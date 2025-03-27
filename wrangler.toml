@@ -5,6 +5,11 @@ main = "workers-site/index.js"
 [site]
 bucket = "out"
 
+# Custom domain configuration
+routes = [
+  { pattern = "www.easytakt.com", custom_domain = true }
+]
+
 [build]
 command = "npm run build"
 cwd = "."
