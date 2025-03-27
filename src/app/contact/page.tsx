@@ -3,7 +3,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
-import { submitContactForm } from './actions';
 
 export default function ContactPage() {
   const [formState, setFormState] = useState<{
@@ -14,25 +13,29 @@ export default function ContactPage() {
     isSubmitting: false,
   });
 
-  async function handleSubmit(formData: FormData) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
     setFormState({ isSubmitting: true });
 
     try {
-      const result = await submitContactForm(formData);
-      
-      if (result.error) {
+      const formData = new FormData(e.currentTarget);
+      const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+        method: 'POST',
+        body: formData,
+        headers: {
+          Accept: 'application/json',
+        },
+      });
+
+      if (response.ok) {
         setFormState({
           isSubmitting: false,
-          error: result.error,
-        });
-      } else {
-        setFormState({
-          isSubmitting: false,
-          success: result.message,
+          success: 'Thank you for your message. We will get back to you soon!',
         });
         // Reset form
-        const form = document.querySelector('form') as HTMLFormElement;
-        form?.reset();
+        (e.target as HTMLFormElement).reset();
+      } else {
+        throw new Error('Failed to submit form');
       }
     } catch (error) {
       setFormState({
@@ -68,7 +71,7 @@ export default function ContactPage() {
             </div>
           )}
 
-          <form action={handleSubmit} className="space-y-6">
+          <form onSubmit={handleSubmit} className="space-y-6">
             {/* Name and Email Row */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
