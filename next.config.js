@@ -12,6 +12,13 @@ const nextConfig = {
     domains: ['localhost'],
     unoptimized: true,
   },
+  output: 'standalone',
+  // Enable static exports
+  output: 'export',
+  // Disable image optimization for static export
+  images: {
+    unoptimized: true,
+  },
 };
 
 module.exports = withMDX(nextConfig); 
