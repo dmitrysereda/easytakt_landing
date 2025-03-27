@@ -6,7 +6,8 @@ import Link from 'next/link';
 import { getBlogPosts, getBlogCategories } from '@/utils/mdx';
 import ClientBlogPage from '@/components/blog/ClientBlogPage';
 
-export const dynamic = 'force-dynamic';
+// This page can be static since we're reading from the filesystem
+export const revalidate = 3600; // Revalidate every hour
 
 export default async function BlogHome() {
   const posts = await getBlogPosts();
