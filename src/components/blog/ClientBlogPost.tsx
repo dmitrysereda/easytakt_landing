@@ -144,6 +144,25 @@ export default function ClientBlogPost({ post, content }: ClientBlogPostProps) {
               </div>
             </div>
           </article>
+
+          {/* CTA Section */}
+          <div className="mt-24 mb-16">
+            <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl p-8 md:p-12 text-center">
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                Ready to Streamline Your Scheduling?
+              </h2>
+              <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+                Join thousands of businesses that trust EasyTakt to manage their appointments and grow their business.
+              </p>
+              <Link
+                href="/signup"
+                className="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-600 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
+              >
+                Try Free Now
+                <ChevronRight className="w-5 h-5 ml-2" />
+              </Link>
+            </div>
+          </div>
         </div>
       </main>
 

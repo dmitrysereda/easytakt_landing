@@ -1,17 +1,19 @@
 'use client';
 
+import { useState, useEffect } from 'react';
+import { useSearchParams } from 'next/navigation';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import { motion } from 'framer-motion';
-import { Clock, ArrowRight, X } from 'lucide-react';
+import { Clock, ArrowRight, X, Search } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useRouter, useSearchParams } from 'next/navigation';
-import type { BlogPost } from '@/utils/mdx';
+import { useRouter } from 'next/navigation';
+import type { BlogPost, BlogCategory } from '@/types/blog';
 
 interface ClientBlogPageProps {
   posts: BlogPost[];
-  categories: { name: string; count: number }[];
+  categories: BlogCategory[];
 }
 
 const getImagePath = (imagePath: string | undefined): string => {
@@ -22,11 +24,19 @@ const getImagePath = (imagePath: string | undefined): string => {
 export default function ClientBlogPage({ posts, categories }: ClientBlogPageProps) {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const selectedCategory = searchParams.get('category');
+  const [searchTerm, setSearchTerm] = useState(searchParams.get('search') || '');
+  const [selectedCategory, setSelectedCategory] = useState(searchParams.get('category') || '');
+  const [filteredPosts, setFilteredPosts] = useState(posts);
 
-  const filteredPosts = selectedCategory
-    ? posts.filter(post => post.category.toLowerCase() === selectedCategory.toLowerCase())
-    : posts;
+  useEffect(() => {
+    const filtered = posts.filter(post => {
+      const matchesSearch = post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        post.excerpt.toLowerCase().includes(searchTerm.toLowerCase());
+      const matchesCategory = !selectedCategory || post.category === selectedCategory;
+      return matchesSearch && matchesCategory;
+    });
+    setFilteredPosts(filtered);
+  }, [searchTerm, selectedCategory, posts]);
 
   const handleCategoryClick = (categoryName: string) => {
     router.push(`/blog?category=${encodeURIComponent(categoryName.toLowerCase())}`);
