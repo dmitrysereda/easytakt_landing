@@ -31,7 +31,7 @@ export default function ClientBlogPage({ posts, categories }: ClientBlogPageProp
   useEffect(() => {
     const filtered = posts.filter(post => {
       const matchesSearch = post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        post.excerpt.toLowerCase().includes(searchTerm.toLowerCase());
+        post.description.toLowerCase().includes(searchTerm.toLowerCase());
       const matchesCategory = !selectedCategory || post.category === selectedCategory;
       return matchesSearch && matchesCategory;
     });
