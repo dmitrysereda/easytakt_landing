@@ -6,4 +6,4 @@ cwd = "."
 format = "service-worker"
 
 [site]
-bucket = ".next" 
+bucket = "out" 
