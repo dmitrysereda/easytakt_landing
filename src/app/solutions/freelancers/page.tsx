@@ -76,6 +76,7 @@ export default function FreelancersPage() {
         features={features}
         imageUrl="/images/solutions/freelancer-workspace.jpg"
         benefitCategories={benefitCategories}
+        challengeText="As a freelancer, managing your schedule can be overwhelming. Endless email chains to find meeting times, double-bookings due to timezone confusion, and unprofessional scheduling experiences can all hurt your business. You need a solution that makes scheduling effortless while maintaining your professional image."
       />
       <Footer />
     </>
