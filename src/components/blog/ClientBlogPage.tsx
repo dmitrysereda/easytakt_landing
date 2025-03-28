@@ -32,14 +32,15 @@ export default function ClientBlogPage({ posts, categories }: ClientBlogPageProp
     const filtered = posts.filter(post => {
       const matchesSearch = post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
         post.description.toLowerCase().includes(searchTerm.toLowerCase());
-      const matchesCategory = !selectedCategory || post.category === selectedCategory;
+      const matchesCategory = !selectedCategory || 
+        post.category.toLowerCase() === selectedCategory.toLowerCase();
       return matchesSearch && matchesCategory;
     });
     setFilteredPosts(filtered);
   }, [searchTerm, selectedCategory, posts]);
 
   const handleCategoryClick = (categoryName: string) => {
-    router.push(`/blog?category=${encodeURIComponent(categoryName.toLowerCase())}`);
+    router.push(`/blog?category=${encodeURIComponent(categoryName)}`);
   };
 
   return (

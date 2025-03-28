@@ -32,7 +32,7 @@ export default function ClientBlogPost({ post, content }: ClientBlogPostProps) {
   }, [post.title]);
 
   const handleCategoryClick = () => {
-    router.push(`/blog?category=${encodeURIComponent(post.category.toLowerCase())}`);
+    router.push(`/blog?category=${encodeURIComponent(post.category)}`);
   };
 
   return (
