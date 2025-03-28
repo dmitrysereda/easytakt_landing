@@ -31,7 +31,8 @@ export default function ClientBlogPost({ post, content }: ClientBlogPostProps) {
     document.title = `${post.title} | EasyTakt`;
   }, [post.title]);
 
-  const handleCategoryClick = () => {
+  const handleCategoryClick = (e?: React.MouseEvent) => {
+    e?.preventDefault();
     router.push(`/blog?category=${encodeURIComponent(post.category)}`);
   };
 

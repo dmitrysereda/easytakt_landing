@@ -40,7 +40,19 @@ export default function ClientBlogPage({ posts, categories }: ClientBlogPageProp
   }, [searchTerm, selectedCategory, posts]);
 
   const handleCategoryClick = (categoryName: string) => {
-    router.push(`/blog?category=${encodeURIComponent(categoryName)}`);
+    // If clicking the already selected category, deselect it
+    if (selectedCategory?.toLowerCase() === categoryName.toLowerCase()) {
+      setSelectedCategory('');
+      router.push('/blog');
+    } else {
+      setSelectedCategory(categoryName);
+      router.push(`/blog?category=${encodeURIComponent(categoryName)}`);
+    }
+  };
+
+  const handleCategoryDeselect = () => {
+    setSelectedCategory('');
+    router.push('/blog');
   };
 
   return (
@@ -67,8 +79,9 @@ export default function ClientBlogPage({ posts, categories }: ClientBlogPageProp
                   <div className="bg-blue-50 text-blue-600 px-4 py-2 rounded-lg flex items-center gap-2">
                     <span>Showing articles in: {selectedCategory}</span>
                     <button
-                      onClick={() => router.push('/blog')}
+                      onClick={handleCategoryDeselect}
                       className="hover:bg-blue-100 p-1 rounded-full transition-colors"
+                      aria-label="Clear category filter"
                     >
                       <X className="w-4 h-4" />
                     </button>
@@ -114,6 +127,7 @@ export default function ClientBlogPage({ posts, categories }: ClientBlogPageProp
                               <button
                                 onClick={(e) => {
                                   e.preventDefault();
+                                  e.stopPropagation();
                                   handleCategoryClick(post.category);
                                 }}
                                 className="bg-blue-50 text-blue-600 px-3 py-1 rounded-full hover:bg-blue-100 transition-colors"
@@ -145,7 +159,7 @@ export default function ClientBlogPage({ posts, categories }: ClientBlogPageProp
                   <div className="text-center py-12">
                     <p className="text-gray-600">No articles found in this category.</p>
                     <button
-                      onClick={() => router.push('/blog')}
+                      onClick={handleCategoryDeselect}
                       className="mt-4 text-blue-600 hover:text-blue-700 font-medium"
                     >
                       View all articles
