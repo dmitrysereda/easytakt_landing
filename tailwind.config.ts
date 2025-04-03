@@ -38,6 +38,9 @@ const config: Config = {
         blob: "blob 7s infinite",
         'fade-in': "fade-in 0.8s ease-out",
         'fade-in-up': "fade-in-up 0.8s ease-out",
+        'fade-up': 'fade-up 0.5s ease-out forwards',
+        'fade-right': 'fade-right 0.5s ease-out forwards',
+        'bounce-subtle': 'bounce-subtle 2s ease-in-out infinite',
       },
       keyframes: {
         blob: {
@@ -70,6 +73,34 @@ const config: Config = {
           '100%': {
             opacity: '1',
             transform: 'translateY(0)',
+          },
+        },
+        'fade-up': {
+          '0%': {
+            opacity: '0',
+            transform: 'translateY(20px)',
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0)',
+          },
+        },
+        'fade-right': {
+          '0%': {
+            opacity: '0',
+            transform: 'translateX(-20px)',
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateX(0)',
+          },
+        },
+        'bounce-subtle': {
+          '0%, 100%': {
+            transform: 'translateY(0)',
+          },
+          '50%': {
+            transform: 'translateY(-5px)',
           },
         },
       },

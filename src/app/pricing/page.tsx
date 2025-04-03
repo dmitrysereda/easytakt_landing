@@ -61,9 +61,9 @@ export default function PricingPage() {
             <div className="max-w-7xl mx-auto">
               <div className="grid md:grid-cols-2 gap-12 items-start">
                 {/* Pricing Card */}
-                <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+                <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12 animate-fade-up opacity-0 [animation-delay:200ms] [animation-fill-mode:forwards]">
                   <div className="flex items-baseline mb-8">
-                    <Euro className="w-12 h-12 text-blue-600" strokeWidth={1.5} />
+                    <Euro className="w-12 h-12 text-blue-600 animate-bounce-subtle" strokeWidth={1.5} />
                     <span className="text-6xl font-bold text-gray-900">15</span>
                     <span className="text-xl text-gray-600 ml-2">/month</span>
                   </div>
@@ -72,7 +72,11 @@ export default function PricingPage() {
                   </p>
                   <div className="space-y-4 mb-8">
                     {features.map((feature, index) => (
-                      <div key={index} className="flex items-start gap-3">
+                      <div 
+                        key={index} 
+                        className="flex items-start gap-3 animate-fade-right opacity-0" 
+                        style={{ animationDelay: `${index * 100 + 400}ms`, animationFillMode: 'forwards' }}
+                      >
                         <CheckCircle2 className="w-5 h-5 text-emerald-500 flex-shrink-0 mt-1" />
                         <span className="text-gray-600">{feature}</span>
                       </div>
@@ -80,24 +84,28 @@ export default function PricingPage() {
                   </div>
                   <Link
                     href="https://app.easytakt.com"
-                    className="inline-flex items-center justify-center w-full px-6 py-4 text-lg font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors duration-200 group"
+                    className="inline-flex items-center justify-center w-full px-6 py-4 text-lg font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-all duration-200 group hover:scale-[1.02] animate-fade-up opacity-0 [animation-delay:1200ms] [animation-fill-mode:forwards]"
                   >
                     Try now for free
                     <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                   </Link>
-                  <p className="text-sm text-gray-500 text-center mt-4">
+                  <p className="text-sm text-gray-500 text-center mt-4 animate-fade-up opacity-0 [animation-delay:1300ms] [animation-fill-mode:forwards]">
                     No credit card required
                   </p>
                 </div>
 
                 {/* Benefits */}
                 <div className="space-y-12">
-                  <h2 className="text-3xl font-bold text-gray-900">
+                  <h2 className="text-3xl font-bold text-gray-900 animate-fade-up opacity-0 [animation-delay:300ms] [animation-fill-mode:forwards]">
                     Your Investment, Multiplied
                   </h2>
                   <div className="grid gap-8">
                     {benefits.map((benefit, index) => (
-                      <div key={index} className="space-y-3 bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                      <div 
+                        key={index} 
+                        className="space-y-3 bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02] animate-fade-up opacity-0"
+                        style={{ animationDelay: `${index * 200 + 400}ms`, animationFillMode: 'forwards' }}
+                      >
                         <h3 className="text-xl font-semibold text-gray-900">
                           {benefit.title}
                         </h3>
@@ -125,42 +133,41 @@ export default function PricingPage() {
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto">
-              <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
+              <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center animate-fade-up opacity-0 [animation-delay:200ms] [animation-fill-mode:forwards]">
                 Frequently Asked Questions
               </h2>
               <div className="space-y-8">
-                <div className="space-y-3">
-                  <h3 className="text-xl font-semibold text-gray-900">
-                    Is there a minimum contract period?
-                  </h3>
-                  <p className="text-gray-600">
-                    No, EasyTakt is a month-to-month service. You can cancel at any time without any penalties.
-                  </p>
-                </div>
-                <div className="space-y-3">
-                  <h3 className="text-xl font-semibold text-gray-900">
-                    Are there any setup fees?
-                  </h3>
-                  <p className="text-gray-600">
-                    None at all. The monthly fee covers everything, including setup and onboarding support.
-                  </p>
-                </div>
-                <div className="space-y-3">
-                  <h3 className="text-xl font-semibold text-gray-900">
-                    What payment methods do you accept?
-                  </h3>
-                  <p className="text-gray-600">
-                    We accept all major credit cards and can provide invoices for bank transfers within the EU.
-                  </p>
-                </div>
-                <div className="space-y-3">
-                  <h3 className="text-xl font-semibold text-gray-900">
-                    Can I change plans later?
-                  </h3>
-                  <p className="text-gray-600">
-                    We offer a single comprehensive plan that includes all features. No need to worry about upgrading or downgrading.
-                  </p>
-                </div>
+                {[
+                  {
+                    question: 'Is there a minimum contract period?',
+                    answer: 'No, EasyTakt is a month-to-month service. You can cancel at any time without any penalties.'
+                  },
+                  {
+                    question: 'Are there any setup fees?',
+                    answer: 'None at all. The monthly fee covers everything, including setup and onboarding support.'
+                  },
+                  {
+                    question: 'What payment methods do you accept?',
+                    answer: 'We accept all major credit cards and can provide invoices for bank transfers within the EU.'
+                  },
+                  {
+                    question: 'Can I change plans later?',
+                    answer: 'We offer a single comprehensive plan that includes all features. No need to worry about upgrading or downgrading.'
+                  }
+                ].map((faq, index) => (
+                  <div 
+                    key={index} 
+                    className="space-y-3 animate-fade-up opacity-0"
+                    style={{ animationDelay: `${index * 150 + 400}ms`, animationFillMode: 'forwards' }}
+                  >
+                    <h3 className="text-xl font-semibold text-gray-900">
+                      {faq.question}
+                    </h3>
+                    <p className="text-gray-600">
+                      {faq.answer}
+                    </p>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -170,15 +177,15 @@ export default function PricingPage() {
         <section className="py-16">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6 animate-fade-up opacity-0 [animation-delay:200ms] [animation-fill-mode:forwards]">
                 Ready to Transform Your Business?
               </h2>
-              <p className="text-xl text-gray-600 mb-8">
+              <p className="text-xl text-gray-600 mb-8 animate-fade-up opacity-0 [animation-delay:300ms] [animation-fill-mode:forwards]">
                 Join thousands of businesses already saving time and growing with EasyTakt.
               </p>
               <Link
                 href="https://app.easytakt.com"
-                className="inline-flex items-center px-8 py-4 text-lg font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors duration-200 group"
+                className="inline-flex items-center px-8 py-4 text-lg font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-all duration-200 group hover:scale-[1.02] animate-fade-up opacity-0 [animation-delay:400ms] [animation-fill-mode:forwards]"
               >
                 Get Started Free
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
