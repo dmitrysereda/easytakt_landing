@@ -4,7 +4,6 @@ import { useState, useEffect } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
-import { motion } from 'framer-motion';
 import { Clock, ArrowRight, X, Search } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -62,12 +61,7 @@ export default function ClientBlogPage({ posts, categories }: ClientBlogPageProp
         {/* Hero Section */}
         <section className="pt-32 pb-16 bg-gradient-to-b from-gray-50 to-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.8 }}
-              className="text-center max-w-3xl mx-auto"
-            >
+            <div className="text-center max-w-3xl mx-auto animate-fade-in">
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
                 Insights for Growing Your Business
               </h1>
@@ -88,7 +82,7 @@ export default function ClientBlogPage({ posts, categories }: ClientBlogPageProp
                   </div>
                 </div>
               )}
-            </motion.div>
+            </div>
           </div>
         </section>
 
@@ -103,11 +97,8 @@ export default function ClientBlogPage({ posts, categories }: ClientBlogPageProp
                 </h2>
                 <div className="space-y-12">
                   {filteredPosts.map((post, index) => (
-                    <motion.article
+                    <div
                       key={post.slug}
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      transition={{ duration: 0.8, delay: index * 0.1 }}
                       className="group"
                     >
                       <Link href={`/blog/${post.slug}`} className="block">
@@ -152,7 +143,7 @@ export default function ClientBlogPage({ posts, categories }: ClientBlogPageProp
                           </div>
                         </div>
                       </Link>
-                    </motion.article>
+                    </div>
                   ))}
                 </div>
                 {filteredPosts.length === 0 && (

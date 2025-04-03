@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
 
 const testimonials = [
@@ -30,6 +29,7 @@ const testimonials = [
 const TestimonialsSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+  const [isTransitioning, setIsTransitioning] = useState(false);
 
   useEffect(() => {
     if (!isAutoPlaying) return;
@@ -43,12 +43,20 @@ const TestimonialsSection = () => {
 
   const handlePrevious = () => {
     setIsAutoPlaying(false);
-    setCurrentIndex((current) => (current - 1 + testimonials.length) % testimonials.length);
+    setIsTransitioning(true);
+    setTimeout(() => {
+      setCurrentIndex((current) => (current - 1 + testimonials.length) % testimonials.length);
+      setIsTransitioning(false);
+    }, 300);
   };
 
   const handleNext = () => {
     setIsAutoPlaying(false);
-    setCurrentIndex((current) => (current + 1) % testimonials.length);
+    setIsTransitioning(true);
+    setTimeout(() => {
+      setCurrentIndex((current) => (current + 1) % testimonials.length);
+      setIsTransitioning(false);
+    }, 300);
   };
 
   return (
@@ -63,30 +71,25 @@ const TestimonialsSection = () => {
           <div className="relative">
             {/* Testimonial Container */}
             <div className="flex items-center justify-center min-h-[400px]">
-              <AnimatePresence mode="wait">
-                <motion.div
-                  key={currentIndex}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -20 }}
-                  transition={{ duration: 0.5 }}
-                  className="text-center max-w-4xl mx-auto px-4"
-                >
-                  <Quote className="w-12 h-12 mx-auto mb-8 text-blue-600 opacity-50" />
-                  <p className="text-2xl md:text-3xl font-medium text-gray-900 mb-8">
-                    "{testimonials[currentIndex].quote}"
-                  </p>
-                  <div className="text-gray-600">
-                    <span className="font-semibold">{testimonials[currentIndex].author}</span>
-                    {testimonials[currentIndex].organization && (
-                      <>
-                        <span className="mx-2">·</span>
-                        <span>{testimonials[currentIndex].organization}</span>
-                      </>
-                    )}
-                  </div>
-                </motion.div>
-              </AnimatePresence>
+              <div
+                className={`text-center max-w-4xl mx-auto px-4 transition-all duration-300 ease-in-out ${
+                  isTransitioning ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'
+                }`}
+              >
+                <Quote className="w-12 h-12 mx-auto mb-8 text-blue-600 opacity-50" />
+                <p className="text-2xl md:text-3xl font-medium text-gray-900 mb-8">
+                  "{testimonials[currentIndex].quote}"
+                </p>
+                <div className="text-gray-600">
+                  <span className="font-semibold">{testimonials[currentIndex].author}</span>
+                  {testimonials[currentIndex].organization && (
+                    <>
+                      <span className="mx-2">·</span>
+                      <span>{testimonials[currentIndex].organization}</span>
+                    </>
+                  )}
+                </div>
+              </div>
             </div>
 
             {/* Navigation Buttons */}

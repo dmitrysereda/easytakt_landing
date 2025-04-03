@@ -1,6 +1,5 @@
 'use client';
 
-import { motion } from 'framer-motion';
 import { Car, Music, Scissors, Dumbbell, GraduationCap, Briefcase, Dog, Wrench, Shirt, Rocket, Wallet, Shield } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -97,113 +96,60 @@ export default function SolutionsPage() {
   useEffect(() => {
     // Add smooth scrolling behavior
     document.documentElement.style.scrollBehavior = 'smooth';
-    
-    return () => {
-      document.documentElement.style.scrollBehavior = 'auto';
-    };
   }, []);
-
-  const fadeInUp = {
-    hidden: { 
-      opacity: 0,
-      y: 30
-    },
-    visible: { 
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.8,
-        ease: [0.22, 1, 0.36, 1]
-      }
-    }
-  };
 
   return (
     <>
       <Header />
-      <main className="min-h-screen">
+      <main>
         {/* Hero Section */}
-        <section className="py-32 bg-gradient-to-b from-gray-50 to-white">
-          <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center max-w-4xl mx-auto mb-20">
-              <motion.div
-                initial="hidden"
-                animate="visible"
-                variants={fadeInUp}
-                className="space-y-6"
-              >
-                <h1 className="text-[2.75rem] md:text-[3.5rem] lg:text-[4rem] font-bold leading-[1.1] tracking-tight">
-                  <span className="block text-gray-900">
-                    Running your business
-                  </span>
-                  <span className="block text-gray-900 mt-2">
-                    is hard.
-                  </span>
-                  <span className="block bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent mt-6">
-                    Scheduling shouldn't be.
-                  </span>
-                </h1>
-              </motion.div>
-              <motion.p
-                initial="hidden"
-                animate="visible"
-                variants={fadeInUp}
-                className="text-xl text-gray-600 max-w-3xl mx-auto mt-10"
-              >
-                A smarter, faster way to manage appointments and schedules for businesses of all sizes – all in one easy-to-use platform
-              </motion.p>
+        <section className="pt-32 pb-16 bg-gradient-to-b from-gray-50 to-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center max-w-3xl mx-auto animate-fade-in">
+              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                Solutions for Every Business
+              </h1>
+              <p className="text-xl text-gray-600 mb-8">
+                Discover how EasyTakt can transform your business operations
+              </p>
             </div>
+          </div>
+        </section>
 
-            {/* Solutions Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
-              {solutions.map((solution, index) => {
-                const Icon = solution.icon;
-                return (
-                  <motion.div
-                    key={solution.title}
-                    initial={{ 
-                      opacity: 0,
-                      y: 40,
-                      scale: 0.97
-                    }}
-                    whileInView={{ 
-                      opacity: 1,
-                      y: 0,
-                      scale: 1
-                    }}
-                    viewport={{ 
-                      once: true,
-                      margin: "-10%"
-                    }}
-                    transition={{ 
-                      duration: 0.8,
-                      delay: index * 0.1,
-                      ease: [0.22, 1, 0.36, 1]
-                    }}
-                  >
-                    <Link href={solution.href} className="block group h-full">
-                      <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
-                        <Image
-                          src={solution.image}
-                          alt={solution.title}
-                          fill
-                          priority={index < 3}
-                          className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-black/0 transition-opacity duration-300 group-hover:opacity-90"></div>
-                        <div className="absolute bottom-0 left-0 right-0 p-6">
-                          <div className={`inline-flex items-center justify-center p-3 rounded-xl ${solution.color} bg-opacity-90 backdrop-blur-sm mb-3 transition-transform duration-300 ease-out group-hover:scale-105`}>
-                            <Icon className={`w-6 h-6 ${solution.iconColor}`} />
-                          </div>
-                          <h3 className="text-2xl font-bold text-white mb-2 transition-transform duration-300 ease-out group-hover:translate-x-1">{solution.title}</h3>
-                          <p className="text-gray-200 text-sm min-h-[3rem] transition-opacity duration-300 group-hover:opacity-90">{solution.description}</p>
-                        </div>
+        {/* Solutions Grid */}
+        <section className="py-16">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {solutions.map((solution, index) => (
+                <Link
+                  key={solution.title}
+                  href={solution.href}
+                  className="group block animate-fade-in-up"
+                  style={{ animationDelay: `${index * 100}ms` }}
+                >
+                  <div className="relative overflow-hidden rounded-2xl bg-white shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div className="aspect-w-16 aspect-h-9">
+                      <Image
+                        src={solution.image}
+                        alt={solution.title}
+                        fill
+                        className="object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
+                    </div>
+                    <div className="p-6">
+                      <div className={`w-12 h-12 rounded-xl ${solution.color} flex items-center justify-center mb-4`}>
+                        <solution.icon className={`w-6 h-6 ${solution.iconColor}`} />
                       </div>
-                    </Link>
-                  </motion.div>
-                );
-              })}
+                      <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                        {solution.title}
+                      </h3>
+                      <p className="text-gray-600">
+                        {solution.description}
+                      </p>
+                    </div>
+                  </div>
+                </Link>
+              ))}
             </div>
           </div>
         </section>
@@ -212,24 +158,12 @@ export default function SolutionsPage() {
         <section className="py-24 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-3xl mx-auto mb-16">
-              <motion.h2
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, margin: "-10%" }}
-                variants={fadeInUp}
-                className="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
-              >
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
                 Core Features for Every Business
-              </motion.h2>
-              <motion.p
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, margin: "-10%" }}
-                variants={fadeInUp}
-                className="text-xl text-gray-600"
-              >
+              </h2>
+              <p className="text-xl text-gray-600">
                 No matter your industry, EasyTakt provides powerful tools to streamline your scheduling operations.
-              </motion.p>
+              </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -259,27 +193,8 @@ export default function SolutionsPage() {
                   description: "Present a professional image with a booking page that matches your brand identity."
                 }
               ].map((feature, index) => (
-                <motion.div
+                <div
                   key={feature.title}
-                  initial={{ 
-                    opacity: 0,
-                    y: 30,
-                    scale: 0.97
-                  }}
-                  whileInView={{ 
-                    opacity: 1,
-                    y: 0,
-                    scale: 1
-                  }}
-                  viewport={{ 
-                    once: true,
-                    margin: "-10%"
-                  }}
-                  transition={{ 
-                    duration: 0.8,
-                    delay: index * 0.1,
-                    ease: [0.22, 1, 0.36, 1]
-                  }}
                   className="bg-gray-50 rounded-2xl p-8 transform transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
                 >
                   <h3 className="text-xl font-semibold text-gray-900 mb-4">
@@ -288,7 +203,7 @@ export default function SolutionsPage() {
                   <p className="text-gray-600">
                     {feature.description}
                   </p>
-                </motion.div>
+                </div>
               ))}
             </div>
           </div>
@@ -297,17 +212,11 @@ export default function SolutionsPage() {
         {/* Save Time Section */}
         <section className="py-24 bg-gradient-to-b from-white to-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "-10%" }}
-              variants={fadeInUp}
-              className="text-center mb-16"
-            >
+            <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
                 Save Time. Stay in Control.
               </h2>
-            </motion.div>
+            </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16">
               {[
@@ -333,27 +242,8 @@ export default function SolutionsPage() {
                   iconColor: "text-green-600"
                 }
               ].map((feature, index) => (
-                <motion.div
+                <div
                   key={feature.title}
-                  initial={{ 
-                    opacity: 0,
-                    y: 30,
-                    scale: 0.97
-                  }}
-                  whileInView={{ 
-                    opacity: 1,
-                    y: 0,
-                    scale: 1
-                  }}
-                  viewport={{ 
-                    once: true,
-                    margin: "-10%"
-                  }}
-                  transition={{ 
-                    duration: 0.8,
-                    delay: index * 0.1,
-                    ease: [0.22, 1, 0.36, 1]
-                  }}
                   className="flex items-start space-x-6"
                 >
                   <div className={`flex-shrink-0 w-16 h-16 ${feature.color} rounded-2xl flex items-center justify-center`}>
@@ -369,7 +259,7 @@ export default function SolutionsPage() {
                       {feature.description}
                     </p>
                   </div>
-                </motion.div>
+                </div>
               ))}
             </div>
           </div>
@@ -378,15 +268,9 @@ export default function SolutionsPage() {
         {/* The Numbers Don't Lie Section */}
         <section className="py-24 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.h2
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "-10%" }}
-              variants={fadeInUp}
-              className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-20"
-            >
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-20">
               The Numbers Don't Lie
-            </motion.h2>
+            </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16">
               {[
@@ -406,27 +290,8 @@ export default function SolutionsPage() {
                   gradient: "from-purple-400 to-blue-600"
                 }
               ].map((stat, index) => (
-                <motion.div
+                <div
                   key={stat.description}
-                  initial={{ 
-                    opacity: 0,
-                    y: 30,
-                    scale: 0.97
-                  }}
-                  whileInView={{ 
-                    opacity: 1,
-                    y: 0,
-                    scale: 1
-                  }}
-                  viewport={{ 
-                    once: true,
-                    margin: "-10%"
-                  }}
-                  transition={{ 
-                    duration: 0.8,
-                    delay: index * 0.1,
-                    ease: [0.22, 1, 0.36, 1]
-                  }}
                   className="text-center"
                 >
                   <div className="mb-4">
@@ -437,7 +302,7 @@ export default function SolutionsPage() {
                   <p className="text-lg text-gray-600">
                     {stat.description}
                   </p>
-                </motion.div>
+                </div>
               ))}
             </div>
           </div>
@@ -447,33 +312,14 @@ export default function SolutionsPage() {
         <section className="py-24 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
-              <motion.h2
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, margin: "-10%" }}
-                variants={fadeInUp}
-                className="text-3xl font-bold text-gray-900 mb-6"
-              >
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">
                 Ready to streamline your scheduling?
-              </motion.h2>
-              <motion.p
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, margin: "-10%" }}
-                variants={fadeInUp}
-                className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto"
-              >
+              </h2>
+              <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
                 Join thousands of businesses that trust EasyTakt to handle their scheduling needs.
                 Get started today with our 30-day free trial.
-              </motion.p>
-              <motion.div
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, margin: "-10%" }}
-                variants={fadeInUp}
-              >
-                <SignupButton size="large" />
-              </motion.div>
+              </p>
+              <SignupButton size="large" />
             </div>
           </div>
         </section>
