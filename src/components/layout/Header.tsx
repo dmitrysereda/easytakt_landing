@@ -32,17 +32,17 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-10">
-            <Link href="#features" className="text-gray-600 hover:text-blue-600 transition-colors">
+            <Link href="/features" className="text-gray-600 hover:text-blue-600 transition-colors">
               Features
             </Link>
             <Link href="/solutions" className="text-gray-600 hover:text-blue-600 transition-colors">
               Solutions
             </Link>
-            <Link href="#benefits" className="text-gray-600 hover:text-blue-600 transition-colors">
-              Benefits
-            </Link>
-            <Link href="#pricing" className="text-gray-600 hover:text-blue-600 transition-colors">
+            <Link href="/pricing" className="text-gray-600 hover:text-blue-600 transition-colors">
               Pricing
+            </Link>
+            <Link href="/blog" className="text-gray-600 hover:text-blue-600 transition-colors">
+              Blog
             </Link>
             <SignupButton size="small" />
           </div>
@@ -76,7 +76,7 @@ const Header = () => {
           <div className="md:hidden py-4 border-t border-gray-100">
             <div className="flex flex-col space-y-4">
               <Link
-                href="#features"
+                href="/features"
                 className="text-gray-600 hover:text-blue-600 transition-colors px-2"
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -90,18 +90,18 @@ const Header = () => {
                 Solutions
               </Link>
               <Link
-                href="#benefits"
-                className="text-gray-600 hover:text-blue-600 transition-colors px-2"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Benefits
-              </Link>
-              <Link
-                href="#pricing"
+                href="/pricing"
                 className="text-gray-600 hover:text-blue-600 transition-colors px-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Pricing
+              </Link>
+              <Link
+                href="/blog"
+                className="text-gray-600 hover:text-blue-600 transition-colors px-2"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Blog
               </Link>
               <div className="px-2">
                 <SignupButton className="w-full" size="small" onClick={() => setIsMenuOpen(false)} />

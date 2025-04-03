@@ -36,48 +36,49 @@ const advantages = [
 
 const CompetitiveAdvantages = () => {
   return (
-    <section className="py-24 overflow-hidden">
+    <section className="py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-center mb-16"
+          className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
             Save Time. Stay in Control.
           </h2>
         </motion.div>
 
-        <div className="space-y-20 md:space-y-32">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {advantages.map((advantage, index) => (
             <motion.div
               key={advantage.title}
-              initial={{ opacity: 0, y: 40 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.7, delay: index * 0.1 }}
-              className={`flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} items-center gap-8 md:gap-16`}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              className="group flex gap-6 items-start p-6 rounded-2xl hover:bg-white/50 transition-colors duration-300"
             >
               {/* Icon Container */}
-              <div className={`w-full md:w-1/3 ${advantage.color} rounded-3xl p-8 md:p-12 transform hover:scale-105 transition-transform duration-300`}>
-                <div className="aspect-square relative">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <advantage.icon className={`w-16 h-16 ${advantage.iconColor}`} />
-                  </div>
+              <div className={`flex-shrink-0 ${advantage.color} rounded-xl p-4 transform group-hover:scale-110 transition-transform duration-300`}>
+                <div className="relative">
                   {/* Decorative background circles */}
-                  <div className={`absolute inset-0 ${advantage.color} rounded-full transform -rotate-6 scale-90`} />
-                  <div className={`absolute inset-0 ${advantage.color} rounded-full transform rotate-12 scale-95`} />
+                  <div className={`absolute inset-0 ${advantage.color} rounded-full transform -rotate-6`} />
+                  <div className={`absolute inset-0 ${advantage.color} rounded-full transform rotate-12`} />
+                  {/* Icon */}
+                  <div className="relative z-10">
+                    <advantage.icon className={`w-8 h-8 ${advantage.iconColor}`} />
+                  </div>
                 </div>
               </div>
 
               {/* Content */}
-              <div className="w-full md:w-2/3 text-center md:text-left">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+              <div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">
                   {advantage.title}
                 </h3>
-                <p className="text-lg text-gray-600 leading-relaxed">
+                <p className="text-gray-600 leading-relaxed">
                   {advantage.description}
                 </p>
               </div>

@@ -18,7 +18,7 @@ export default function SignupButton({
 }: SignupButtonProps) {
   return (
     <Link
-      href="http://app.easytakt.com"
+      href="https://app.easytakt.com"
       className={cn(
         "inline-flex items-center justify-center font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 rounded-xl",
         variant === 'primary' ? "bg-blue-600 text-white hover:bg-blue-700" : "bg-white text-gray-900 hover:bg-gray-50",

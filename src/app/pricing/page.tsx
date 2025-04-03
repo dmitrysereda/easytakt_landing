@@ -4,38 +4,40 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 
 const features = [
-  'All features included - no upsells',
-  'Unlimited clients and staff members',
   'Smart scheduling & automated notifications',
+  'Unlimited clients and staff members',
   'Comprehensive business analytics',
   'Client history and notes',
   'Custom booking rules',
   'Multiple service locations',
   'Calendar integrations',
-  'Mobile app access',
-  'Priority support',
+  'All features included - no upsells'
 ];
 
 const benefits = [
   {
     title: 'Reduce No-Shows',
     description: 'Smart reminders and confirmations dramatically reduce missed appointments',
-    metric: 'Up to 80% reduction in no-shows'
+    metric: 'Up to 80% reduction in no-shows',
+    emphasis: 'Save thousands in lost revenue'
   },
   {
     title: 'Save Admin Time',
     description: 'Automate your scheduling workflow and free up hours every week',
-    metric: '15+ hours saved per month'
+    metric: '15+ hours saved per month',
+    emphasis: 'Focus on growing your business'
   },
   {
     title: 'Boost Client Satisfaction',
     description: 'Deliver a seamless booking experience that keeps clients coming back',
-    metric: '95% client satisfaction rate'
+    metric: '95% client satisfaction rate',
+    emphasis: 'Build lasting relationships'
   },
   {
     title: 'Increase Revenue',
     description: 'Fill empty slots and optimize your schedule for maximum earnings',
-    metric: '25% average revenue increase'
+    metric: '25% average revenue increase',
+    emphasis: 'Maximize your potential'
   }
 ];
 
@@ -45,7 +47,7 @@ export default function PricingPage() {
       <Header />
       <main className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
         {/* Hero Section */}
-        <section className="pt-24 pb-16">
+        <section className="pt-32 pb-16">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -67,7 +69,7 @@ export default function PricingPage() {
                 <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
                   <div className="flex items-baseline mb-8">
                     <Euro className="w-12 h-12 text-blue-600" strokeWidth={1.5} />
-                    <span className="text-6xl font-bold text-gray-900">35</span>
+                    <span className="text-6xl font-bold text-gray-900">15</span>
                     <span className="text-xl text-gray-600 ml-2">/month</span>
                   </div>
                   <p className="text-xl text-gray-600 mb-8">
@@ -82,12 +84,15 @@ export default function PricingPage() {
                     ))}
                   </div>
                   <Link
-                    href="/signup"
-                    className="inline-flex items-center justify-center w-full px-6 py-4 text-lg font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors duration-200"
+                    href="https://app.easytakt.com"
+                    className="inline-flex items-center justify-center w-full px-6 py-4 text-lg font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors duration-200 group"
                   >
-                    Sign up for early access
-                    <ArrowRight className="ml-2 w-5 h-5" />
+                    Try now for free
+                    <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                   </Link>
+                  <p className="text-sm text-gray-500 text-center mt-4">
+                    No credit card required
+                  </p>
                 </div>
 
                 {/* Benefits */}
@@ -97,16 +102,21 @@ export default function PricingPage() {
                   </h2>
                   <div className="grid gap-8">
                     {benefits.map((benefit, index) => (
-                      <div key={index} className="space-y-3">
+                      <div key={index} className="space-y-3 bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
                         <h3 className="text-xl font-semibold text-gray-900">
                           {benefit.title}
                         </h3>
                         <p className="text-gray-600">
                           {benefit.description}
                         </p>
-                        <p className="text-sm font-medium text-emerald-600">
-                          {benefit.metric}
-                        </p>
+                        <div className="flex items-center justify-between pt-2">
+                          <p className="text-sm font-medium text-emerald-600">
+                            {benefit.metric}
+                          </p>
+                          <p className="text-sm font-medium text-blue-600">
+                            {benefit.emphasis}
+                          </p>
+                        </div>
                       </div>
                     ))}
                   </div>
@@ -172,11 +182,11 @@ export default function PricingPage() {
                 Join thousands of businesses already saving time and growing with EasyTakt.
               </p>
               <Link
-                href="/signup"
-                className="inline-flex items-center px-8 py-4 text-lg font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors duration-200"
+                href="https://app.easytakt.com"
+                className="inline-flex items-center px-8 py-4 text-lg font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors duration-200 group"
               >
                 Get Started Free
-                <ArrowRight className="ml-2 w-5 h-5" />
+                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
             </div>
           </div>

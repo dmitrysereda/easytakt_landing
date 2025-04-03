@@ -62,7 +62,7 @@ const PricingSection = () => {
           >
             <div className="text-center mb-8">
               <div className="flex items-end justify-center">
-                <span className="text-6xl md:text-7xl font-bold text-gray-900">35€</span>
+                <span className="text-6xl md:text-7xl font-bold text-gray-900">15€</span>
                 <span className="text-xl text-gray-600 mb-2 ml-2">/month</span>
               </div>
               <p className="text-lg text-gray-600 mt-2">Everything included. No surprises.</p>
