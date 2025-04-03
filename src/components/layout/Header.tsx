@@ -8,7 +8,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="fixed w-full bg-white/80 backdrop-blur-sm border-b border-gray-100 z-50">
+    <header className="fixed w-full bg-white/95 backdrop-blur-md border-b border-gray-100 z-50">
       {/* Skip to main content link */}
       <a
         href="#main-content"

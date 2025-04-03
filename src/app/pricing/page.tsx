@@ -1,7 +1,14 @@
+import { Metadata } from 'next';
 import { Euro, CheckCircle2, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import PricingHero from '@/components/pricing/PricingHero';
+
+export const metadata: Metadata = {
+  title: 'Pricing - EasyTakt',
+  description: 'Simple, transparent pricing with no hidden fees. Everything you need to manage your business schedule efficiently.',
+};
 
 const features = [
   'Smart scheduling & automated notifications',
@@ -46,20 +53,8 @@ export default function PricingPage() {
     <>
       <Header />
       <main className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
-        {/* Hero Section */}
-        <section className="pt-32 pb-16">
-          <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto text-center">
-              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                Simple, Transparent Pricing
-              </h1>
-              <p className="text-xl text-gray-600">
-                No hidden fees. No long-term contracts. Just everything you need to run your business efficiently.
-              </p>
-            </div>
-          </div>
-        </section>
-
+        <PricingHero />
+        
         {/* Pricing Section */}
         <section className="py-16">
           <div className="container mx-auto px-4">

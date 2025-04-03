@@ -7,6 +7,7 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import { useEffect } from 'react';
 import SignupButton from '@/components/SignupButton';
+import SolutionsHero from '@/components/solutions/SolutionsHero';
 
 const solutions = [
   {
@@ -101,30 +102,12 @@ export default function SolutionsPage() {
   return (
     <>
       <Header />
-      <main className="min-h-screen">
-        {/* Hero Section */}
-        <section className="py-32 bg-gradient-to-b from-gray-50 to-white">
-          <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center max-w-4xl mx-auto mb-20">
-              <div className="space-y-6">
-                <h1 className="text-[2.75rem] md:text-[3.5rem] lg:text-[4rem] font-bold leading-[1.1] tracking-tight">
-                  <span className="block text-gray-900">
-                    Running your business
-                  </span>
-                  <span className="block text-gray-900 mt-2">
-                    is hard.
-                  </span>
-                  <span className="block bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent mt-6">
-                    Scheduling shouldn't be.
-                  </span>
-                </h1>
-              </div>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto mt-10">
-                A smarter, faster way to manage appointments and schedules for businesses of all sizes – all in one easy-to-use platform
-              </p>
-            </div>
+      <main className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+        <SolutionsHero />
 
-            {/* Solutions Grid */}
+        {/* Solutions Grid */}
+        <section className="pb-32">
+          <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
               {solutions.map((solution, index) => {
                 const Icon = solution.icon;
