@@ -12,17 +12,15 @@ export default function FeaturesHero() {
           ref={heroRef}
           className="text-center max-w-4xl mx-auto animate-fade-in-up"
         >
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
-            <span className="text-gray-900">Powerful Scheduling</span>
-            <br />
-            <span className="text-gray-900">Features for Business</span>
-            <br />
-            <span className="bg-gradient-to-r from-blue-500 via-purple-500 to-purple-600 text-transparent bg-clip-text">
+          <h1 className="text-5xl md:text-6xl font-bold">
+            <span className="block text-gray-900 mb-4">Powerful Scheduling</span>
+            <span className="block text-gray-900 mb-4">Features for Business</span>
+            <span className="block bg-gradient-to-r from-blue-500 via-purple-500 to-purple-600 text-transparent bg-clip-text pb-2">
               All in One Platform
             </span>
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto animate-fade-in-up-delay">
-            Streamline appointments, automate reminders, and manage your business schedule with our comprehensive suite of scheduling tools
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto mt-10">
+            Streamline your scheduling workflow with powerful tools that drive business growth
           </p>
         </div>
       </div>

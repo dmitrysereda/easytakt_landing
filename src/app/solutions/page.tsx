@@ -112,8 +112,13 @@ export default function SolutionsPage() {
               {solutions.map((solution, index) => {
                 const Icon = solution.icon;
                 return (
-                  <Link href={solution.href} className="block group h-full">
-                    <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
+                  <Link 
+                    key={solution.title}
+                    href={solution.href} 
+                    className="block group h-full animate-fade-up opacity-0"
+                    style={{ animationDelay: `${index * 100}ms`, animationFillMode: 'forwards' }}
+                  >
+                    <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
                       <Image
                         src={solution.image}
                         alt={solution.title}
@@ -124,11 +129,11 @@ export default function SolutionsPage() {
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-black/0 transition-opacity duration-300 group-hover:opacity-90"></div>
                       <div className="absolute bottom-0 left-0 right-0 p-6">
-                        <div className={`inline-flex items-center justify-center p-3 rounded-xl ${solution.color} bg-opacity-90 backdrop-blur-sm mb-3 transition-transform duration-300 ease-out group-hover:scale-105`}>
+                        <div className={`inline-flex items-center justify-center p-3 rounded-xl ${solution.color} bg-opacity-90 backdrop-blur-sm mb-3 transition-all duration-300 ease-out group-hover:scale-110 group-hover:rotate-3`}>
                           <Icon className={`w-6 h-6 ${solution.iconColor}`} />
                         </div>
-                        <h3 className="text-2xl font-bold text-white mb-2 transition-transform duration-300 ease-out group-hover:translate-x-1">{solution.title}</h3>
-                        <p className="text-gray-200 text-sm min-h-[3rem] transition-opacity duration-300 group-hover:opacity-90">{solution.description}</p>
+                        <h3 className="text-2xl font-bold text-white mb-2 transition-transform duration-300 ease-out group-hover:translate-x-2">{solution.title}</h3>
+                        <p className="text-gray-200 text-sm min-h-[3rem] transition-all duration-300 group-hover:opacity-90 group-hover:translate-x-1">{solution.description}</p>
                       </div>
                     </div>
                   </Link>
@@ -141,7 +146,7 @@ export default function SolutionsPage() {
         {/* Core Features Section */}
         <section className="py-24 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center max-w-3xl mx-auto mb-16">
+            <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-up opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
                 Core Features for Every Business
               </h2>
@@ -179,7 +184,8 @@ export default function SolutionsPage() {
               ].map((feature, index) => (
                 <div
                   key={feature.title}
-                  className="bg-gray-50 rounded-2xl p-8 transform transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+                  className="bg-gray-50 rounded-2xl p-8 transform transition-all duration-300 hover:shadow-lg hover:-translate-y-1 animate-fade-up opacity-0"
+                  style={{ animationDelay: `${index * 100 + 400}ms`, animationFillMode: 'forwards' }}
                 >
                   <h3 className="text-xl font-semibold text-gray-900 mb-4">
                     {feature.title}
@@ -196,7 +202,7 @@ export default function SolutionsPage() {
         {/* Save Time Section */}
         <section className="py-24 bg-gradient-to-b from-white to-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
+            <div className="text-center mb-16 animate-fade-up opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
                 Save Time. Stay in Control.
               </h2>
