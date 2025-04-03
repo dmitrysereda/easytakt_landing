@@ -1,17 +1,16 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { useIntersectionObserver } from '@/hooks/useIntersectionObserver';
 
 const CostTransparency = () => {
+  const sectionRef = useIntersectionObserver();
+
   return (
     <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          viewport={{ once: true }}
-          className="max-w-4xl mx-auto"
+        <div
+          ref={sectionRef}
+          className="max-w-4xl mx-auto animate-fade-in-up"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center">
             Looks great, but what's the catch?
@@ -153,7 +152,7 @@ const CostTransparency = () => {
               </div>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

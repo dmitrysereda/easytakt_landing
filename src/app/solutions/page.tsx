@@ -101,55 +101,56 @@ export default function SolutionsPage() {
   return (
     <>
       <Header />
-      <main>
+      <main className="min-h-screen">
         {/* Hero Section */}
-        <section className="pt-32 pb-16 bg-gradient-to-b from-gray-50 to-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center max-w-3xl mx-auto animate-fade-in">
-              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                Solutions for Every Business
-              </h1>
-              <p className="text-xl text-gray-600 mb-8">
-                Discover how EasyTakt can transform your business operations
+        <section className="py-32 bg-gradient-to-b from-gray-50 to-white">
+          <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center max-w-4xl mx-auto mb-20">
+              <div className="space-y-6">
+                <h1 className="text-[2.75rem] md:text-[3.5rem] lg:text-[4rem] font-bold leading-[1.1] tracking-tight">
+                  <span className="block text-gray-900">
+                    Running your business
+                  </span>
+                  <span className="block text-gray-900 mt-2">
+                    is hard.
+                  </span>
+                  <span className="block bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent mt-6">
+                    Scheduling shouldn't be.
+                  </span>
+                </h1>
+              </div>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto mt-10">
+                A smarter, faster way to manage appointments and schedules for businesses of all sizes – all in one easy-to-use platform
               </p>
             </div>
-          </div>
-        </section>
 
-        {/* Solutions Grid */}
-        <section className="py-16">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {solutions.map((solution, index) => (
-                <Link
-                  key={solution.title}
-                  href={solution.href}
-                  className="group block animate-fade-in-up"
-                  style={{ animationDelay: `${index * 100}ms` }}
-                >
-                  <div className="relative overflow-hidden rounded-2xl bg-white shadow-sm hover:shadow-md transition-shadow duration-300">
-                    <div className="aspect-w-16 aspect-h-9">
+            {/* Solutions Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
+              {solutions.map((solution, index) => {
+                const Icon = solution.icon;
+                return (
+                  <Link href={solution.href} className="block group h-full">
+                    <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
                       <Image
                         src={solution.image}
                         alt={solution.title}
                         fill
-                        className="object-cover transition-transform duration-300 group-hover:scale-105"
+                        priority={index < 3}
+                        className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       />
-                    </div>
-                    <div className="p-6">
-                      <div className={`w-12 h-12 rounded-xl ${solution.color} flex items-center justify-center mb-4`}>
-                        <solution.icon className={`w-6 h-6 ${solution.iconColor}`} />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-black/0 transition-opacity duration-300 group-hover:opacity-90"></div>
+                      <div className="absolute bottom-0 left-0 right-0 p-6">
+                        <div className={`inline-flex items-center justify-center p-3 rounded-xl ${solution.color} bg-opacity-90 backdrop-blur-sm mb-3 transition-transform duration-300 ease-out group-hover:scale-105`}>
+                          <Icon className={`w-6 h-6 ${solution.iconColor}`} />
+                        </div>
+                        <h3 className="text-2xl font-bold text-white mb-2 transition-transform duration-300 ease-out group-hover:translate-x-1">{solution.title}</h3>
+                        <p className="text-gray-200 text-sm min-h-[3rem] transition-opacity duration-300 group-hover:opacity-90">{solution.description}</p>
                       </div>
-                      <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                        {solution.title}
-                      </h3>
-                      <p className="text-gray-600">
-                        {solution.description}
-                      </p>
                     </div>
-                  </div>
-                </Link>
-              ))}
+                  </Link>
+                );
+              })}
             </div>
           </div>
         </section>

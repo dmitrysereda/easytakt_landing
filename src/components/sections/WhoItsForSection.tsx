@@ -1,8 +1,8 @@
 'use client';
 
-import { motion } from 'framer-motion';
 import { Music, Scissors, Dumbbell, GraduationCap, Briefcase, Stethoscope, Car, Dog, Wrench, Shirt } from 'lucide-react';
 import Link from 'next/link';
+import { useIntersectionObserver } from '@/hooks/useIntersectionObserver';
 
 const businesses = [
   {
@@ -80,14 +80,15 @@ const businesses = [
 ];
 
 const WhoItsForSection = () => {
+  const titleRef = useIntersectionObserver();
+  const businessRefs = businesses.map(() => useIntersectionObserver());
+
   return (
     <section className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+        <div
+          ref={titleRef}
+          className="text-center mb-16 animate-fade-in-up"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Who It's For?
@@ -95,7 +96,7 @@ const WhoItsForSection = () => {
           <p className="text-xl text-gray-600">
             Designed for small business owners who need a simple, reliable scheduling system
           </p>
-        </motion.div>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {businesses.map((business, index) => (
@@ -104,15 +105,10 @@ const WhoItsForSection = () => {
               href={business.href}
               className="block group"
             >
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ 
-                  duration: 0.8,
-                  delay: index * 0.1,
-                  ease: [0.22, 1, 0.36, 1]
-                }}
-                className={`${business.color} rounded-2xl p-8 transform transition-all duration-300 h-full hover:scale-[1.02] hover:shadow-lg`}
+              <div
+                ref={businessRefs[index]}
+                className={`${business.color} rounded-2xl p-8 transform transition-all duration-300 h-full hover:scale-[1.02] hover:shadow-lg animate-fade-in-up`}
+                style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div className="flex items-center mb-6">
                   <div className={`p-3 rounded-lg ${business.color}`}>
@@ -125,7 +121,7 @@ const WhoItsForSection = () => {
                 <p className="text-gray-600">
                   {business.description}
                 </p>
-              </motion.div>
+              </div>
             </Link>
           ))}
         </div>

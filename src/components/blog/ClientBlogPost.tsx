@@ -156,7 +156,7 @@ export default function ClientBlogPost({ post, content }: ClientBlogPostProps) {
                 Join thousands of businesses that trust EasyTakt to manage their appointments and grow their business.
               </p>
               <Link
-                href="/signup"
+                href="https://app.easytakt.com"
                 className="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-600 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
               >
                 Try Free Now

@@ -1,8 +1,11 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { useIntersectionObserver } from '@/hooks/useIntersectionObserver';
 
 const BenefitsSection = () => {
+  const titleRef = useIntersectionObserver();
+  const categoryRefs = Array(3).fill(null).map(() => useIntersectionObserver());
+
   const categories = [
     {
       title: "For Students",
@@ -34,75 +37,34 @@ const BenefitsSection = () => {
     },
   ];
 
-  const container = {
-    hidden: { opacity: 0 },
-    show: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-      },
-    },
-  };
-
-  const item = {
-    hidden: { opacity: 0, y: 20 },
-    show: { opacity: 1, y: 0 },
-  };
-
   return (
     <section id="benefits" className="py-24 bg-gradient-to-b from-gray-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <motion.h2 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-4xl font-bold text-gray-900 mb-4"
+          <h2 
+            ref={titleRef}
+            className="text-4xl font-bold text-gray-900 mb-4 animate-fade-in-up"
           >
             Why EasyTakt?
-          </motion.h2>
-          <motion.p 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-xl text-gray-600"
-          >
+          </h2>
+          <p className="text-xl text-gray-600 animate-fade-in-up-delay">
             Designed to make scheduling effortless
-          </motion.p>
+          </p>
         </div>
 
-        <motion.div
-          variants={container}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12"
-        >
-          {categories.map((category) => (
-            <motion.div
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+          {categories.map((category, index) => (
+            <div
               key={category.title}
-              variants={item}
-              whileHover={{ 
-                y: -8,
-                transition: { type: "spring", stiffness: 200, damping: 15 }
-              }}
-              className="relative bg-white rounded-2xl p-8 shadow-md transition-all duration-500"
+              ref={categoryRefs[index]}
+              className="relative bg-white rounded-2xl p-8 shadow-md transition-all duration-500 hover:-translate-y-2 animate-fade-in-up"
+              style={{ animationDelay: `${index * 100}ms` }}
             >
-              {/* Gradient background that appears on hover */}
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileHover={{ opacity: 1 }}
-                transition={{ duration: 0.3 }}
-                className="absolute inset-0 bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl -z-10"
-              />
+              {/* Gradient background */}
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl -z-10 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
               
               {/* Card content */}
-              <motion.div
-                initial={{ scale: 1 }}
-                whileHover={{ scale: 1.02 }}
-                transition={{ duration: 0.3 }}
-                className="relative"
-              >
+              <div className="relative transition-transform duration-300 hover:scale-[1.02]">
                 <div className="text-4xl mb-6">{category.icon}</div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-6">{category.title}</h3>
                 <ul className="space-y-4">
@@ -113,10 +75,10 @@ const BenefitsSection = () => {
                     </li>
                   ))}
                 </ul>
-              </motion.div>
-            </motion.div>
+              </div>
+            </div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );

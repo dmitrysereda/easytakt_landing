@@ -50,3 +50,72 @@ html {
     max-width: 80rem;
   }
 }
+
+@layer utilities {
+  /* Base animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeInUpDelay {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    50% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  /* Animation classes */
+  .animate-fade-in-up {
+    opacity: 0;
+    animation: none;
+  }
+
+  .animate-fade-in-up-delay {
+    opacity: 0;
+    animation: none;
+  }
+
+  .animate-fade-in-right {
+    opacity: 0;
+    animation: none;
+  }
+
+  /* Intersection Observer animations */
+  .animate-fade-in-up.visible {
+    animation: fadeInUp 0.5s ease-out forwards;
+  }
+
+  .animate-fade-in-up-delay.visible {
+    animation: fadeInUpDelay 0.7s ease-out forwards;
+  }
+
+  .animate-fade-in-right.visible {
+    animation: fadeInRight 0.7s ease-out forwards;
+  }
+}

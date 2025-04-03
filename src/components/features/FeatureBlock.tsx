@@ -1,8 +1,8 @@
 'use client';
 
-import { motion } from 'framer-motion';
 import { Calendar, Users, Bell, BarChart, Smartphone, Settings, LucideIcon } from 'lucide-react';
 import Image from 'next/image';
+import { useIntersectionObserver } from '@/hooks/useIntersectionObserver';
 
 const iconMap: Record<string, LucideIcon> = {
   'calendar': Calendar,
@@ -34,16 +34,15 @@ export default function FeatureBlock({
 }: FeatureBlockProps) {
   const contentOrder = align === 'left' ? 'order-2' : 'order-1';
   const imageOrder = align === 'left' ? 'order-1' : 'order-2';
+  const blockRef = useIntersectionObserver();
   
   const Icon = iconMap[icon];
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.6, delay: 0.1 }}
-      className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center max-w-[1400px] mx-auto"
+    <div
+      ref={blockRef}
+      className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center max-w-[1400px] mx-auto animate-fade-in-up"
+      style={{ animationDelay: `${index * 100}ms` }}
     >
       {/* Content */}
       <div className={`${contentOrder} lg:px-12`}>
@@ -77,6 +76,6 @@ export default function FeatureBlock({
         {/* Decorative elements */}
         <div className="absolute -inset-x-6 -inset-y-6 z-0 bg-gradient-to-r from-blue-50/50 to-purple-50/50 rounded-[2.5rem] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       </div>
-    </motion.div>
+    </div>
   );
 } 

@@ -1,7 +1,7 @@
 'use client';
 
-import { motion } from 'framer-motion';
 import { Clock, Coins, Shield, Briefcase } from 'lucide-react';
+import { useIntersectionObserver } from '@/hooks/useIntersectionObserver';
 
 const advantages = [
   {
@@ -35,30 +35,28 @@ const advantages = [
 ];
 
 const CompetitiveAdvantages = () => {
+  const titleRef = useIntersectionObserver();
+  const refs = advantages.map(() => useIntersectionObserver());
+
   return (
     <section className="py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="text-center mb-12"
+        <div
+          ref={titleRef}
+          className="text-center mb-12 animate-fade-in-up"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
             Save Time. Stay in Control.
           </h2>
-        </motion.div>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {advantages.map((advantage, index) => (
-            <motion.div
+            <div
               key={advantage.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group flex gap-6 items-start p-6 rounded-2xl hover:bg-white/50 transition-colors duration-300"
+              ref={refs[index]}
+              className={`group flex gap-6 items-start p-6 rounded-2xl hover:bg-white/50 transition-colors duration-300 animate-fade-in-up`}
+              style={{ animationDelay: `${index * 100}ms` }}
             >
               {/* Icon Container */}
               <div className={`flex-shrink-0 ${advantage.color} rounded-xl p-4 transform group-hover:scale-110 transition-transform duration-300`}>
@@ -82,7 +80,7 @@ const CompetitiveAdvantages = () => {
                   {advantage.description}
                 </p>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

@@ -1,9 +1,9 @@
 'use client';
 
-import { motion } from 'framer-motion';
 import { LucideIcon } from 'lucide-react';
 import SignupButton from '../SignupButton';
 import Image from 'next/image';
+import { useIntersectionObserver } from '@/hooks/useIntersectionObserver';
 
 interface Feature {
   title: string;
@@ -42,6 +42,12 @@ const SolutionPageTemplate = ({
   benefitCategories,
   challengeText,
 }: SolutionPageTemplateProps) => {
+  const featureRefs = features.map(() => useIntersectionObserver());
+  const challengeTextRef = useIntersectionObserver();
+  const challengeImageRef = useIntersectionObserver();
+  const whyEasyTaktRef = useIntersectionObserver();
+  const benefitRefs = benefitCategories.map(() => useIntersectionObserver());
+
   return (
     <div className="min-h-screen">
       {/* Combined Hero & Image Section */}
@@ -80,13 +86,11 @@ const SolutionPageTemplate = ({
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature, index) => (
-              <motion.div
+              <div
                 key={feature.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-gray-50 rounded-2xl p-8"
+                ref={featureRefs[index]}
+                className="bg-gray-50 rounded-2xl p-8 animate-fade-in-up"
+                style={{ animationDelay: `${index * 100}ms` }}
               >
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">
                   {feature.title}
@@ -94,7 +98,7 @@ const SolutionPageTemplate = ({
                 <p className="text-gray-600">
                   {feature.description}
                 </p>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -105,23 +109,16 @@ const SolutionPageTemplate = ({
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Text Content */}
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="text-left"
+            <div
+              ref={challengeTextRef}
+              className="text-left animate-fade-in-right"
             >
               <div className="space-y-4 mb-8">
-                <motion.span
-                  initial={{ opacity: 0, y: 10 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5 }}
+                <span
                   className="inline-block text-sm font-semibold uppercase tracking-wider bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
                 >
                   The Challenge
-                </motion.span>
+                </span>
                 <h2 className="text-4xl md:text-5xl font-bold">
                   <span className="bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">
                     Time to Say Goodbye to
@@ -135,15 +132,12 @@ const SolutionPageTemplate = ({
               <p className="text-xl text-gray-600 leading-relaxed">
                 {challengeText}
               </p>
-            </motion.div>
+            </div>
 
             {/* Image */}
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="relative h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-xl"
+            <div
+              ref={challengeImageRef}
+              className="relative h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-xl animate-fade-in-right"
             >
               <Image
                 src="/images/mess.jpg"
@@ -153,7 +147,7 @@ const SolutionPageTemplate = ({
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
               <div className="absolute inset-0 bg-gradient-to-br from-black/10 to-black/0"></div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
@@ -162,33 +156,24 @@ const SolutionPageTemplate = ({
       <section className="py-24 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <motion.h2 
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.8 }}
-              className="text-4xl font-bold text-gray-900 mb-4"
+            <h2 
+              ref={whyEasyTaktRef}
+              className="text-4xl font-bold text-gray-900 mb-4 animate-fade-in-up"
             >
               Why EasyTakt?
-            </motion.h2>
-            <motion.p 
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-xl text-gray-600"
-            >
+            </h2>
+            <p className="text-xl text-gray-600 animate-fade-in-up-delay">
               Designed to make scheduling effortless
-            </motion.p>
+            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
             {benefitCategories.map((category, index) => (
-              <motion.div
+              <div
                 key={category.title}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.8, delay: index * 0.1 }}
-                whileHover={{ y: -4 }}
-                className="relative bg-white rounded-2xl p-8 shadow-md transition-all duration-300"
+                ref={benefitRefs[index]}
+                className="relative bg-white rounded-2xl p-8 shadow-md transition-all duration-300 hover:-translate-y-1 animate-fade-in-up"
+                style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div className="relative">
                   <div className="text-4xl mb-6">{category.icon}</div>
@@ -202,7 +187,7 @@ const SolutionPageTemplate = ({
                     ))}
                   </ul>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -211,20 +196,14 @@ const SolutionPageTemplate = ({
       {/* Getting Started Section */}
       <section className="py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="text-center mb-16"
-          >
+          <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
               Get Up & Running with EasyTakt in 3 Ridiculously Simple Steps
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Want to make booking and managing your business a breeze? We've got you. With EasyTakt, setting up takes about as much effort as making a cup of coffee (okay, maybe two). Just follow these three steps:
             </p>
-          </motion.div>
+          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
             {[
@@ -250,12 +229,8 @@ const SolutionPageTemplate = ({
                 image: "/images/steps/customize-screen.png"
               }
             ].map((step, index) => (
-              <motion.div
+              <div
                 key={step.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.2 }}
                 className="relative text-center group"
               >
                 {/* Step background with gradient */}
@@ -265,18 +240,13 @@ const SolutionPageTemplate = ({
                 />
                 
                 {/* Content */}
-                <motion.div
-                  initial={{ scale: 1 }}
-                  whileInView={{ scale: 1 }}
-                  viewport={{ once: true }}
-                  whileHover={{ scale: 1.02 }}
-                  transition={{ duration: 0.4, delay: 0.1 }}
+                <div
                   className="mb-6"
                 >
                   <span className="text-6xl md:text-7xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                     {step.step}
                   </span>
-                </motion.div>
+                </div>
                 
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">
                   {step.title}
@@ -297,7 +267,7 @@ const SolutionPageTemplate = ({
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/5 to-transparent" />
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
