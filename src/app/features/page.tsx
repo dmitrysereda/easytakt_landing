@@ -10,7 +10,16 @@ export const metadata: Metadata = {
   description: 'Discover all the powerful features that make EasyTakt the best choice for managing your business schedule.',
 };
 
-const features = [
+type Feature = {
+  title: string;
+  description: string;
+  icon: 'calendar' | 'users' | 'bell' | 'bar-chart' | 'smartphone' | 'settings';
+  image: string;
+  imageAlt: string;
+  align: 'left' | 'right';
+};
+
+const features: Feature[] = [
   {
     title: 'Interactive Calendar',
     description: 'Easily manage your schedule with our intuitive calendar. Set availability, handle bookings, and view your entire schedule at a glance.',
