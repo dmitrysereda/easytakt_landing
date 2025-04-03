@@ -1,12 +1,13 @@
 'use client';
 
-import { useSignupForm } from '@/contexts/SignupFormContext';
-import { ButtonHTMLAttributes } from 'react';
+import { AnchorHTMLAttributes } from 'react';
 import { cn } from '@/lib/utils';
+import Link from 'next/link';
 
-interface SignupButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+interface SignupButtonProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   variant?: 'primary' | 'white';
   size?: 'default' | 'large' | 'small';
+  className?: string;
 }
 
 export default function SignupButton({ 
@@ -15,11 +16,9 @@ export default function SignupButton({
   size = 'default',
   ...props 
 }: SignupButtonProps) {
-  const { openSignupForm } = useSignupForm();
-
   return (
-    <button
-      onClick={openSignupForm}
+    <Link
+      href="http://app.easytakt.com"
       className={cn(
         "inline-flex items-center justify-center font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 rounded-xl",
         variant === 'primary' ? "bg-blue-600 text-white hover:bg-blue-700" : "bg-white text-gray-900 hover:bg-gray-50",
@@ -30,7 +29,7 @@ export default function SignupButton({
       )}
       {...props}
     >
-      Sign up for early access
-    </button>
+      Try now for free
+    </Link>
   );
 } 
