@@ -17,20 +17,26 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "EasyTakt - Business Scheduling Made Easy",
-  description: "Simplify your business operations with EasyTakt. Manage schedules, reduce admin work, and grow your business with our easy-to-use platform.",
-  keywords: "driving school, scheduling software, driving instructor, student management, driving school management",
+  title: {
+    template: '%s | EasyTakt',
+    default: 'EasyTakt - Smart Scheduling Software for Businesses',
+  },
+  description: 'Streamline your business operations with EasyTakt\'s smart scheduling software. Manage appointments, reduce no-shows, and grow your business with our powerful booking platform.',
+  keywords: 'scheduling software, appointment booking, business management, online booking system, appointment scheduling, business automation',
+  alternates: {
+    canonical: 'https://easytakt.com',
+  },
   openGraph: {
-    title: "EasyTakt - Business Scheduling Made Easy",
-    description: "Simplify your business operations with EasyTakt. Manage schedules, reduce admin work, and grow your business with our easy-to-use platform.",
-    type: "website",
-    url: "https://easytakt.com",
-    siteName: "EasyTakt",
+    title: 'EasyTakt - Smart Scheduling Software for Businesses',
+    description: 'Streamline your business operations with EasyTakt\'s smart scheduling software. Manage appointments, reduce no-shows, and grow your business with our powerful booking platform.',
+    type: 'website',
+    url: 'https://easytakt.com',
+    siteName: 'EasyTakt',
   },
   twitter: {
-    card: "summary_large_image",
-    title: "EasyTakt - Business Scheduling Made Easy",
-    description: "Simplify your business operations with EasyTakt. Manage schedules, reduce admin work, and grow your business with our easy-to-use platform.",
+    card: 'summary_large_image',
+    title: 'EasyTakt - Smart Scheduling Software for Businesses',
+    description: 'Streamline your business operations with EasyTakt\'s smart scheduling software. Manage appointments, reduce no-shows, and grow your business with our powerful booking platform.',
   },
   metadataBase: new URL("https://easytakt.com"),
   robots: {
