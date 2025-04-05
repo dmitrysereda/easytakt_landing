@@ -1,10 +1,16 @@
 'use client';
 
 import { useIntersectionObserver } from '@/hooks/useIntersectionObserver';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const BenefitsSection = () => {
   const titleRef = useIntersectionObserver();
   const categoryRefs = Array(3).fill(null).map(() => useIntersectionObserver());
+  const { t, loading } = useLanguage();
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
 
   const categories = [
     {
@@ -45,10 +51,10 @@ const BenefitsSection = () => {
             ref={titleRef}
             className="text-4xl font-bold text-gray-900 mb-4 animate-fade-in-up"
           >
-            Why EasyTakt?
+            {t('why_easytakt.title')}
           </h2>
           <p className="text-xl text-gray-600 animate-fade-in-up-delay">
-            Designed to make scheduling effortless
+            {t('why_easytakt.subtitle')}
           </p>
         </div>
 

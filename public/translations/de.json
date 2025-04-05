@@ -11,12 +11,18 @@
     "blog": "Blog"
   },
   "hero": {
-    "title": "Intelligente Terminplanung für Ihr Unternehmen",
-    "subtitle": "Optimieren Sie Ihre Abläufe, reduzieren Sie Terminausfälle und steigern Sie Ihren Geschäftserfolg mit unserer leistungsstarken Planungsplattform.",
-    "cta": "Jetzt starten"
+    "title": {
+      "line1": "Ein Unternehmen",
+      "line2": "zu führen",
+      "line3": "ist schwer.",
+      "line4": "Die Terminplanung sollte es nicht sein."
+    },
+    "description": "Eine intelligentere und schnellere Möglichkeit, Termine und Zeitpläne für Unternehmen jeder Größe zu verwalten – alles in einer benutzerfreundlichen Plattform",
+    "cta": "Jetzt kostenlos testen",
+    "image_alt": "EasyTakt Kalender-Dashboard"
   },
   "features": {
-    "title": "Leistungsstarke Terminplanungsfunktionen",
+    "title": "Leistungsstarke Planungsfunktionen für Unternehmen",
     "subtitle": "Alles in einer Plattform",
     "description": "Optimieren Sie Ihren Terminplanungsablauf mit leistungsstarken Tools, die das Wachstum Ihres Unternehmens fördern",
     "items": {
@@ -62,11 +68,11 @@
     "subtitle": "Entdecken Sie, wie EasyTakt Ihrer Branche helfen kann",
     "hero": {
       "title": {
-        "line1": "Ein Unternehmen zu führen",
-        "line2": "ist schwer.",
-        "line3": "Die Terminplanung sollte es nicht sein."
+        "line1": "Terminplanungssoftware",
+        "line2": "für jede Art von",
+        "line3": "Unternehmen."
       },
-      "description": "Eine intelligentere und schnellere Möglichkeit, Termine und Zeitpläne für Unternehmen jeder Größe zu verwalten – alles in einer benutzerfreundlichen Plattform"
+      "description": "Branchenspezifische Terminplanungslösungen zur Optimierung von Terminen, Personalverwaltung und Geschäftswachstum – alles in einer leistungsstarken Plattform"
     },
     "core_features": {
       "title": "Kernfunktionen für jedes Unternehmen",
@@ -140,57 +146,847 @@
       "title": "Bereit, Ihre Terminplanung zu optimieren?",
       "description": "Schließen Sie sich tausenden von Unternehmen an, die EasyTakt für ihre Terminplanungsbedürfnisse vertrauen. Starten Sie noch heute mit unserer 30-tägigen kostenlosen Testversion.",
       "button": "Jetzt kostenlos testen"
+    },
+    "salons_spas_page": {
+      "title": "Mühelose Buchung für Salons & Spas",
+      "description": "Lassen Sie Kunden rund um die Uhr Termine buchen, reduzieren Sie Terminausfälle durch Erinnerungen und verwalten Sie die Verfügbarkeit Ihres Teams über ein Dashboard.",
+      "challenge_text": "In der schnelllebigen Welt der Beauty- und Wellness-Branche sollte die Terminplanung nicht Ihr größter Stressfaktor sein. Doch hier sind Sie, beschäftigt mit einem ständigen Strom von Telefonanrufen während der Behandlungen, versuchen Stylistentermine auf Papier zu koordinieren und verlieren Einnahmen durch Terminausfälle. Ihr Team ist mit kurzfristigen Änderungen überfordert, während Kunden frustriert sind, wenn sie außerhalb der Geschäftszeiten keinen Termin bei ihrem Lieblingsstylisten buchen können. Das Ergebnis? Doppelt gebuchte Stühle, unzufriedene Kunden und ein Planungssystem, das komplizierter ist als ein mehrstufiger Haarfärbeprozess.",
+      "features": [
+        {
+          "title": "24/7 Online-Buchung",
+          "description": "Lassen Sie Kunden jederzeit und überall Termine buchen. Schluss mit verpassten Anrufen und Rückrufschleifen."
+        },
+        {
+          "title": "Intelligente Personalplanung",
+          "description": "Verwalten Sie die Verfügbarkeit und Spezialisierungen Ihres Teams. Weisen Sie automatisch den richtigen Stylisten für jeden Service zu."
+        },
+        {
+          "title": "Automatisierte Erinnerungen",
+          "description": "Reduzieren Sie Terminausfälle durch anpassbare Terminerinnerungen per E-Mail oder SMS."
+        },
+        {
+          "title": "Service-Management",
+          "description": "Verwalten Sie verschiedene Dienstleistungen, Dauern und Preise einfach. Gruppieren Sie Dienstleistungen zu Paketen."
+        },
+        {
+          "title": "Kundenhistorie",
+          "description": "Behalten Sie Kundenpräferenzen, frühere Dienstleistungen und Notizen für ein personalisiertes Erlebnis im Blick."
+        },
+        {
+          "title": "Ressourcenmanagement",
+          "description": "Optimieren Sie die Nutzung von Stühlen, Räumen und Ausrüstung über alle Termine hinweg."
+        }
+      ],
+      "benefits": {
+        "clients": {
+          "title": "Für Kunden",
+          "icon": "💇‍♀️",
+          "items": [
+            {
+              "title": "Jederzeit buchen",
+              "description": "Buchen Sie Termine rund um die Uhr von Ihrem Smartphone oder Computer aus"
+            },
+            {
+              "title": "Immer informiert",
+              "description": "Erhalten Sie automatische Erinnerungen und Updates zu Ihren Terminen"
+            },
+            {
+              "title": "Einfache Umbuchung",
+              "description": "Ändern Sie Ihre Terminzeit mit wenigen Klicks"
+            },
+            {
+              "title": "Persönliche Präferenzen",
+              "description": "Ihre Lieblingsservices und Stylistenpräferenzen werden für das nächste Mal gespeichert"
+            }
+          ]
+        },
+        "staff": {
+          "title": "Für Stylisten & Mitarbeiter",
+          "icon": "✂️",
+          "items": [
+            {
+              "title": "Übersichtlicher Tagesplan",
+              "description": "Sehen Sie alle Ihre Termine und Pausen in einer organisierten Übersicht"
+            },
+            {
+              "title": "Kundenhistorie zur Hand",
+              "description": "Greifen Sie sofort auf Kundenpräferenzen und Service-Historie zu"
+            },
+            {
+              "title": "Flexible Verfügbarkeit",
+              "description": "Aktualisieren Sie einfach Ihre Arbeitszeiten und Serviceangebote"
+            }
+          ]
+        },
+        "owners": {
+          "title": "Für Salonbesitzer",
+          "icon": "👔",
+          "items": [
+            {
+              "title": "Kompletter Geschäftsüberblick",
+              "description": "Überwachen Sie Mitarbeiterleistung und Terminstatistiken"
+            },
+            {
+              "title": "Ressourcenoptimierung",
+              "description": "Maximieren Sie die Stuhlauslastung und reduzieren Sie leere Zeitfenster"
+            },
+            {
+              "title": "Wachstumsorientiert",
+              "description": "Verbringen Sie weniger Zeit mit der Terminverwaltung und mehr Zeit mit dem Wachstum Ihres Unternehmens"
+            }
+          ]
+        }
+      }
+    },
+    "music_and_dance_page": {
+      "title": "Vereinfachte Terminplanung für Musik- & Tanzschulen",
+      "description": "Verwalten Sie Einzelunterricht, Gruppenkurse und Schülerfortschritte mit Leichtigkeit. Ermöglichen Sie Schülern und Eltern, Termine online zu buchen und automatisieren Sie Erinnerungen.",
+      "challenge_text": "Eine Musik- oder Tanzschule zu leiten ist wie ein Orchester zu dirigieren – jedes Element muss perfekt synchronisiert sein. Zwischen der Koordination von Einzelunterricht, Gruppenkursen und Studioräumen versagen traditionelle Planungsmethoden. Lehrer kämpfen mit kurzfristigen Absagen, während Eltern und Schüler von unflexiblen Buchungssystemen frustriert sind. Übungsräume stehen in Hauptzeiten leer, werden aber zu Stoßzeiten doppelt gebucht. Und die Verfolgung des Schülerfortschritts über mehrere Lehrkräfte hinweg? Das ist ein Tanz, den niemand tanzen möchte.",
+      "features": [
+        {
+          "title": "Einfache Unterrichtsplanung",
+          "description": "Planen Sie Einzelunterricht und Gruppenkurse mit wenigen Klicks. Schüler und Eltern können verfügbare Termine online buchen."
+        },
+        {
+          "title": "Fortschrittsverfolgung",
+          "description": "Führen Sie detaillierte Notizen über Schülerfortschritte, Repertoire und Übungsaufgaben an einem Ort."
+        },
+        {
+          "title": "Automatische Erinnerungen",
+          "description": "Reduzieren Sie Terminausfälle durch automatische Unterrichtserinnerungen per E-Mail oder SMS."
+        },
+        {
+          "title": "Raum- & Ressourcenverwaltung",
+          "description": "Verwalten Sie Übungsräume, Instrumente und andere Ressourcen effizient über alle Ihre Kurse hinweg."
+        },
+        {
+          "title": "Gruppenkursverwaltung",
+          "description": "Organisieren Sie Aufführungen, Workshops und Gruppenstunden mit Leichtigkeit. Verfolgen Sie Anwesenheit und Kapazität."
+        },
+        {
+          "title": "Zahlungsintegration",
+          "description": "Verbinden Sie sich mit Ihrem bevorzugten Zahlungssystem zur Abwicklung von Unterrichtsgebühren und Paketbuchungen."
+        }
+      ],
+      "benefits": {
+        "students": {
+          "title": "Für Schüler",
+          "icon": "🎵",
+          "items": [
+            {
+              "title": "Mühelos auf Kurs bleiben",
+              "description": "Überblicken Sie Ihre kommenden Unterrichtsstunden und Übungspläne auf einen Blick"
+            },
+            {
+              "title": "Keine Stunde verpassen",
+              "description": "Erhalten Sie rechtzeitige Erinnerungen und synchronisieren Sie Unterrichtsstunden sofort mit Ihrem Kalender"
+            },
+            {
+              "title": "Einfach umplanen",
+              "description": "Ändern Sie Unterrichtszeiten mit wenigen Klicks, wenn das Leben hektisch wird"
+            },
+            {
+              "title": "Fortschritte verfolgen",
+              "description": "Greifen Sie auf Übungsnotizen und Aufgaben an einem Ort zu"
+            }
+          ]
+        },
+        "teachers": {
+          "title": "Für Lehrer",
+          "icon": "👩‍🏫",
+          "items": [
+            {
+              "title": "Zeitplan organisieren",
+              "description": "Sehen Sie all Ihre Einzel- und Gruppenstunden in einer übersichtlichen Ansicht"
+            },
+            {
+              "title": "Detaillierte Aufzeichnungen führen",
+              "description": "Verfolgen Sie Schülerfortschritte, Repertoire und Übungsaufgaben"
+            },
+            {
+              "title": "Ressourcen verwalten",
+              "description": "Buchen Sie Übungsräume und Instrumente ohne Konflikte"
+            }
+          ]
+        },
+        "owners": {
+          "title": "Für Schulleiter",
+          "icon": "🎹",
+          "items": [
+            {
+              "title": "Abläufe optimieren",
+              "description": "Verwalten Sie mehrere Lehrer und Kurstypen mühelos"
+            },
+            {
+              "title": "Ressourcen optimieren",
+              "description": "Maximieren Sie die Nutzung von Studioräumen und Instrumenten"
+            },
+            {
+              "title": "Geschäft ausbauen",
+              "description": "Konzentrieren Sie sich aufs Unterrichten, während wir die Planung übernehmen"
+            }
+          ]
+        }
+      }
+    },
+    "driving_schools_page": {
+      "title": "Intelligente Terminplanung für Fahrschulen",
+      "description": "Optimieren Sie Fahrstundenbuchungen, verwalten Sie Ihre Flotte und verfolgen Sie den Fortschritt der Schüler an einem Ort. Lassen Sie Schüler online Fahrstunden buchen und automatisieren Sie Erinnerungen.",
+      "challenge_text": "Eine Fahrschule zu leiten bedeutet, mehrere Fahrlehrer, Fahrzeuge und Schüler zu koordinieren – und dabei einen reibungslosen Betrieb aufrechtzuerhalten. Telefonanrufe unterbrechen den Unterricht, Doppelbuchungen verursachen Frust, und die Verfolgung der Fahrzeugverfügbarkeit wird zu einem logistischen Puzzle. Manuelle Planungssysteme führen zu Verwirrung, während papierbasierte Aufzeichnungen es schwer machen, den Fortschritt der Schüler zu verfolgen. Und nicht zu vergessen die Zeit, die damit verbracht wird, mit Schülern Telefon-Ping-Pong zu spielen, um Fahrstunden zu planen oder umzuplanen. Kommt Ihnen das bekannt vor? Das dachten wir uns.",
+      "features": [
+        {
+          "title": "Schüler-Unterrichtsverwaltung",
+          "description": "Planen Sie Theorie- und Praxisstunden mit Leichtigkeit. Lassen Sie Schüler verfügbare Termine online buchen."
+        },
+        {
+          "title": "Fuhrparkverwaltung",
+          "description": "Verfolgen und verwalten Sie Ihren Fuhrpark effizient. Verhindern Sie Doppelbuchungen und optimieren Sie die Auslastung."
+        },
+        {
+          "title": "Fahrlehrerplanung",
+          "description": "Koordinieren Sie Fahrlehrerpläne, Spezialisierungen und Verfügbarkeiten an einem Ort."
+        },
+        {
+          "title": "Automatische Erinnerungen",
+          "description": "Reduzieren Sie Terminausfälle durch automatische Fahrstundenerinnerungen per E-Mail oder SMS."
+        },
+        {
+          "title": "Fortschrittsverfolgung",
+          "description": "Führen Sie detaillierte Notizen über Schülerfortschritte, Prüfungsbereitschaft und Lernmeilensteine."
+        },
+        {
+          "title": "Ressourcenverwaltung",
+          "description": "Verwalten Sie Schulungsräume für Theorieunterricht und Schulungsmaterialien mit Leichtigkeit."
+        }
+      ],
+      "benefits": {
+        "students": {
+          "title": "Für Fahrschüler",
+          "icon": "👨‍🎓",
+          "items": [
+            {
+              "title": "Mühelos auf Kurs bleiben",
+              "description": "Überblicken Sie Ihre kommenden Fahrstunden auf einen Blick"
+            },
+            {
+              "title": "Keine Fahrstunde verpassen",
+              "description": "Erhalten Sie rechtzeitige Erinnerungen und fügen Sie Fahrstunden mit einem Klick Ihrem Kalender hinzu"
+            },
+            {
+              "title": "In Sekunden umplanen",
+              "description": "Flexible Umbuchung bedeutet kein lästiges Hin und Her mehr"
+            },
+            {
+              "title": "Intelligenter planen",
+              "description": "Sehen Sie Theorie- und Praxisstunden an einem Ort"
+            }
+          ]
+        },
+        "instructors": {
+          "title": "Für Fahrlehrer",
+          "icon": "👨‍🏫",
+          "items": [
+            {
+              "title": "Bestens vorbereitet sein",
+              "description": "Greifen Sie auf Ihren Tages- und Wochenplan in einer Übersicht zu"
+            },
+            {
+              "title": "Organisiert bleiben",
+              "description": "Machen Sie sich nach jeder Fahrstunde Notizen zum Schülerfortschritt"
+            },
+            {
+              "title": "Flexibel anpassen",
+              "description": "Planen Sie Fahrstunden einfach entsprechend Ihrer Verfügbarkeit um"
+            }
+          ]
+        },
+        "owners": {
+          "title": "Für Fahrschulbesitzer",
+          "icon": "👔",
+          "items": [
+            {
+              "title": "Volle Kontrolle haben",
+              "description": "Überwachen Sie Fahrlehrerauslastung und Schülerfortschritte auf einen Blick"
+            },
+            {
+              "title": "Vermögenswerte verwalten",
+              "description": "Behalten Sie Ihre Flotte – Autos und Motorräder – ohne Tabellen im Blick"
+            },
+            {
+              "title": "Effizienz steigern",
+              "description": "Reduzieren Sie manuelle Arbeit, damit sich Ihr Personal aufs Unterrichten konzentrieren kann"
+            }
+          ]
+        }
+      }
+    },
+    "fitness_and_wellness_page": {
+      "title": "Intelligente Terminplanung für Fitness & Wellness",
+      "description": "Optimieren Sie Kursbuchungen, verwalten Sie die Anwesenheit der Mitglieder und koordinieren Sie Trainerpläne an einem Ort. Lassen Sie Mitglieder Kurse online buchen und automatisieren Sie Erinnerungen.",
+      "challenge_text": "Eine Fitness- oder Wellnesseinrichtung zu betreiben bedeutet, Menschen bei ihrer Transformation zu unterstützen – nicht, sich in Terminplanungschaos zu verstricken. Aber zwischen der Verwaltung von Kurskapazitäten, der Koordination von Trainerplänen und der Handhabung kurzfristiger Stornierungen verbringen Sie mehr Zeit mit Verwaltung als mit echtem Coaching. Mitglieder sind frustriert, wenn Kurse voll sind, Trainer kämpfen mit Terminkonflikten und Ihre Rezeption ist mit Buchungsanfragen überfordert. Währenddessen bleiben die besten Studiozeiten ungenutzt, während die Stoßzeiten überbucht sind. Das bringt jeden ins Schwitzen – und nicht auf die gute Art.",
+      "features": [
+        {
+          "title": "Kurs- & Terminbuchung",
+          "description": "Lassen Sie Mitglieder Gruppenkurse und Personal Training-Einheiten einfach online buchen."
+        },
+        {
+          "title": "Kapazitätsmanagement",
+          "description": "Legen Sie Kursgrößen fest und verfolgen Sie Wartelisten und Gerätverfügbarkeit automatisch."
+        },
+        {
+          "title": "Trainerplanung",
+          "description": "Koordinieren Sie Trainerpläne, Spezialisierungen und Verfügbarkeiten an einem Ort."
+        },
+        {
+          "title": "Mitgliederverwaltung",
+          "description": "Verfolgen Sie Mitgliederanwesenheit, Fortschritte und Präferenzen für personalisierten Service."
+        },
+        {
+          "title": "Automatische Erinnerungen",
+          "description": "Reduzieren Sie Ausfälle durch Kurs- und Terminerinnerungen per E-Mail oder SMS."
+        },
+        {
+          "title": "Ressourcenmanagement",
+          "description": "Optimieren Sie die Nutzung von Studiofläche und Geräten über alle Kurse und Einheiten hinweg."
+        }
+      ],
+      "benefits": {
+        "members": {
+          "title": "Für Mitglieder",
+          "icon": "💪",
+          "items": [
+            {
+              "title": "Einfach buchen",
+              "description": "Reservieren Sie Ihren Platz in Kursen und Einheiten jederzeit und überall"
+            },
+            {
+              "title": "Motiviert bleiben",
+              "description": "Erhalten Sie rechtzeitige Erinnerungen, um Ihre Fitnessroutine einzuhalten"
+            },
+            {
+              "title": "Flexible Planung",
+              "description": "Tauschen Sie Kurse einfach oder planen Sie um, wenn sich Pläne ändern"
+            },
+            {
+              "title": "Fortschritt verfolgen",
+              "description": "Überwachen Sie Ihre Anwesenheit und Entwicklung im Laufe der Zeit"
+            }
+          ]
+        },
+        "trainers": {
+          "title": "Für Trainer",
+          "icon": "🏋️‍♂️",
+          "items": [
+            {
+              "title": "Organisierter Zeitplan",
+              "description": "Sehen Sie alle Ihre Kurse und Privateinheiten an einem Ort"
+            },
+            {
+              "title": "Kundeneinblicke",
+              "description": "Greifen Sie sofort auf Mitgliederprofile und Fitnessziele zu"
+            },
+            {
+              "title": "Kapazitätskontrolle",
+              "description": "Verwalten Sie Kursgrößen und Wartelisten mühelos"
+            }
+          ]
+        },
+        "owners": {
+          "title": "Für Einrichtungsbesitzer",
+          "icon": "🏢",
+          "items": [
+            {
+              "title": "Effizienz maximieren",
+              "description": "Optimieren Sie die Nutzung von Studiofläche und Geräten"
+            },
+            {
+              "title": "Datenbasierte Entscheidungen",
+              "description": "Verfolgen Sie Kursbeliebtheit und Anwesenheitsmuster"
+            },
+            {
+              "title": "Einfach skalieren",
+              "description": "Fügen Sie neue Kurse und Trainer hinzu, wenn Ihr Unternehmen wächst"
+            }
+          ]
+        }
+      }
+    },
+    "tutors_and_coaches_page": {
+      "title": "Intelligente Terminplanung für Tutoren & Coaches",
+      "description": "Verwalten Sie Ihre Nachhilfestunden, verfolgen Sie den Fortschritt der Schüler und teilen Sie Ressourcen an einem Ort. Lassen Sie Schüler online Stunden buchen und automatisieren Sie Erinnerungen.",
+      "challenge_text": "Als Pädagoge oder Coach sollte Ihr Fokus darauf liegen, Schülern zum Erfolg zu verhelfen – nicht darin, mit Kalendern und Terminkonflikten zu kämpfen. Dennoch finden Sie sich in E-Mails und Textnachrichten wieder, während Sie versuchen, Stunden über verschiedene Zeitzonen hinweg zu koordinieren und die Verfügbarkeit mehrerer Schüler zu jonglieren. Last-Minute-Absagen hinterlassen Lücken in Ihrem Zeitplan, während die Verfolgung von Zahlungen und die Verwaltung von Unterrichtsmaterialien zu einem Teilzeitjob an sich werden. Und ganz zu schweigen von den Kopfschmerzen beim Wechsel zwischen Präsenz- und Online-Sitzungen. Es ist, als würde man versuchen, Algebra zu unterrichten, während man einen Handstand macht – technisch möglich, aber unnötig kompliziert.",
+      "features": [
+        {
+          "title": "Stundenplanung",
+          "description": "Lassen Sie Schüler Einzel- oder Gruppensitzungen zu Zeiten buchen, die für alle passen."
+        },
+        {
+          "title": "Online & Präsenz",
+          "description": "Verwalten Sie sowohl virtuelle als auch physische Sitzungen mit integrierten Videoanruflinks."
+        },
+        {
+          "title": "Fortschrittsverfolgung",
+          "description": "Führen Sie detaillierte Notizen über den Fortschritt der Schüler, Aufgaben und Lernziele."
+        },
+        {
+          "title": "Ressourcenteilung",
+          "description": "Teilen Sie Studienmaterialien, Hausaufgaben und Ressourcen direkt über die Plattform."
+        },
+        {
+          "title": "Automatische Erinnerungen",
+          "description": "Reduzieren Sie Nichterscheinen mit Sitzungserinnerungen per E-Mail oder SMS."
+        },
+        {
+          "title": "Zahlungsintegration",
+          "description": "Bewältigen Sie Sitzungszahlungen und Paketkäufe nahtlos."
+        }
+      ],
+      "benefits": {
+        "students": {
+          "title": "Für Schüler",
+          "icon": "📚",
+          "items": [
+            {
+              "title": "Flexibel buchen",
+              "description": "Planen Sie Sitzungen, die zu Ihrem Lerntempo und Ihrer Verfügbarkeit passen"
+            },
+            {
+              "title": "Organisiert bleiben",
+              "description": "Greifen Sie auf Sitzungsmaterialien und Hausaufgaben an einem Ort zu"
+            },
+            {
+              "title": "Fortschritt verfolgen",
+              "description": "Überwachen Sie Ihren Lernweg und Ihre Erfolge"
+            },
+            {
+              "title": "Keine Sitzung verpassen",
+              "description": "Erhalten Sie rechtzeitige Erinnerungen für bevorstehende Stunden"
+            }
+          ]
+        },
+        "tutors": {
+          "title": "Für Tutoren & Coaches",
+          "icon": "👩‍🏫",
+          "items": [
+            {
+              "title": "Zeit verwalten",
+              "description": "Legen Sie Ihre Verfügbarkeit fest und lassen Sie Schüler innerhalb Ihres Zeitplans buchen"
+            },
+            {
+              "title": "Detaillierte Aufzeichnungen führen",
+              "description": "Verfolgen Sie den Fortschritt der Schüler und führen Sie Sitzungsnotizen"
+            },
+            {
+              "title": "Ressourcen einfach teilen",
+              "description": "Verteilen Sie Materialien und Aufgaben effizient"
+            }
+          ]
+        },
+        "centers": {
+          "title": "Für Bildungszentren",
+          "icon": "🏫",
+          "items": [
+            {
+              "title": "Betrieb optimieren",
+              "description": "Koordinieren Sie mehrere Tutoren und Fächer nahtlos"
+            },
+            {
+              "title": "Leistung verfolgen",
+              "description": "Überwachen Sie das Engagement der Schüler und die Effektivität der Tutoren"
+            },
+            {
+              "title": "Ihre Wirkung skalieren",
+              "description": "Wachsen Sie Ihr Nachhilfegeschäft ohne Verwaltungsaufwand"
+            }
+          ]
+        }
+      }
+    },
+    "freelancers_page": {
+      "title": "Professionelle Terminplanung für Freiberufler",
+      "description": "Übernehmen Sie die Kontrolle über Ihren Zeitplan, verwalten Sie Kundenbuchungen und präsentieren Sie ein professionelles Image. Lassen Sie Kunden Termine online buchen und automatisieren Sie Erinnerungen.",
+      "challenge_text": "Als Freiberufler kann die Verwaltung Ihres Zeitplans überwältigend sein. Endlose E-Mail-Ketten zur Terminfindung, Doppelbuchungen aufgrund von Zeitzonenverwirrung und unprofessionelle Planungserfahrungen können Ihrem Geschäft schaden. Sie brauchen eine Lösung, die die Terminplanung mühelos macht und gleichzeitig Ihr professionelles Image bewahrt.",
+      "features": [
+        {
+          "title": "Intelligente Verfügbarkeit",
+          "description": "Legen Sie Ihre Arbeitszeiten fest und lassen Sie Kunden zu Zeiten buchen, die für Sie passen."
+        },
+        {
+          "title": "Dienstleistungsverwaltung",
+          "description": "Organisieren Sie Ihre Dienstleistungen, Pakete und Preise in einer professionellen Oberfläche."
+        },
+        {
+          "title": "Kundenportal",
+          "description": "Bieten Sie Kunden eine professionelle Buchungserfahrung mit Ihrem markenspezifischen Portal."
+        },
+        {
+          "title": "Projektverfolgung",
+          "description": "Behalten Sie laufende Projekte, Fristen und Kundenkommunikation im Blick."
+        },
+        {
+          "title": "Automatische Erinnerungen",
+          "description": "Reduzieren Sie Nichterscheinen mit Terminerinnerungen per E-Mail oder SMS."
+        },
+        {
+          "title": "Kalenderintegration",
+          "description": "Synchronisieren Sie mit Ihrem bevorzugten Kalender, um Doppelbuchungen zu vermeiden."
+        }
+      ],
+      "benefits": {
+        "clients": {
+          "title": "Für Ihre Kunden",
+          "icon": "🤝",
+          "items": [
+            {
+              "title": "Einfache Buchung",
+              "description": "Planen Sie Meetings und Beratungen mit nur wenigen Klicks"
+            },
+            {
+              "title": "Klar kommuniziert",
+              "description": "Erhalten Sie automatische Bestätigungen und Terminerinnerungen"
+            },
+            {
+              "title": "Professionelle Erfahrung",
+              "description": "Buchen Sie über Ihr markenspezifisches Planungsportal"
+            },
+            {
+              "title": "Flexible Optionen",
+              "description": "Wählen Sie aus Ihren verfügbaren Dienstleistungen und Zeitslots"
+            }
+          ]
+        },
+        "freelancers": {
+          "title": "Für Sie als Freiberufler",
+          "icon": "💼",
+          "items": [
+            {
+              "title": "Arbeiten Sie nach Ihren Bedingungen",
+              "description": "Kontrollieren Sie Ihren Zeitplan und Ihre Verfügbarkeit präzise"
+            },
+            {
+              "title": "Bleiben Sie organisiert",
+              "description": "Verwalten Sie alle Ihre Kundenmeetings und Projekte an einem Ort"
+            },
+            {
+              "title": "Erscheinen Sie professionell",
+              "description": "Bieten Sie Kunden eine polierte Buchungserfahrung"
+            }
+          ]
+        },
+        "business": {
+          "title": "Für Ihr Unternehmen",
+          "icon": "📈",
+          "items": [
+            {
+              "title": "Zeit sparen",
+              "description": "Eliminieren Sie hin und her E-Mails über die Terminplanung"
+            },
+            {
+              "title": "Effizient wachsen",
+              "description": "Skalieren Sie Ihre Kundenbasis ohne administrativen Aufwand"
+            },
+            {
+              "title": "Arbeiten Sie schlauer",
+              "description": "Konzentrieren Sie sich auf die Wertschöpfung statt auf die Kalenderverwaltung"
+            }
+          ]
+        }
+      }
+    },
+    "pet_services_page": {
+      "title": "Intelligente Terminplanung für Tierdienstleistungen",
+      "description": "Optimieren Sie Termine für Tierpflege, Training und Gassi-Service. Führen Sie detaillierte Tierakten und automatisieren Sie die Kundenkommunikation.",
+      "challenge_text": "Ein Tierdienstleistungsunternehmen zu führen bedeutet, mehrere Termine zu jonglieren und dabei sicherzustellen, dass jeder pelzige Freund die Aufmerksamkeit bekommt, die er verdient. Zwischen der Verwaltung verschiedener Serviceangebote, der Koordination von Mitarbeiterplänen und der Verfolgung der individuellen Bedürfnisse jedes Tieres stoßen herkömmliche Buchungssysteme an ihre Grenzen. Telefonanrufe unterbrechen die Dienstleistungen, während Papieraufzeichnungen es schwierig machen, detaillierte Tierhistorien zu führen. Gleichzeitig haben Tierbesitzer Schwierigkeiten, Termine in ihren vollen Zeitplan einzuplanen. Kommt Ihnen das bekannt vor? Wir haben die Lösung.",
+      "features": [
+        {
+          "title": "Tiertermiverwaltung",
+          "description": "Planen Sie Pflege-, Trainings- und Gassi-Termine mit Leichtigkeit. Verfolgen Sie tierspezifische Anforderungen und Vorlieben."
+        },
+        {
+          "title": "Kunden- & Tierprofile",
+          "description": "Führen Sie detaillierte Aufzeichnungen über Tiere, einschließlich Rasse, Alter, medizinische Bedingungen und spezielle Pflegeanweisungen."
+        },
+        {
+          "title": "Personalplanung",
+          "description": "Koordinieren Sie Pfleger, Trainer und Gassigeher effizient. Ordnen Sie Tiere den richtigen Spezialisten zu."
+        },
+        {
+          "title": "Automatische Erinnerungen",
+          "description": "Senden Sie Terminbestätigungen und Erinnerungen an Tierbesitzer per E-Mail oder SMS."
+        },
+        {
+          "title": "Service-Verlaufsverfolgung",
+          "description": "Führen Sie detaillierte Aufzeichnungen über vergangene Dienstleistungen, Verhaltensnotizen und Pflegevorlieben."
+        },
+        {
+          "title": "Online-Buchungsportal",
+          "description": "Lassen Sie Tierbesitzer Dienstleistungen online buchen und ihre Termine rund um die Uhr verwalten."
+        }
+      ],
+      "benefits": {
+        "pet_owners": {
+          "title": "Für Tierbesitzer",
+          "icon": "🐾",
+          "items": [
+            {
+              "title": "Einfache Buchung",
+              "description": "Buchen Sie Tierdienstleistungen jederzeit und überall mit wenigen Klicks"
+            },
+            {
+              "title": "Service-Verlauf",
+              "description": "Greifen Sie auf die vollständige Historie der Tierdienstleistungen und Termine zu"
+            },
+            {
+              "title": "Automatische Erinnerungen",
+              "description": "Verpassen Sie nie einen Termin dank zeitnaher Benachrichtigungen"
+            }
+          ]
+        },
+        "staff": {
+          "title": "Für Mitarbeiter",
+          "icon": "👥",
+          "items": [
+            {
+              "title": "Organisierter Zeitplan",
+              "description": "Tagestermine effizient einsehen und verwalten"
+            },
+            {
+              "title": "Tierinformationen",
+              "description": "Sofortiger Zugriff auf detaillierte Tierprofile und Pflegeanweisungen"
+            },
+            {
+              "title": "Service-Notizen",
+              "description": "Erfassen und verfolgen Sie Tierverhalten und Vorlieben"
+            }
+          ]
+        },
+        "owners": {
+          "title": "Für Geschäftsinhaber",
+          "icon": "💼",
+          "items": [
+            {
+              "title": "Geschäftswachstum",
+              "description": "Erweitern Sie Ihre Kundenbasis mit professioneller Online-Buchung"
+            },
+            {
+              "title": "Personalmanagement",
+              "description": "Optimieren Sie Mitarbeiterpläne und Servicezuweisungen"
+            },
+            {
+              "title": "Kundenbindung",
+              "description": "Bauen Sie dauerhafte Beziehungen durch automatisierte Nachverfolgung auf"
+            }
+          ]
+        }
+      }
+    },
+    "automotive_services_page": {
+      "title": "Intelligente Terminplanung für Autowerkstätten",
+      "description": "Optimieren Sie Wartungstermine, verwalten Sie Servicebuchten und führen Sie detaillierte Serviceaufzeichnungen. Lassen Sie Kunden Dienstleistungen online buchen und automatisieren Sie Nachverfolgungen.",
+      "challenge_text": "Der Betrieb einer Autowerkstatt bringt einzigartige Planungsherausforderungen mit sich. Zwischen der Verwaltung mehrerer Servicebuchten, der Koordination von Technikerplänen und der Bewältigung kurzfristiger Notreparaturen verursachen traditionelle Buchungsmethoden unnötige Kopfschmerzen. Telefonunterbrechungen stören die Arbeit, während papierbasierte Systeme es schwierig machen, Fahrzeughistorien zu verfolgen und genaue Aufzeichnungen zu führen. Gleichzeitig haben Kunden Schwierigkeiten, passende Termine für Servicetermine zu finden. Wir verstehen diese Herausforderungen und haben eine Lösung entwickelt, die sie alle angeht.",
+      "features": [
+        {
+          "title": "Service-Terminbuchung",
+          "description": "Ermöglichen Sie Kunden, Wartungs-, Reparatur- und Pflegetermine einfach online zu buchen."
+        },
+        {
+          "title": "Fahrzeughistorie",
+          "description": "Führen Sie detaillierte Serviceaufzeichnungen für jedes Fahrzeug, einschließlich Wartungshistorie und Notizen."
+        },
+        {
+          "title": "Technikerplanung",
+          "description": "Verwalten Sie Technikerpläne und Arbeitsverteilung effizient."
+        },
+        {
+          "title": "Buchtenverwaltung",
+          "description": "Optimieren Sie die Nutzung der Servicebuchten und vermeiden Sie Planungskonflikte."
+        },
+        {
+          "title": "Service-Erinnerungen",
+          "description": "Senden Sie automatisierte Wartungserinnerungen und Nachverfolgungsbenachrichtigungen an Kunden."
+        },
+        {
+          "title": "Digitale Kostenvoranschläge",
+          "description": "Erstellen und senden Sie professionelle Serviceangebote direkt über die Plattform."
+        }
+      ],
+      "benefits": {
+        "vehicle_owners": {
+          "title": "Für Fahrzeugbesitzer",
+          "icon": "🚗",
+          "items": [
+            {
+              "title": "Bequeme Buchung",
+              "description": "Planen Sie Servicetermine jederzeit ohne Telefonanrufe"
+            },
+            {
+              "title": "Service-Verfolgung",
+              "description": "Greifen Sie auf die vollständige Fahrzeug-Servicehistorie und anstehende Wartungen zu"
+            },
+            {
+              "title": "Klare Kommunikation",
+              "description": "Erhalten Sie Updates und Kostenvoranschläge direkt über die Plattform"
+            }
+          ]
+        },
+        "technicians": {
+          "title": "Für Techniker",
+          "icon": "🔧",
+          "items": [
+            {
+              "title": "Organisierter Arbeitsablauf",
+              "description": "Tagesaufgaben und Termine auf einen Blick einsehen"
+            },
+            {
+              "title": "Service-Informationen",
+              "description": "Sofortiger Zugriff auf Fahrzeughistorie und Serviceanforderungen"
+            },
+            {
+              "title": "Zeitmanagement",
+              "description": "Bessere Terminplanung und Arbeitsverteilung"
+            }
+          ]
+        },
+        "owners": {
+          "title": "Für Werkstattbesitzer",
+          "icon": "💼",
+          "items": [
+            {
+              "title": "Gesteigerte Effizienz",
+              "description": "Optimieren Sie Buchtenauslastung und Technikerplanung"
+            },
+            {
+              "title": "Kundenbindung",
+              "description": "Bauen Sie Loyalität durch professionellen Service und Nachverfolgung auf"
+            },
+            {
+              "title": "Geschäftswachstum",
+              "description": "Erweitern Sie Ihre Kundenbasis mit Online-Buchungsmöglichkeiten"
+            }
+          ]
+        }
+      }
+    },
+    "personal_stylists_page": {
+      "title": "Intelligente Terminplanung für Personal Stylists",
+      "description": "Transformieren Sie Ihr Styling-Geschäft mit effizienter Terminverwaltung und Kundenorganisation. Konzentrieren Sie sich auf das Erstellen großartiger Looks, während wir uns um die Planung kümmern.",
+      "challenge_text": "Die Verwaltung mehrerer Kundentermine, die Nachverfolgung von Stilpräferenzen und die Koordination von Einkaufsterminen können überwältigend sein. EasyTakt hilft Ihnen, organisiert zu bleiben und sich auf das Wesentliche zu konzentrieren - Ihre Kunden bestmöglich aussehen und sich wohlfühlen zu lassen.",
+      "features": [
+        {
+          "title": "Kunden-Garderobenverwaltung",
+          "description": "Führen Sie detaillierte Aufzeichnungen über Kundenpräferenzen, Größen und Stilziele. Verfolgen Sie Garderobenbestände und Einkaufstermine."
+        },
+        {
+          "title": "Einkaufsterminplanung",
+          "description": "Planen und verwalten Sie mühelos persönliche Einkaufstermine, virtuelle Beratungen und Garderobenanalysen."
+        },
+        {
+          "title": "Stilempfehlungen",
+          "description": "Erstellen und teilen Sie digitale Stilboards, Outfit-Kombinationen und Einkaufsempfehlungen mit Kunden."
+        },
+        {
+          "title": "Kundenkommunikation",
+          "description": "Senden Sie automatisierte Terminerinnerungen, Follow-ups und Stil-Updates, um Kunden zu binden."
+        },
+        {
+          "title": "Servicepakete",
+          "description": "Verwalten Sie verschiedene Servicepakete und verfolgen Sie Kundensitzungen, von Einzelberatungen bis zu laufenden Styling-Diensten."
+        },
+        {
+          "title": "Digitale Lookbooks",
+          "description": "Erstellen und pflegen Sie digitale Lookbooks für jeden Kunden, um vergangene Empfehlungen und Käufe einfach nachzuschlagen."
+        }
+      ],
+      "benefits": {
+        "clients": {
+          "title": "Für Kunden",
+          "icon": "👗",
+          "items": [
+            {
+              "title": "Einfache Buchung",
+              "description": "Buchen Sie Styling-Sitzungen und Beratungen mit nur wenigen Klicks"
+            },
+            {
+              "title": "Stilgeschichte",
+              "description": "Greifen Sie auf vergangene Empfehlungen und Käufe an einem Ort zu"
+            },
+            {
+              "title": "Nahtlose Kommunikation",
+              "description": "Erhalten Sie zeitnahe Updates und Stilempfehlungen"
+            }
+          ]
+        },
+        "stylists": {
+          "title": "Für Stylisten",
+          "icon": "👔",
+          "items": [
+            {
+              "title": "Organisierter Zeitplan",
+              "description": "Verwalten Sie alle Ihre Kundentermine in einem Kalender"
+            },
+            {
+              "title": "Kundenprofile",
+              "description": "Greifen Sie sofort auf detaillierte Kundenpräferenzen und -historie zu"
+            },
+            {
+              "title": "Digitale Tools",
+              "description": "Erstellen und teilen Sie mühelos Stilboards und Empfehlungen"
+            }
+          ]
+        },
+        "owners": {
+          "title": "Für Geschäftsinhaber",
+          "icon": "💼",
+          "items": [
+            {
+              "title": "Geschäftswachstum",
+              "description": "Skalieren Sie Ihr Styling-Geschäft mit effizienter Terminplanung"
+            },
+            {
+              "title": "Kundenmanagement",
+              "description": "Bauen Sie dauerhafte Beziehungen mit organisierten Kundendaten auf"
+            },
+            {
+              "title": "Service-Tracking",
+              "description": "Überwachen Sie Styling-Sitzungen und Paketnutzung"
+            }
+          ]
+        }
+      }
     }
   },
   "pricing": {
-    "title": "Einfach, Transparent",
-    "subtitle": "Preise für Jeden",
-    "description": "Keine versteckten Gebühren. Keine langfristigen Verträge. Nur alles, was Sie für den effizienten Betrieb Ihres Unternehmens benötigen.",
-    "features": [
-      "Intelligente Planung & automatisierte Benachrichtigungen",
-      "Unbegrenzte Kunden und Mitarbeiter",
-      "Umfassende Geschäftsanalysen",
-      "Kundenhistorie und Notizen",
-      "Individuelle Buchungsregeln",
-      "Mehrere Standorte",
-      "Kalenderintegrationen",
-      "Alle Funktionen inklusive - keine versteckten Kosten"
-    ],
+    "title": "Einfache,",
+    "subtitle": "Transparente Preisgestaltung",
+    "description": "Keine versteckten Gebühren. Keine langfristigen Verträge. Nur alles, was Sie brauchen, um Ihr Unternehmen effizient zu führen.",
     "price": {
       "amount": "15",
       "period": "/Monat",
       "description": "Alles inklusive. Keine Überraschungen."
     },
+    "features": [
+      "Alle Funktionen enthalten - keine Zusatzverkäufe",
+      "Unbegrenzte Anzahl von Kunden und Mitarbeitern",
+      "Intelligente Terminplanung & automatisierte Benachrichtigungen",
+      "Umfassende Geschäftsanalysen"
+    ],
     "cta": {
-      "primary": "Kostenlos testen",
-      "secondary": "Keine Kreditkarte erforderlich"
+      "primary": "Kostenlos testen"
     },
     "benefits": {
       "title": "Ihre Investition, maximiert",
       "items": [
         {
-          "title": "Weniger Terminausfälle",
-          "description": "Intelligente Erinnerungen und Bestätigungen reduzieren verpasste Termine drastisch",
-          "metric": "Bis zu 80% weniger Ausfälle",
-          "emphasis": "Tausende Euro an Umsatzverlusten sparen"
+          "title": "Reduzieren Sie Terminausfälle",
+          "description": "Intelligente Erinnerungen und Bestätigungen reduzieren verpasste Termine drastisch"
         },
         {
-          "title": "Verwaltungszeit sparen",
-          "description": "Automatisieren Sie Ihre Terminplanung und gewinnen Sie wöchentlich mehr Zeit",
-          "metric": "Über 15 Stunden pro Monat gespart",
-          "emphasis": "Konzentrieren Sie sich auf Ihr Wachstum"
+          "title": "Sparen Sie Verwaltungszeit",
+          "description": "Automatisieren Sie Ihren Terminplanungsablauf und gewinnen Sie jede Woche Stunden zurück"
         },
         {
-          "title": "Höhere Kundenzufriedenheit",
-          "description": "Bieten Sie ein nahtloses Buchungserlebnis, das Kunden bindet",
-          "metric": "95% Kundenzufriedenheit",
-          "emphasis": "Bauen Sie dauerhafte Beziehungen auf"
-        },
-        {
-          "title": "Umsatzsteigerung",
-          "description": "Füllen Sie freie Termine und optimieren Sie Ihren Zeitplan für maximale Einnahmen",
-          "metric": "25% durchschnittliche Umsatzsteigerung",
-          "emphasis": "Maximieren Sie Ihr Potenzial"
+          "title": "Steigern Sie die Kundenzufriedenheit",
+          "description": "Bieten Sie ein nahtloses Buchungserlebnis, das Kunden immer wieder zurückkommen lässt"
         }
       ]
     },
@@ -222,8 +1018,87 @@
     }
   },
   "footer": {
-    "copyright": "© 2024 EasyTakt. Alle Rechte vorbehalten.",
-    "links": []
+    "brand": {
+      "description": "Intelligente Terminplanungslösungen für moderne Unternehmen."
+    },
+    "sections": {
+      "solutions": {
+        "title": "Lösungen",
+        "links": [
+          {
+            "href": "/solutions/driving-schools",
+            "label": "Fahrschulen"
+          },
+          {
+            "href": "/solutions/music-and-dance",
+            "label": "Musik- & Tanzschulen"
+          },
+          {
+            "href": "/solutions/salons-and-spas",
+            "label": "Salons & Spas"
+          },
+          {
+            "href": "/solutions/fitness-and-wellness",
+            "label": "Fitness & Wellness"
+          },
+          {
+            "href": "/solutions/tutors-and-coaches",
+            "label": "Tutoren & Coaches"
+          },
+          {
+            "href": "/solutions/freelancers",
+            "label": "Freiberufler"
+          },
+          {
+            "href": "/solutions/pet-services",
+            "label": "Tierdienstleistungen"
+          },
+          {
+            "href": "/solutions/automotive-services",
+            "label": "Kfz-Dienstleistungen"
+          },
+          {
+            "href": "/solutions/personal-stylists",
+            "label": "Personal Stylisten"
+          }
+        ]
+      },
+      "quick_links": {
+        "title": "Schnellzugriff",
+        "links": [
+          {
+            "href": "/blog",
+            "label": "Blog"
+          },
+          {
+            "href": "/features",
+            "label": "Funktionen"
+          },
+          {
+            "href": "/pricing",
+            "label": "Preise"
+          },
+          {
+            "href": "/contact",
+            "label": "Kontakt"
+          }
+        ]
+      },
+      "legal": {
+        "title": "Rechtliches",
+        "links": [
+          {
+            "href": "/privacy",
+            "label": "Datenschutzerklärung"
+          },
+          {
+            "href": "/terms",
+            "label": "Nutzungsbedingungen"
+          }
+        ]
+      }
+    },
+    "copyright": "© {{year}} EasyTakt. Alle Rechte vorbehalten."
   },
   "save_time": {
     "title": "Zeit sparen. Kontrolle behalten.",
@@ -239,6 +1114,10 @@
       {
         "title": "DSGVO-konform & sicher",
         "description": "Ihre Daten bleiben sicher und werden innerhalb der EU gespeichert, wodurch die vollständige Einhaltung der DSGVO-Vorschriften gewährleistet ist."
+      },
+      {
+        "title": "Ihr Geschäft, Ihre Regeln",
+        "description": "Wir mischen uns nicht in Ihre finanziellen Beziehungen zu Kunden ein. EasyTakt ist hier, um Ihnen stundenlange Terminplanungsprobleme zu ersparen – nicht um Ihnen vorzuschreiben, wie Sie Ihr Unternehmen führen sollen."
       }
     ]
   },
@@ -258,5 +1137,111 @@
         "description": "Reduzierung von Terminkonflikten und Doppelbuchungen"
       }
     ]
+  },
+  "challenge": {
+    "title": "DIE HERAUSFORDERUNG",
+    "subtitle": "Zeit, sich von Planungskopfschmerzen zu verabschieden"
+  },
+  "why_easytakt": {
+    "title": "Warum EasyTakt?",
+    "subtitle": "Entwickelt, um die Terminplanung mühelos zu machen"
+  },
+  "who_its_for": {
+    "title": "Für wen ist es?",
+    "subtitle": "Entwickelt für Kleinunternehmer, die ein einfaches, zuverlässiges Terminplanungssystem benötigen",
+    "businesses": {
+      "driving_schools": {
+        "title": "Fahrschulen",
+        "description": "Verwalten Sie Fahrlehrer, Fahrzeuge und Fahrstunden effizient."
+      },
+      "music_dance": {
+        "title": "Musik- & Tanzschulen",
+        "description": "Organisieren Sie Einzelunterricht und Gruppenkurse."
+      },
+      "salons_spas": {
+        "title": "Salons & Spas",
+        "description": "Lassen Sie Kunden Termine ohne Anruf buchen."
+      },
+      "fitness_wellness": {
+        "title": "Fitness- & Wellnessstudios",
+        "description": "Verwalten Sie Kurse, Trainer und Stundenpläne."
+      },
+      "tutors_coaches": {
+        "title": "Tutoren & Coaches",
+        "description": "Behalten Sie Unterrichtsstunden und Schülerfortschritte mühelos im Blick."
+      },
+      "freelancers": {
+        "title": "Freiberufler & Dienstleister",
+        "description": "Verbringen Sie mehr Zeit mit der Arbeit, weniger mit der Terminplanung."
+      },
+      "pet_services": {
+        "title": "Tierdienstleistungen",
+        "description": "Verwalten Sie Tierpflegetermine, Trainingssitzungen und Kundenkommunikation."
+      },
+      "automotive": {
+        "title": "Kfz-Dienstleistungen",
+        "description": "Ermöglichen Sie einfache Terminbuchungen für Fahrzeugwartung und Reparaturen."
+      },
+      "personal_stylists": {
+        "title": "Persönliche Stylisten & Mode-Berater",
+        "description": "Verwalten Sie Kundentermine für Styling und Shopping-Beratung."
+      }
+    }
+  },
+  "getting_started": {
+    "title": "Starten Sie mit EasyTakt in 3 kinderleichten Schritten",
+    "subtitle": "Sie möchten die Terminverwaltung Ihres Unternehmens vereinfachen? Wir kümmern uns darum. Mit EasyTakt ist die Einrichtung so einfach wie eine Tasse Kaffee zu kochen (na gut, vielleicht zwei). Folgen Sie einfach diesen drei Schritten:",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Erstellen Sie Ihr EasyTakt-Konto",
+        "description": "Melden Sie sich an, fügen Sie Ihre Unternehmensdetails hinzu, und schon sind Sie auf dem Weg zu einem stressfreien Buchungssystem. Es ist so einfach, dass es sogar Ihre Katze könnte (wenn sie oppositionsfähige Daumen hätte).",
+        "image": "/images/steps/signup-screen.png"
+      },
+      {
+        "number": "02",
+        "title": "Fügen Sie Ihre Dienstleistungen & Team hinzu",
+        "description": "Sie haben Termine, Veranstaltungen oder ein Dreamteam, das loslegen möchte? Fügen Sie alles hinzu. Mit wenigen Klicks sind sie offiziell buchbar, und Sie sehen absolut professionell aus.",
+        "image": "/images/steps/services-screen.png"
+      },
+      {
+        "number": "03",
+        "title": "Personalisieren & Verbinden wie ein Profi",
+        "description": "Gestalten Sie Ihre Buchungsseite so elegant wie Ihre Marke, und binden Sie sie dann in Ihre Website, soziale Medien oder überall dort ein, wo sich Ihre Kunden aufhalten. Mehr Buchungen, weniger Stress. Gern geschehen.",
+        "image": "/images/steps/customize-screen.png"
+      }
+    ]
+  },
+  "blog": {
+    "hero": {
+      "title": "Einblicke für Ihr Geschäftswachstum",
+      "description": "Expertenratschläge zu Terminplanung, Geschäftswachstum und Branchenstandards"
+    },
+    "categories": {
+      "title": "Kategorien",
+      "showing_articles_in": "Artikel in der Kategorie: {{category}}",
+      "clear_filter": "Kategoriefilter löschen",
+      "no_articles": {
+        "message": "Keine Artikel in dieser Kategorie gefunden.",
+        "view_all": "Alle Artikel anzeigen"
+      }
+    },
+    "posts": {
+      "latest_articles": "Neueste Artikel",
+      "articles_in_category": "Artikel in {{category}}",
+      "read_more": "Weiterlesen"
+    },
+    "post": {
+      "navigation": {
+        "home": "Startseite",
+        "blog": "Blog"
+      },
+      "cta": {
+        "title": "Bereit, Ihre Terminplanung zu optimieren?",
+        "description": "Schließen Sie sich Tausenden von Unternehmen an, die EasyTakt für ihre Terminverwaltung und ihr Geschäftswachstum vertrauen.",
+        "button": "Jetzt kostenlos testen"
+      }
+    },
+    "loading": "Blog-Beiträge werden geladen..."
   }
 } 

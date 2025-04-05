@@ -11,9 +11,39 @@
     "blog": "Blog"
   },
   "hero": {
-    "title": "Smart Scheduling for Your Business",
-    "subtitle": "Streamline your operations, reduce no-shows, and grow your business with our powerful scheduling platform.",
-    "cta": "Get Started"
+    "title": {
+      "line1": "Running your",
+      "line2": "business",
+      "line3": "is hard.",
+      "line4": "Scheduling shouldn't be."
+    },
+    "description": "A smarter, faster way to manage appointments and schedules for businesses of all sizes – all in one easy-to-use platform",
+    "cta": "Try now for free",
+    "image_alt": "EasyTakt Calendar Dashboard"
+  },
+  "getting_started": {
+    "title": "Get Up & Running with EasyTakt in 3 Ridiculously Simple Steps",
+    "subtitle": "Want to make booking and managing your business a breeze? We've got you. With EasyTakt, setting up takes about as much effort as making a cup of coffee (okay, maybe two). Just follow these three steps:",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Create Your EasyTakt Account",
+        "description": "Sign up, drop in your business details, and boom—you're on your way to a stress-free booking system. It's so easy, even your cat could do it (if they had opposable thumbs).",
+        "image": "/images/steps/signup-screen.png"
+      },
+      {
+        "number": "02",
+        "title": "Add Your Services & Team",
+        "description": "Got appointments, events, or a dream team ready to roll? Add them all in. With just a few clicks, they're officially bookable, and you look like a total pro.",
+        "image": "/images/steps/services-screen.png"
+      },
+      {
+        "number": "03",
+        "title": "Customize & Connect Like a Boss",
+        "description": "Make your booking page as stylish as your brand, then slap it onto your website, social media, or wherever your customers hang out. More bookings, less hassle. You're welcome.",
+        "image": "/images/steps/provider-screen.png"
+      }
+    ]
   },
   "features": {
     "title": "Powerful Scheduling Features for Business",
@@ -22,33 +52,27 @@
     "items": {
       "calendar": {
         "title": "Interactive Calendar",
-        "description": "Easily manage your schedule with our intuitive calendar. Set availability, handle bookings, and view your entire schedule at a glance.",
-        "imageAlt": "EasyTakt Calendar Interface"
+        "description": "Easily manage your schedule with our intuitive calendar. Set availability, handle bookings, and view your entire schedule at a glance."
       },
       "clients": {
         "title": "Client Management",
-        "description": "Keep track of client information, preferences, and booking history in one organized system. Build stronger relationships with detailed insights.",
-        "imageAlt": "Client Management Interface"
+        "description": "Keep track of client information, preferences, and booking history in one organized system. Build stronger relationships with detailed insights."
       },
       "reminders": {
         "title": "Smart Notifications",
-        "description": "Reduce no-shows with automated reminders. Keep clients and staff informed with timely notifications about appointments and changes.",
-        "imageAlt": "Smart Notifications Interface"
+        "description": "Reduce no-shows with automated reminders. Keep clients and staff informed with timely notifications about appointments and changes."
       },
       "analytics": {
         "title": "Business Analytics",
-        "description": "Make data-driven decisions with insights into booking patterns, client preferences, and business performance metrics.",
-        "imageAlt": "Business Analytics Dashboard"
+        "description": "Make data-driven decisions with insights into booking patterns, client preferences, and business performance metrics."
       },
       "mobile": {
         "title": "Mobile-Friendly",
-        "description": "Manage your business on the go. Access your schedule, handle bookings, and stay connected from any device.",
-        "imageAlt": "Mobile Interface"
+        "description": "Manage your business on the go. Access your schedule, handle bookings, and stay connected from any device."
       },
       "settings": {
         "title": "Customizable Settings",
-        "description": "Tailor the platform to your business needs. Set custom booking rules, service durations, and availability windows.",
-        "imageAlt": "Settings Interface"
+        "description": "Tailor the platform to your business needs. Set custom booking rules, service durations, and availability windows."
       }
     }
   },
@@ -57,11 +81,11 @@
     "subtitle": "Discover how EasyTakt can help your specific industry",
     "hero": {
       "title": {
-        "line1": "Running your business",
-        "line2": "is hard.",
-        "line3": "Scheduling shouldn't be."
+        "line1": "Scheduling Software",
+        "line2": "for every type of",
+        "line3": "business."
       },
-      "description": "A smarter, faster way to manage appointments and schedules for businesses of all sizes – all in one easy-to-use platform"
+      "description": "Industry-specific scheduling solutions designed to streamline appointments, manage staff, and grow your business – all in one powerful platform"
     },
     "core_features": {
       "title": "Core Features for Every Business",
@@ -135,57 +159,847 @@
       "title": "Ready to streamline your scheduling?",
       "description": "Join thousands of businesses that trust EasyTakt to handle their scheduling needs. Get started today with our 30-day free trial.",
       "button": "Try now for free"
+    },
+    "salons_spas_page": {
+      "title": "Effortless Booking for Salons & Spas",
+      "description": "Let clients schedule appointments 24/7, reduce no-shows with reminders, and manage your team's availability from one dashboard.",
+      "challenge_text": "In the fast-paced world of beauty and wellness, scheduling shouldn't be your biggest stress factor. Yet here you are, dealing with a constant stream of phone calls during treatments, trying to coordinate stylist schedules on paper, and losing revenue to no-shows. Your team gets overwhelmed with last-minute changes, while clients get frustrated when they can't book their favorite stylist outside business hours. The result? Double-booked chairs, unhappy clients, and a scheduling system that's more complicated than a multi-step hair color process.",
+      "features": [
+        {
+          "title": "24/7 Online Booking",
+          "description": "Let clients book appointments anytime, anywhere. No more phone tag or missed calls."
+        },
+        {
+          "title": "Smart Staff Scheduling",
+          "description": "Manage your team's availability and specialties. Automatically assign the right stylist for each service."
+        },
+        {
+          "title": "Automated Reminders",
+          "description": "Reduce no-shows with customizable appointment reminders via email or SMS."
+        },
+        {
+          "title": "Service Management",
+          "description": "Easily manage different services, durations, and pricing. Group services into packages."
+        },
+        {
+          "title": "Client History",
+          "description": "Keep track of client preferences, previous services, and notes for personalized experience."
+        },
+        {
+          "title": "Resource Management",
+          "description": "Optimize the use of chairs, rooms, and equipment across all appointments."
+        }
+      ],
+      "benefits": {
+        "clients": {
+          "title": "For Clients",
+          "icon": "💇‍♀️",
+          "items": [
+            {
+              "title": "Book anytime",
+              "description": "Schedule appointments 24/7 from your phone or computer"
+            },
+            {
+              "title": "Stay informed",
+              "description": "Get automatic reminders and updates about your appointments"
+            },
+            {
+              "title": "Easy rescheduling",
+              "description": "Change your appointment time with just a few taps"
+            },
+            {
+              "title": "Personal preferences",
+              "description": "Your favorite services and stylist preferences are saved for next time"
+            }
+          ]
+        },
+        "staff": {
+          "title": "For Stylists & Staff",
+          "icon": "✂️",
+          "items": [
+            {
+              "title": "Clear daily schedule",
+              "description": "See all your appointments and breaks in one organized view"
+            },
+            {
+              "title": "Client history at hand",
+              "description": "Access client preferences and service history instantly"
+            },
+            {
+              "title": "Flexible availability",
+              "description": "Easily update your working hours and service offerings"
+            }
+          ]
+        },
+        "owners": {
+          "title": "For Salon Owners",
+          "icon": "👔",
+          "items": [
+            {
+              "title": "Full business overview",
+              "description": "Monitor staff performance and appointment statistics"
+            },
+            {
+              "title": "Resource optimization",
+              "description": "Maximize chair time and reduce empty slots"
+            },
+            {
+              "title": "Growth focused",
+              "description": "Spend less time managing schedules, more time growing your business"
+            }
+          ]
+        }
+      }
+    },
+    "music_and_dance_page": {
+      "title": "Simplified Scheduling for Music & Dance Schools",
+      "description": "Manage private lessons, group classes, and student progress with ease. Allow students and parents to book sessions online and automate reminders.",
+      "challenge_text": "Managing a music or dance school is like conducting an orchestra—every element needs to be perfectly synchronized. Between coordinating private lessons, group classes, and studio space, traditional scheduling methods fall flat. Teachers struggle with last-minute cancellations, while parents and students get frustrated with inflexible booking systems. Practice rooms sit empty during prime times, yet get double-booked during peak hours. And keeping track of student progress across multiple instructors? That's a dance nobody wants to do.",
+      "features": [
+        {
+          "title": "Easy Lesson Scheduling",
+          "description": "Schedule private lessons and group classes with a few clicks. Students and parents can book available slots online."
+        },
+        {
+          "title": "Student Progress Tracking",
+          "description": "Keep detailed notes on student progress, repertoire, and practice assignments all in one place."
+        },
+        {
+          "title": "Automated Reminders",
+          "description": "Reduce no-shows with automatic lesson reminders via email or SMS."
+        },
+        {
+          "title": "Room & Resource Management",
+          "description": "Efficiently manage practice rooms, instruments, and other resources across all your classes."
+        },
+        {
+          "title": "Group Class Management",
+          "description": "Organize recitals, workshops, and group lessons with ease. Track attendance and capacity."
+        },
+        {
+          "title": "Payment Integration",
+          "description": "Connect with your preferred payment system to handle lesson fees and package purchases."
+        }
+      ],
+      "benefits": {
+        "students": {
+          "title": "For Students",
+          "icon": "🎵",
+          "items": [
+            {
+              "title": "Stay on track effortlessly",
+              "description": "View your upcoming lessons and practice schedule at a glance"
+            },
+            {
+              "title": "Never miss a lesson",
+              "description": "Get timely reminders and sync lessons with your calendar instantly"
+            },
+            {
+              "title": "Reschedule easily",
+              "description": "Change lesson times with a few clicks when life gets busy"
+            },
+            {
+              "title": "Track your progress",
+              "description": "Access practice notes and assignments in one place"
+            }
+          ]
+        },
+        "teachers": {
+          "title": "For Teachers",
+          "icon": "👩‍🏫",
+          "items": [
+            {
+              "title": "Organize your schedule",
+              "description": "See all your private and group lessons in one clear view"
+            },
+            {
+              "title": "Keep detailed records",
+              "description": "Track student progress, repertoire, and practice assignments"
+            },
+            {
+              "title": "Manage resources",
+              "description": "Book practice rooms and instruments without conflicts"
+            }
+          ]
+        },
+        "owners": {
+          "title": "For School Owners",
+          "icon": "🎹",
+          "items": [
+            {
+              "title": "Streamline operations",
+              "description": "Manage multiple teachers and class types effortlessly"
+            },
+            {
+              "title": "Optimize resources",
+              "description": "Maximize studio space and instrument utilization"
+            },
+            {
+              "title": "Grow your business",
+              "description": "Focus on teaching while we handle the scheduling"
+            }
+          ]
+        }
+      }
+    },
+    "driving_schools_page": {
+      "title": "Smart Scheduling for Driving Schools",
+      "description": "Streamline lesson bookings, manage your fleet, and track student progress all in one place. Let students book lessons online and automate reminders.",
+      "challenge_text": "Running a driving school means juggling multiple instructors, vehicles, and students—all while trying to maintain a smooth operation. Phone calls interrupt lessons, double-bookings cause frustration, and tracking vehicle availability becomes a logistical puzzle. Manual scheduling systems lead to confusion, while paper-based records make it hard to track student progress. And let's not forget the time spent playing phone tag with students trying to schedule or reschedule lessons. Sound familiar? We thought so.",
+      "features": [
+        {
+          "title": "Student Lesson Management",
+          "description": "Schedule theory and practical lessons with ease. Let students book available slots online."
+        },
+        {
+          "title": "Vehicle Fleet Management",
+          "description": "Track and manage your vehicle fleet efficiently. Prevent double-booking and optimize utilization."
+        },
+        {
+          "title": "Instructor Scheduling",
+          "description": "Coordinate instructor schedules, specialties, and availability all in one place."
+        },
+        {
+          "title": "Automated Reminders",
+          "description": "Reduce no-shows with automatic lesson reminders via email or SMS."
+        },
+        {
+          "title": "Progress Tracking",
+          "description": "Keep detailed notes on student progress, test readiness, and learning milestones."
+        },
+        {
+          "title": "Resource Management",
+          "description": "Manage classrooms for theory lessons and training materials with ease."
+        }
+      ],
+      "benefits": {
+        "students": {
+          "title": "For Students",
+          "icon": "👨‍🎓",
+          "items": [
+            {
+              "title": "Stay on track effortlessly",
+              "description": "View your upcoming lessons at a glance"
+            },
+            {
+              "title": "Never miss a lesson",
+              "description": "Receive timely reminders and add lessons to your calendar with a single tap"
+            },
+            {
+              "title": "Reschedule in seconds",
+              "description": "Flexible rescheduling means no more back-and-forth hassle"
+            },
+            {
+              "title": "Plan smarter",
+              "description": "See both theory and practice lessons in one place"
+            }
+          ]
+        },
+        "instructors": {
+          "title": "For Instructors",
+          "icon": "👨‍🏫",
+          "items": [
+            {
+              "title": "Be fully prepared",
+              "description": "Access your daily and weekly schedule in one view"
+            },
+            {
+              "title": "Stay organized",
+              "description": "Take notes after each lesson to track student progress"
+            },
+            {
+              "title": "Adapt on the fly",
+              "description": "Easily reschedule lessons to match your availability"
+            }
+          ]
+        },
+        "owners": {
+          "title": "For School Owners",
+          "icon": "👔",
+          "items": [
+            {
+              "title": "Get full control",
+              "description": "Monitor instructor workload and student progress at a glance"
+            },
+            {
+              "title": "Manage your assets",
+              "description": "Keep track of your fleet—cars and motorcycles—without spreadsheets"
+            },
+            {
+              "title": "Boost efficiency",
+              "description": "Reduce manual work so your staff can focus on teaching"
+            }
+          ]
+        }
+      }
+    },
+    "fitness_and_wellness_page": {
+      "title": "Smart Scheduling for Fitness & Wellness",
+      "description": "Streamline class bookings, manage member attendance, and coordinate trainer schedules all in one place. Let members book sessions online and automate reminders.",
+      "challenge_text": "Running a fitness or wellness facility is about helping people transform their lives—not getting tangled up in scheduling chaos. But between managing class capacities, coordinating trainer schedules, and handling last-minute cancellations, you're spending more time on admin than actual coaching. Members get frustrated when classes are full, trainers struggle with schedule conflicts, and your front desk is overwhelmed with booking requests. Meanwhile, prime studio time goes unused while peak hours are overbooked. It's enough to make anyone break a sweat—and not in a good way.",
+      "features": [
+        {
+          "title": "Class & Session Booking",
+          "description": "Let members book group classes and personal training sessions online with ease."
+        },
+        {
+          "title": "Capacity Management",
+          "description": "Set and track class sizes, waitlists, and equipment availability automatically."
+        },
+        {
+          "title": "Trainer Scheduling",
+          "description": "Coordinate trainer schedules, specialties, and availability in one place."
+        },
+        {
+          "title": "Member Management",
+          "description": "Track member attendance, progress, and preferences for personalized service."
+        },
+        {
+          "title": "Automated Reminders",
+          "description": "Reduce no-shows with class and session reminders via email or SMS."
+        },
+        {
+          "title": "Resource Management",
+          "description": "Optimize studio space and equipment usage across all classes and sessions."
+        }
+      ],
+      "benefits": {
+        "members": {
+          "title": "For Members",
+          "icon": "💪",
+          "items": [
+            {
+              "title": "Book with ease",
+              "description": "Reserve your spot in classes and sessions anytime, anywhere"
+            },
+            {
+              "title": "Stay committed",
+              "description": "Get timely reminders to keep your fitness routine on track"
+            },
+            {
+              "title": "Flexible scheduling",
+              "description": "Easily swap classes or reschedule when plans change"
+            },
+            {
+              "title": "Track your journey",
+              "description": "Monitor your attendance and progress over time"
+            }
+          ]
+        },
+        "trainers": {
+          "title": "For Trainers",
+          "icon": "🏋️‍♂️",
+          "items": [
+            {
+              "title": "Organized schedule",
+              "description": "View all your classes and private sessions in one place"
+            },
+            {
+              "title": "Client insights",
+              "description": "Access member profiles and fitness goals instantly"
+            },
+            {
+              "title": "Capacity control",
+              "description": "Manage class sizes and waitlists effortlessly"
+            }
+          ]
+        },
+        "owners": {
+          "title": "For Facility Owners",
+          "icon": "🏢",
+          "items": [
+            {
+              "title": "Maximize efficiency",
+              "description": "Optimize studio space and equipment utilization"
+            },
+            {
+              "title": "Data-driven decisions",
+              "description": "Track class popularity and attendance patterns"
+            },
+            {
+              "title": "Scale with ease",
+              "description": "Add new classes and trainers as your business grows"
+            }
+          ]
+        }
+      }
+    },
+    "tutors_and_coaches_page": {
+      "title": "Smart Scheduling for Tutors & Coaches",
+      "description": "Manage your tutoring sessions, track student progress, and share resources all in one place. Let students book sessions online and automate reminders.",
+      "challenge_text": "As an educator or coach, your focus should be on helping students succeed—not wrestling with calendars and scheduling conflicts. Yet you find yourself buried in emails and text messages, trying to coordinate sessions across different time zones and juggle multiple students' availability. Last-minute cancellations leave gaps in your schedule, while tracking payments and managing lesson materials becomes a part-time job in itself. And don't even mention the headache of switching between in-person and online sessions. It's like trying to teach algebra while doing a handstand—technically possible, but unnecessarily complicated.",
+      "features": [
+        {
+          "title": "Session Scheduling",
+          "description": "Let students book one-on-one or group sessions at times that work for everyone."
+        },
+        {
+          "title": "Online & In-Person",
+          "description": "Manage both virtual and physical sessions with integrated video call links."
+        },
+        {
+          "title": "Progress Tracking",
+          "description": "Keep detailed notes on student progress, assignments, and learning goals."
+        },
+        {
+          "title": "Resource Sharing",
+          "description": "Share study materials, homework, and resources directly through the platform."
+        },
+        {
+          "title": "Automated Reminders",
+          "description": "Reduce no-shows with session reminders via email or SMS."
+        },
+        {
+          "title": "Payment Integration",
+          "description": "Handle session payments and package purchases seamlessly."
+        }
+      ],
+      "benefits": {
+        "students": {
+          "title": "For Students",
+          "icon": "📚",
+          "items": [
+            {
+              "title": "Book flexibly",
+              "description": "Schedule sessions that fit your learning pace and availability"
+            },
+            {
+              "title": "Stay organized",
+              "description": "Access session materials and homework in one place"
+            },
+            {
+              "title": "Track progress",
+              "description": "Monitor your learning journey and achievements"
+            },
+            {
+              "title": "Never miss a session",
+              "description": "Get timely reminders for upcoming lessons"
+            }
+          ]
+        },
+        "tutors": {
+          "title": "For Tutors & Coaches",
+          "icon": "👩‍🏫",
+          "items": [
+            {
+              "title": "Manage your time",
+              "description": "Set your availability and let students book within your schedule"
+            },
+            {
+              "title": "Keep detailed records",
+              "description": "Track student progress and maintain session notes"
+            },
+            {
+              "title": "Share resources easily",
+              "description": "Distribute materials and assignments efficiently"
+            }
+          ]
+        },
+        "centers": {
+          "title": "For Educational Centers",
+          "icon": "🏫",
+          "items": [
+            {
+              "title": "Streamline operations",
+              "description": "Coordinate multiple tutors and subjects seamlessly"
+            },
+            {
+              "title": "Track performance",
+              "description": "Monitor student engagement and tutor effectiveness"
+            },
+            {
+              "title": "Scale your impact",
+              "description": "Grow your tutoring business without administrative overhead"
+            }
+          ]
+        }
+      }
+    },
+    "freelancers_page": {
+      "title": "Professional Scheduling for Freelancers",
+      "description": "Take control of your schedule, manage client bookings, and present a professional image. Let clients book meetings online and automate reminders.",
+      "challenge_text": "As a freelancer, managing your schedule can be overwhelming. Endless email chains to find meeting times, double-bookings due to timezone confusion, and unprofessional scheduling experiences can all hurt your business. You need a solution that makes scheduling effortless while maintaining your professional image.",
+      "features": [
+        {
+          "title": "Smart Availability",
+          "description": "Set your working hours and let clients book during times that work for you."
+        },
+        {
+          "title": "Service Management",
+          "description": "Organize your services, packages, and pricing in one professional interface."
+        },
+        {
+          "title": "Client Portal",
+          "description": "Give clients a professional booking experience with your branded portal."
+        },
+        {
+          "title": "Project Tracking",
+          "description": "Keep track of ongoing projects, deadlines, and client communications."
+        },
+        {
+          "title": "Automated Reminders",
+          "description": "Reduce no-shows with meeting reminders via email or SMS."
+        },
+        {
+          "title": "Calendar Integration",
+          "description": "Sync with your favorite calendar to avoid double-booking."
+        }
+      ],
+      "benefits": {
+        "clients": {
+          "title": "For Your Clients",
+          "icon": "🤝",
+          "items": [
+            {
+              "title": "Easy booking",
+              "description": "Schedule meetings and consultations with just a few clicks"
+            },
+            {
+              "title": "Clear communication",
+              "description": "Get automatic confirmations and meeting reminders"
+            },
+            {
+              "title": "Professional experience",
+              "description": "Book through your branded scheduling portal"
+            },
+            {
+              "title": "Flexible options",
+              "description": "Choose from your available services and time slots"
+            }
+          ]
+        },
+        "freelancers": {
+          "title": "For You as a Freelancer",
+          "icon": "💼",
+          "items": [
+            {
+              "title": "Work on your terms",
+              "description": "Control your schedule and availability with precision"
+            },
+            {
+              "title": "Stay organized",
+              "description": "Manage all your client meetings and projects in one place"
+            },
+            {
+              "title": "Look professional",
+              "description": "Present a polished booking experience to clients"
+            }
+          ]
+        },
+        "business": {
+          "title": "For Your Business",
+          "icon": "📈",
+          "items": [
+            {
+              "title": "Save time",
+              "description": "Eliminate back-and-forth emails about scheduling"
+            },
+            {
+              "title": "Grow efficiently",
+              "description": "Scale your client base without administrative overhead"
+            },
+            {
+              "title": "Work smarter",
+              "description": "Focus on delivering value instead of managing calendars"
+            }
+          ]
+        }
+      }
+    },
+    "pet_services_page": {
+      "title": "Smart Scheduling for Pet Services",
+      "description": "Streamline pet grooming, training, and walking appointments. Keep detailed pet records and automate client communications.",
+      "challenge_text": "Running a pet service business means juggling multiple appointments while ensuring each furry friend gets the attention they deserve. Between managing different service types, coordinating staff schedules, and keeping track of each pet's unique needs, traditional booking systems fall short. Phone calls interrupt services, while paper records make it hard to maintain detailed pet histories. Meanwhile, pet owners struggle to book appointments around their busy schedules. Sound familiar? We've got you covered.",
+      "features": [
+        {
+          "title": "Pet Appointment Management",
+          "description": "Schedule grooming, training, and walking appointments with ease. Track pet-specific requirements and preferences."
+        },
+        {
+          "title": "Client & Pet Profiles",
+          "description": "Maintain detailed records of pets, including breed, age, medical conditions, and special care instructions."
+        },
+        {
+          "title": "Staff Scheduling",
+          "description": "Coordinate groomers, trainers, and pet walkers efficiently. Match pets with the right specialists."
+        },
+        {
+          "title": "Automated Reminders",
+          "description": "Send appointment confirmations and reminders to pet owners via email or SMS."
+        },
+        {
+          "title": "Service History Tracking",
+          "description": "Keep detailed records of past services, pet behavior notes, and grooming preferences."
+        },
+        {
+          "title": "Online Booking Portal",
+          "description": "Let pet owners book services online and manage their appointments 24/7."
+        }
+      ],
+      "benefits": {
+        "pet_owners": {
+          "title": "For Pet Owners",
+          "icon": "🐾",
+          "items": [
+            {
+              "title": "Easy Booking",
+              "description": "Book pet services anytime, anywhere with just a few clicks"
+            },
+            {
+              "title": "Service History",
+              "description": "Access complete history of pet services and appointments"
+            },
+            {
+              "title": "Automatic Reminders",
+              "description": "Never miss an appointment with timely notifications"
+            }
+          ]
+        },
+        "staff": {
+          "title": "For Staff",
+          "icon": "👥",
+          "items": [
+            {
+              "title": "Organized Schedule",
+              "description": "View and manage daily appointments efficiently"
+            },
+            {
+              "title": "Pet Information",
+              "description": "Access detailed pet profiles and care instructions instantly"
+            },
+            {
+              "title": "Service Notes",
+              "description": "Record and track pet behavior and preferences"
+            }
+          ]
+        },
+        "owners": {
+          "title": "For Business Owners",
+          "icon": "💼",
+          "items": [
+            {
+              "title": "Business Growth",
+              "description": "Expand your client base with professional online booking"
+            },
+            {
+              "title": "Staff Management",
+              "description": "Optimize staff schedules and service allocation"
+            },
+            {
+              "title": "Client Retention",
+              "description": "Build lasting relationships with automated follow-ups"
+            }
+          ]
+        }
+      }
+    },
+    "automotive_services_page": {
+      "title": "Smart Scheduling for Automotive Services",
+      "description": "Streamline vehicle maintenance appointments, manage service bays, and keep detailed service records. Let customers book services online and automate follow-ups.",
+      "challenge_text": "Running an automotive service business comes with unique scheduling challenges. Between managing multiple service bays, coordinating technician schedules, and handling last-minute emergency repairs, traditional booking methods create unnecessary headaches. Phone interruptions disrupt work, while paper-based systems make it difficult to track vehicle histories and maintain accurate records. Meanwhile, customers struggle to find convenient times for service appointments. We understand these challenges and have built a solution to address them all.",
+      "features": [
+        {
+          "title": "Service Appointment Booking",
+          "description": "Enable customers to book maintenance, repairs, and detailing services online with ease."
+        },
+        {
+          "title": "Vehicle History Tracking",
+          "description": "Maintain detailed service records for each vehicle, including maintenance history and notes."
+        },
+        {
+          "title": "Technician Scheduling",
+          "description": "Efficiently manage technician schedules and workload distribution."
+        },
+        {
+          "title": "Bay Management",
+          "description": "Optimize service bay utilization and prevent scheduling conflicts."
+        },
+        {
+          "title": "Service Reminders",
+          "description": "Send automated maintenance reminders and follow-up notifications to customers."
+        },
+        {
+          "title": "Digital Estimates",
+          "description": "Create and send professional service estimates directly through the platform."
+        }
+      ],
+      "benefits": {
+        "vehicle_owners": {
+          "title": "For Vehicle Owners",
+          "icon": "🚗",
+          "items": [
+            {
+              "title": "Convenient Booking",
+              "description": "Schedule service appointments anytime without phone calls"
+            },
+            {
+              "title": "Service Tracking",
+              "description": "Access complete vehicle service history and upcoming maintenance"
+            },
+            {
+              "title": "Clear Communication",
+              "description": "Receive updates and estimates directly through the platform"
+            }
+          ]
+        },
+        "technicians": {
+          "title": "For Technicians",
+          "icon": "🔧",
+          "items": [
+            {
+              "title": "Organized Workflow",
+              "description": "View daily tasks and appointments at a glance"
+            },
+            {
+              "title": "Service Information",
+              "description": "Access vehicle history and service requirements instantly"
+            },
+            {
+              "title": "Time Management",
+              "description": "Better schedule planning and work distribution"
+            }
+          ]
+        },
+        "owners": {
+          "title": "For Shop Owners",
+          "icon": "💼",
+          "items": [
+            {
+              "title": "Increased Efficiency",
+              "description": "Optimize bay utilization and technician scheduling"
+            },
+            {
+              "title": "Customer Retention",
+              "description": "Build loyalty with professional service and follow-ups"
+            },
+            {
+              "title": "Business Growth",
+              "description": "Expand your customer base with online booking capabilities"
+            }
+          ]
+        }
+      }
+    },
+    "personal_stylists_page": {
+      "title": "Smart Scheduling for Personal Stylists",
+      "description": "Transform your styling business with efficient appointment management and client organization. Focus on creating amazing looks while we handle the scheduling.",
+      "challenge_text": "Managing multiple client appointments, keeping track of style preferences, and coordinating shopping sessions can be overwhelming. EasyTakt helps you stay organized and focused on what matters most - making your clients look and feel their best.",
+      "features": [
+        {
+          "title": "Client Wardrobe Management",
+          "description": "Keep detailed records of client preferences, sizes, and style goals. Track wardrobe inventories and shopping lists."
+        },
+        {
+          "title": "Shopping Session Scheduling",
+          "description": "Easily schedule and manage personal shopping appointments, virtual consultations, and wardrobe audits."
+        },
+        {
+          "title": "Style Recommendations",
+          "description": "Create and share digital style boards, outfit combinations, and shopping recommendations with clients."
+        },
+        {
+          "title": "Client Communication",
+          "description": "Send automated appointment reminders, follow-ups, and style updates to keep clients engaged."
+        },
+        {
+          "title": "Service Packages",
+          "description": "Manage different service packages and track client sessions, from one-time consultations to ongoing styling services."
+        },
+        {
+          "title": "Digital Lookbooks",
+          "description": "Create and maintain digital lookbooks for each client, making it easy to reference past recommendations and purchases."
+        }
+      ],
+      "benefits": {
+        "clients": {
+          "title": "For Clients",
+          "icon": "👗",
+          "items": [
+            {
+              "title": "Easy Booking",
+              "description": "Book styling sessions and consultations with just a few clicks"
+            },
+            {
+              "title": "Style History",
+              "description": "Access past recommendations and purchases in one place"
+            },
+            {
+              "title": "Seamless Communication",
+              "description": "Get timely updates and style recommendations"
+            }
+          ]
+        },
+        "stylists": {
+          "title": "For Stylists",
+          "icon": "👔",
+          "items": [
+            {
+              "title": "Organized Schedule",
+              "description": "Manage all your client appointments in one calendar"
+            },
+            {
+              "title": "Client Profiles",
+              "description": "Access detailed client preferences and history instantly"
+            },
+            {
+              "title": "Digital Tools",
+              "description": "Create and share style boards and recommendations easily"
+            }
+          ]
+        },
+        "owners": {
+          "title": "For Business Owners",
+          "icon": "💼",
+          "items": [
+            {
+              "title": "Business Growth",
+              "description": "Scale your styling business with efficient scheduling"
+            },
+            {
+              "title": "Client Management",
+              "description": "Build lasting relationships with organized client data"
+            },
+            {
+              "title": "Service Tracking",
+              "description": "Monitor styling sessions and package utilization"
+            }
+          ]
+        }
+      }
     }
   },
   "pricing": {
-    "title": "Simple, Transparent",
-    "subtitle": "Pricing for Everyone",
+    "title": "Simple,",
+    "subtitle": "Transparent Pricing",
     "description": "No hidden fees. No long-term contracts. Just everything you need to run your business efficiently.",
-    "features": [
-      "Smart scheduling & automated notifications",
-      "Unlimited clients and staff members",
-      "Comprehensive business analytics",
-      "Client history and notes",
-      "Custom booking rules",
-      "Multiple service locations",
-      "Calendar integrations",
-      "All features included - no upsells"
-    ],
     "price": {
       "amount": "15",
       "period": "/month",
       "description": "Everything included. No surprises."
     },
+    "features": [
+      "All features included - no upsells",
+      "Unlimited clients and staff members",
+      "Smart scheduling & automated notifications",
+      "Comprehensive business analytics"
+    ],
     "cta": {
-      "primary": "Try now for free",
-      "secondary": "No credit card required"
+      "primary": "Start Free Trial"
     },
     "benefits": {
       "title": "Your Investment, Multiplied",
       "items": [
         {
           "title": "Reduce No-Shows",
-          "description": "Smart reminders and confirmations dramatically reduce missed appointments",
-          "metric": "Up to 80% reduction in no-shows",
-          "emphasis": "Save thousands in lost revenue"
+          "description": "Smart reminders and confirmations dramatically reduce missed appointments"
         },
         {
           "title": "Save Admin Time",
-          "description": "Automate your scheduling workflow and free up hours every week",
-          "metric": "15+ hours saved per month",
-          "emphasis": "Focus on growing your business"
+          "description": "Automate your scheduling workflow and free up hours every week"
         },
         {
           "title": "Boost Client Satisfaction",
-          "description": "Deliver a seamless booking experience that keeps clients coming back",
-          "metric": "95% client satisfaction rate",
-          "emphasis": "Build lasting relationships"
-        },
-        {
-          "title": "Increase Revenue",
-          "description": "Fill empty slots and optimize your schedule for maximum earnings",
-          "metric": "25% average revenue increase",
-          "emphasis": "Maximize your potential"
+          "description": "Deliver a seamless booking experience that keeps clients coming back"
         }
       ]
     },
@@ -217,8 +1031,87 @@
     }
   },
   "footer": {
-    "copyright": "© 2024 EasyTakt. All rights reserved.",
-    "links": []
+    "brand": {
+      "description": "Smart scheduling solutions for modern businesses."
+    },
+    "sections": {
+      "solutions": {
+        "title": "Solutions",
+        "links": [
+          {
+            "href": "/solutions/driving-schools",
+            "label": "Driving Schools"
+          },
+          {
+            "href": "/solutions/music-and-dance",
+            "label": "Music & Dance Schools"
+          },
+          {
+            "href": "/solutions/salons-and-spas",
+            "label": "Salons & Spas"
+          },
+          {
+            "href": "/solutions/fitness-and-wellness",
+            "label": "Fitness & Wellness"
+          },
+          {
+            "href": "/solutions/tutors-and-coaches",
+            "label": "Tutors & Coaches"
+          },
+          {
+            "href": "/solutions/freelancers",
+            "label": "Freelancers"
+          },
+          {
+            "href": "/solutions/pet-services",
+            "label": "Pet Services"
+          },
+          {
+            "href": "/solutions/automotive-services",
+            "label": "Automotive Services"
+          },
+          {
+            "href": "/solutions/personal-stylists",
+            "label": "Personal Stylists"
+          }
+        ]
+      },
+      "quick_links": {
+        "title": "Quick Links",
+        "links": [
+          {
+            "href": "/blog",
+            "label": "Blog"
+          },
+          {
+            "href": "/features",
+            "label": "Features"
+          },
+          {
+            "href": "/pricing",
+            "label": "Pricing"
+          },
+          {
+            "href": "/contact",
+            "label": "Contact"
+          }
+        ]
+      },
+      "legal": {
+        "title": "Legal",
+        "links": [
+          {
+            "href": "/privacy",
+            "label": "Privacy Policy"
+          },
+          {
+            "href": "/terms",
+            "label": "Terms of Service"
+          }
+        ]
+      }
+    },
+    "copyright": "© {{year}} EasyTakt. All rights reserved."
   },
   "cta": {
     "title": "Ready to Transform Your Business?",
@@ -239,6 +1132,10 @@
       {
         "title": "GDPR-Compliant & Secure",
         "description": "Your data stays safe, stored securely within the EU, ensuring full compliance with GDPR regulations."
+      },
+      {
+        "title": "Your Business, Your Rules",
+        "description": "We don't interfere with your financial relationships with clients. EasyTakt is here to save you hours of scheduling headaches—not to dictate how you run your business."
       }
     ]
   },
@@ -258,5 +1155,87 @@
         "description": "decrease in scheduling conflicts and double bookings"
       }
     ]
+  },
+  "challenge": {
+    "title": "THE CHALLENGE",
+    "subtitle": "Time to Say Goodbye to Scheduling Headaches"
+  },
+  "why_easytakt": {
+    "title": "Why EasyTakt?",
+    "subtitle": "Designed to make scheduling effortless"
+  },
+  "who_its_for": {
+    "title": "Who It's For?",
+    "subtitle": "Designed for small business owners who need a simple, reliable scheduling system",
+    "businesses": {
+      "driving_schools": {
+        "title": "Driving Schools",
+        "description": "Manage instructors, vehicles, and student lessons efficiently."
+      },
+      "music_dance": {
+        "title": "Music & Dance Schools",
+        "description": "Organize private lessons and group classes."
+      },
+      "salons_spas": {
+        "title": "Salons & Spas",
+        "description": "Let clients book appointments without calling."
+      },
+      "fitness_wellness": {
+        "title": "Fitness & Wellness Studios",
+        "description": "Manage sessions, trainers, and class schedules."
+      },
+      "tutors_coaches": {
+        "title": "Tutors & Coaches",
+        "description": "Keep track of lessons and student progress effortlessly."
+      },
+      "freelancers": {
+        "title": "Freelancers & Service Providers",
+        "description": "Spend more time working, less time scheduling."
+      },
+      "pet_services": {
+        "title": "Pet Services",
+        "description": "Manage pet appointments, training sessions, and client communication."
+      },
+      "automotive": {
+        "title": "Automotive Services",
+        "description": "Enable easy appointment booking for vehicle maintenance and repairs."
+      },
+      "personal_stylists": {
+        "title": "Personal Stylists & Fashion Consultants",
+        "description": "Manage client appointments for wardrobe styling and shopping sessions."
+      }
+    }
+  },
+  "blog": {
+    "hero": {
+      "title": "Insights for Growing Your Business",
+      "description": "Expert advice on scheduling, business growth, and industry best practices"
+    },
+    "categories": {
+      "title": "Categories",
+      "showing_articles_in": "Showing articles in: {{category}}",
+      "clear_filter": "Clear category filter",
+      "no_articles": {
+        "message": "No articles found in this category.",
+        "view_all": "View all articles"
+      }
+    },
+    "posts": {
+      "latest_articles": "Latest Articles",
+      "articles_in_category": "Articles in {{category}}",
+      "read_more": "Read more"
+    },
+    "post": {
+      "navigation": {
+        "home": "Home",
+        "blog": "Blog"
+      },
+      "cta": {
+        "title": "Ready to Streamline Your Scheduling?",
+        "description": "Join thousands of businesses that trust EasyTakt to manage their appointments and grow their business.",
+        "button": "Try Free Now"
+      }
+    },
+    "loading": "Loading blog posts..."
   }
 } 

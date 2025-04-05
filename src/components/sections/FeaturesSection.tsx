@@ -2,44 +2,21 @@
 
 import { Calendar, Users, Bell, Car, ChartLine, Smartphone, BarChart, Settings, Play } from 'lucide-react';
 import { useIntersectionObserver } from '@/hooks/useIntersectionObserver';
-
-const features = [
-  {
-    icon: Calendar,
-    title: 'Interactive Calendar',
-    description: 'Easily schedule and manage lessons in a visual, user-friendly planner'
-  },
-  {
-    icon: Users,
-    title: 'Student Management',
-    description: 'Keep track of student progress, attendance, and lesson history'
-  },
-  {
-    icon: Bell,
-    title: 'Automated Reminders',
-    description: 'Reduce no-shows with smart notifications for upcoming lessons'
-  },
-  {
-    icon: Car,
-    title: 'Manage Facitilties',
-    description: 'Optimize vehicle availability and prevent scheduling conflicts'
-  },
-  {
-    icon: ChartLine,
-    title: 'Progress Tracking',
-    description: 'Monitor student performance with clear insights and reports'
-  },
-  {
-    icon: Smartphone,
-    title: 'Mobile Version',
-    description: 'Works seamlessly on mobile - schedule always at hand'
-  }
-];
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const FeaturesSection = () => {
   const titleRef = useIntersectionObserver();
   const featureRefs = Array(6).fill(null).map(() => useIntersectionObserver());
   const videoRef = useIntersectionObserver();
+  const { t, loading } = useLanguage();
+
+  if (loading) {
+    return (
+      <div className="flex justify-center items-center h-64">
+        <div className="text-gray-600">{t('common.loading')}</div>
+      </div>
+    );
+  }
 
   return (
     <section id="features" className="relative py-24 overflow-hidden">
@@ -56,10 +33,10 @@ const FeaturesSection = () => {
           className="text-center mb-16 animate-fade-in-up"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            EasyTakt
+            {t('features.title')}
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            A smarter way to manage your business schedule - streamline bookings, automate reminders, and delight your clients
+            {t('features.subtitle')}
           </p>
         </div>
 
@@ -68,28 +45,25 @@ const FeaturesSection = () => {
           {[
             {
               icon: Calendar,
-              title: 'Interactive Calendar',
-              description: 'Easily manage your schedule with our intuitive calendar. Set availability, handle bookings, and view your entire schedule at a glance.',
+              key: 'calendar',
               bgColor: 'bg-blue-50',
               iconColor: 'text-blue-600'
             },
             {
               icon: Users,
-              title: 'Client Management',
-              description: 'Keep track of client information, preferences, and booking history in one organized system. Build stronger relationships with detailed insights.',
+              key: 'clients',
               bgColor: 'bg-purple-50',
               iconColor: 'text-purple-600'
             },
             {
               icon: Bell,
-              title: 'Smart Notifications',
-              description: 'Reduce no-shows with automated reminders. Keep clients and staff informed with timely notifications about appointments and changes.',
+              key: 'reminders',
               bgColor: 'bg-cyan-50',
               iconColor: 'text-cyan-600'
             }
           ].map((feature, index) => (
             <div
-              key={feature.title}
+              key={feature.key}
               ref={featureRefs[index]}
               className="bg-white rounded-2xl p-8 shadow-lg animate-fade-in-up"
               style={{ animationDelay: `${index * 100}ms` }}
@@ -98,10 +72,10 @@ const FeaturesSection = () => {
                 <feature.icon className={`w-6 h-6 ${feature.iconColor}`} />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                {feature.title}
+                {t(`features.items.${feature.key}.title`)}
               </h3>
               <p className="text-gray-600">
-                {feature.description}
+                {t(`features.items.${feature.key}.description`)}
               </p>
             </div>
           ))}
@@ -112,28 +86,25 @@ const FeaturesSection = () => {
           {[
             {
               icon: BarChart,
-              title: 'Business Analytics',
-              description: 'Make data-driven decisions with insights into booking patterns, client preferences, and business performance metrics.',
+              key: 'analytics',
               bgColor: 'bg-emerald-50',
               iconColor: 'text-emerald-600'
             },
             {
               icon: Smartphone,
-              title: 'Mobile-Friendly',
-              description: 'Manage your business on the go. Access your schedule, handle bookings, and stay connected from any device.',
+              key: 'mobile',
               bgColor: 'bg-rose-50',
               iconColor: 'text-rose-600'
             },
             {
               icon: Settings,
-              title: 'Customizable Settings',
-              description: 'Tailor the platform to your business needs. Set custom booking rules, service durations, and availability windows.',
+              key: 'settings',
               bgColor: 'bg-amber-50',
               iconColor: 'text-amber-600'
             }
           ].map((feature, index) => (
             <div
-              key={feature.title}
+              key={feature.key}
               ref={featureRefs[index + 3]}
               className="bg-white rounded-2xl p-8 shadow-lg animate-fade-in-up"
               style={{ animationDelay: `${(index + 3) * 100}ms` }}
@@ -142,10 +113,10 @@ const FeaturesSection = () => {
                 <feature.icon className={`w-6 h-6 ${feature.iconColor}`} />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                {feature.title}
+                {t(`features.items.${feature.key}.title`)}
               </h3>
               <p className="text-gray-600">
-                {feature.description}
+                {t(`features.items.${feature.key}.description`)}
               </p>
             </div>
           ))}

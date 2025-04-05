@@ -12,6 +12,7 @@ import type { BlogPost } from '@/utils/mdx';
 import type { MDXRemoteSerializeResult } from 'next-mdx-remote';
 import MDXComponents from '@/components/mdx/MDXComponents';
 import { format } from 'date-fns';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 // Helper function for image paths
 const getImagePath = (imagePath: string | undefined): string => {
@@ -26,6 +27,7 @@ interface ClientBlogPostProps {
 
 export default function ClientBlogPost({ post, content }: ClientBlogPostProps) {
   const router = useRouter();
+  const { t } = useLanguage();
 
   useEffect(() => {
     document.title = `${post.title} | EasyTakt`;
@@ -48,7 +50,7 @@ export default function ClientBlogPost({ post, content }: ClientBlogPostProps) {
               <ol className="flex items-center space-x-2 text-sm">
                 <li>
                   <Link href="/" className="text-gray-500 hover:text-gray-700">
-                    Home
+                    {t('blog.post.navigation.home')}
                   </Link>
                 </li>
                 <li>
@@ -56,7 +58,7 @@ export default function ClientBlogPost({ post, content }: ClientBlogPostProps) {
                 </li>
                 <li>
                   <Link href="/blog" className="text-gray-500 hover:text-gray-700">
-                    Blog
+                    {t('blog.post.navigation.blog')}
                   </Link>
                 </li>
                 <li>
@@ -150,16 +152,16 @@ export default function ClientBlogPost({ post, content }: ClientBlogPostProps) {
           <div className="mt-24 mb-16">
             <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl p-8 md:p-12 text-center">
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                Ready to Streamline Your Scheduling?
+                {t('blog.post.cta.title')}
               </h2>
               <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-                Join thousands of businesses that trust EasyTakt to manage their appointments and grow their business.
+                {t('blog.post.cta.description')}
               </p>
               <Link
                 href="https://app.easytakt.com"
                 className="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-600 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
               >
-                Try Free Now
+                {t('blog.post.cta.button')}
                 <ChevronRight className="w-5 h-5 ml-2" />
               </Link>
             </div>
