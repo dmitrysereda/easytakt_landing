@@ -2,6 +2,8 @@ import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import GoogleTagManager from '@/components/analytics/GoogleTagManager';
+import { LanguageProviderWrapper } from '@/components/providers/LanguageProviderWrapper';
+import { LanguageSwitcher } from '@/components/LanguageSwitcher';
 
 const inter = Inter({ 
   subsets: ["latin"],
@@ -17,32 +19,26 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: {
-    template: '%s | EasyTakt',
-    default: 'EasyTakt - Smart Scheduling Software for Businesses',
-  },
-  description: 'Streamline your business operations with EasyTakt\'s smart scheduling software. Manage appointments, reduce no-shows, and grow your business with our powerful booking platform.',
-  keywords: 'scheduling software, appointment booking, business management, online booking system, appointment scheduling, business automation',
+  title: 'EasyTakt - Smart Scheduling for Your Business',
+  description: 'Streamline your operations, reduce no-shows, and grow your business with our powerful scheduling platform.',
+  keywords: 'scheduling software, appointment booking, business management, online booking system',
   alternates: {
     canonical: 'https://easytakt.com',
   },
   openGraph: {
-    title: 'EasyTakt - Smart Scheduling Software for Businesses',
-    description: 'Streamline your business operations with EasyTakt\'s smart scheduling software. Manage appointments, reduce no-shows, and grow your business with our powerful booking platform.',
+    title: 'EasyTakt - Smart Scheduling for Your Business',
+    description: 'Streamline your operations, reduce no-shows, and grow your business with our powerful scheduling platform.',
     type: 'website',
-    url: 'https://easytakt.com',
+    locale: 'en_US',
     siteName: 'EasyTakt',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'EasyTakt - Smart Scheduling Software for Businesses',
-    description: 'Streamline your business operations with EasyTakt\'s smart scheduling software. Manage appointments, reduce no-shows, and grow your business with our powerful booking platform.',
+    title: 'EasyTakt - Smart Scheduling for Your Business',
+    description: 'Streamline your operations, reduce no-shows, and grow your business with our powerful scheduling platform.',
   },
   metadataBase: new URL("https://easytakt.com"),
-  robots: {
-    index: true,
-    follow: true,
-  }
+  robots: 'index, follow',
 };
 
 export default function RootLayout({
@@ -52,11 +48,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={inter.variable}>
-      <body className={inter.className}>
+      <head>
         <GoogleTagManager />
-        <main id="main-content" tabIndex={-1}>
-          {children}
-        </main>
+      </head>
+      <body className={inter.className}>
+        <LanguageProviderWrapper>
+          <div className="min-h-screen">
+            <main id="main-content" tabIndex={-1}>
+              {children}
+            </main>
+          </div>
+        </LanguageProviderWrapper>
       </body>
     </html>
   );

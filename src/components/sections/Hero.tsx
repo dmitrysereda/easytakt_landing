@@ -3,11 +3,13 @@
 import Image from 'next/image';
 import SignupButton from '../SignupButton';
 import { useIntersectionObserver } from '@/hooks/useIntersectionObserver';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const Hero = () => {
   const textRef = useIntersectionObserver();
   const buttonRef = useIntersectionObserver();
   const imageRef = useIntersectionObserver();
+  const { t } = useLanguage();
 
   return (
     <section className="relative min-h-[90vh] flex items-center bg-gradient-to-b from-white to-gray-50 overflow-hidden">
@@ -23,10 +25,11 @@ const Hero = () => {
             className="relative z-10 text-left max-w-xl mx-auto lg:mx-0 lg:pr-12 animate-fade-in-up"
           >
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 tracking-tight leading-[1.15]">
-              Running your business
+              Running your
               <br />
-              is{' '}
-              <span className="text-gray-900">hard.</span>
+              business
+              <br />
+              is <span className="text-gray-900">hard.</span>
               <div className="bg-gradient-to-r from-blue-500 via-purple-500 to-purple-600 text-transparent bg-clip-text mt-4">
                 Scheduling
                 <br />

@@ -3,6 +3,7 @@
 import { Calendar, Users, Bell, BarChart, Smartphone, Settings, LucideIcon } from 'lucide-react';
 import Image from 'next/image';
 import { useIntersectionObserver } from '@/hooks/useIntersectionObserver';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const iconMap: Record<string, LucideIcon> = {
   'calendar': Calendar,
@@ -14,29 +15,37 @@ const iconMap: Record<string, LucideIcon> = {
 };
 
 interface FeatureBlockProps {
-  title: string;
-  description: string;
+  index: number;
+  translationKey: string;
   icon: keyof typeof iconMap;
   image: string;
-  imageAlt: string;
   align: 'left' | 'right';
-  index: number;
 }
 
 export default function FeatureBlock({
-  title,
-  description,
+  index,
+  translationKey,
   icon,
   image,
-  imageAlt,
   align,
-  index
 }: FeatureBlockProps) {
   const contentOrder = align === 'left' ? 'order-2' : 'order-1';
   const imageOrder = align === 'left' ? 'order-1' : 'order-2';
   const blockRef = useIntersectionObserver();
+  const { t, loading } = useLanguage();
   
+  if (loading) {
+    return (
+      <div className="flex justify-center items-center h-64">
+        <div className="text-gray-600">{t('common.loading')}</div>
+      </div>
+    );
+  }
+
   const Icon = iconMap[icon];
+  const title = t(`features.items.${translationKey}.title`);
+  const description = t(`features.items.${translationKey}.description`);
+  const imageAlt = t(`features.items.${translationKey}.imageAlt`);
 
   return (
     <div
@@ -65,7 +74,7 @@ export default function FeatureBlock({
           <div className="aspect-[16/10] w-full">
             <Image
               src={image}
-              alt={imageAlt}
+              alt={imageAlt || ''}
               fill
               className="object-contain p-6 transition-transform duration-300 group-hover:scale-102"
               sizes="(max-width: 768px) 100vw, (max-width: 1400px) 60vw, 800px"

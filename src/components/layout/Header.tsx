@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import SignupButton from '../SignupButton';
+import { LanguageSwitcher } from '../LanguageSwitcher';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -55,6 +56,7 @@ const Header = () => {
             >
               Blog
             </Link>
+            <LanguageSwitcher />
             <SignupButton size="small" />
           </div>
 
@@ -123,6 +125,9 @@ const Header = () => {
             >
               Blog
             </Link>
+            <div className="p-2">
+              <LanguageSwitcher />
+            </div>
             <div className="p-2">
               <SignupButton className="w-full" size="small" onClick={() => setIsMenuOpen(false)} />
             </div>

@@ -1,9 +1,10 @@
 'use client';
 
-import { LucideIcon } from 'lucide-react';
-import SignupButton from '../SignupButton';
+import React from 'react';
 import Image from 'next/image';
-import { useIntersectionObserver } from '@/hooks/useIntersectionObserver';
+import { LucideIcon } from 'lucide-react';
+import SignupButton from '@/components/SignupButton';
+import AnimatedElement from '@/components/AnimatedElement';
 
 interface Feature {
   title: string;
@@ -11,8 +12,8 @@ interface Feature {
 }
 
 interface BenefitCategory {
-  title: string;
   icon: string;
+  title: string;
   benefits: {
     title: string;
     description: string;
@@ -42,12 +43,6 @@ const SolutionPageTemplate = ({
   benefitCategories,
   challengeText,
 }: SolutionPageTemplateProps) => {
-  const featureRefs = features.map(() => useIntersectionObserver());
-  const challengeTextRef = useIntersectionObserver();
-  const challengeImageRef = useIntersectionObserver();
-  const whyEasyTaktRef = useIntersectionObserver();
-  const benefitRefs = benefitCategories.map(() => useIntersectionObserver());
-
   return (
     <div className="min-h-screen">
       {/* Combined Hero & Image Section */}
@@ -86,9 +81,8 @@ const SolutionPageTemplate = ({
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature, index) => (
-              <div
+              <AnimatedElement
                 key={feature.title}
-                ref={featureRefs[index]}
                 className="bg-gray-50 rounded-2xl p-8 animate-fade-in-up"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
@@ -98,7 +92,7 @@ const SolutionPageTemplate = ({
                 <p className="text-gray-600">
                   {feature.description}
                 </p>
-              </div>
+              </AnimatedElement>
             ))}
           </div>
         </div>
@@ -109,14 +103,9 @@ const SolutionPageTemplate = ({
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Text Content */}
-            <div
-              ref={challengeTextRef}
-              className="text-left animate-fade-in-right"
-            >
+            <AnimatedElement className="text-left animate-fade-in-right">
               <div className="space-y-4 mb-8">
-                <span
-                  className="inline-block text-sm font-semibold uppercase tracking-wider bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
-                >
+                <span className="inline-block text-sm font-semibold uppercase tracking-wider bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                   The Challenge
                 </span>
                 <h2 className="text-4xl md:text-5xl font-bold">
@@ -132,13 +121,10 @@ const SolutionPageTemplate = ({
               <p className="text-xl text-gray-600 leading-relaxed">
                 {challengeText}
               </p>
-            </div>
+            </AnimatedElement>
 
             {/* Image */}
-            <div
-              ref={challengeImageRef}
-              className="relative h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-xl animate-fade-in-right"
-            >
+            <AnimatedElement className="relative h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-xl animate-fade-in-right">
               <Image
                 src="/images/mess.jpg"
                 alt="Scheduling challenges illustration"
@@ -147,7 +133,7 @@ const SolutionPageTemplate = ({
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
               <div className="absolute inset-0 bg-gradient-to-br from-black/10 to-black/0"></div>
-            </div>
+            </AnimatedElement>
           </div>
         </div>
       </section>
@@ -156,12 +142,9 @@ const SolutionPageTemplate = ({
       <section className="py-24 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 
-              ref={whyEasyTaktRef}
-              className="text-4xl font-bold text-gray-900 mb-4 animate-fade-in-up"
-            >
-              Why EasyTakt?
-            </h2>
+            <AnimatedElement className="text-4xl font-bold text-gray-900 mb-4 animate-fade-in-up">
+              <h2>Why EasyTakt?</h2>
+            </AnimatedElement>
             <p className="text-xl text-gray-600 animate-fade-in-up-delay">
               Designed to make scheduling effortless
             </p>
@@ -169,9 +152,8 @@ const SolutionPageTemplate = ({
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
             {benefitCategories.map((category, index) => (
-              <div
+              <AnimatedElement
                 key={category.title}
-                ref={benefitRefs[index]}
                 className="relative bg-white rounded-2xl p-8 shadow-md transition-all duration-300 hover:-translate-y-1 animate-fade-in-up"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
@@ -187,7 +169,7 @@ const SolutionPageTemplate = ({
                     ))}
                   </ul>
                 </div>
-              </div>
+              </AnimatedElement>
             ))}
           </div>
         </div>

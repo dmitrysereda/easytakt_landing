@@ -1,0 +1,119 @@
+{
+  "common": {
+    "language": "Langue",
+    "loading": "Chargement..."
+  },
+  "navigation": {
+    "solutions": "Solutions",
+    "features": "Fonctionnalités",
+    "pricing": "Tarifs",
+    "contact": "Contact",
+    "blog": "Blog"
+  },
+  "hero": {
+    "title": "Planification intelligente pour votre entreprise",
+    "subtitle": "Optimisez vos opérations, réduisez les annulations et développez votre activité avec notre plateforme de planification puissante.",
+    "cta": "Commencer"
+  },
+  "features": {
+    "title": "Fonctionnalités de planification puissantes",
+    "subtitle": "Tous les outils dont vous avez besoin pour un flux de travail de planification optimisé",
+    "items": [
+      {
+        "title": "Réservation en ligne",
+        "description": "Permettez à vos clients de prendre rendez-vous 24/7 via votre site web ou les réseaux sociaux."
+      },
+      {
+        "title": "Rappels automatiques",
+        "description": "Réduisez les annulations avec des rappels automatiques par email et SMS."
+      },
+      {
+        "title": "Synchronisation des calendriers",
+        "description": "Synchronisez avec Google Calendar, Outlook et autres calendriers populaires."
+      }
+    ]
+  },
+  "solutions": {
+    "title": "Solutions pour chaque entreprise",
+    "subtitle": "Découvrez comment EasyTakt peut aider votre secteur spécifique",
+    "items": [
+      {
+        "title": "Médecine & Santé",
+        "description": "Gérez efficacement les rendez-vous des patients et les emplois du temps du personnel."
+      },
+      {
+        "title": "Auto-écoles",
+        "description": "Coordonnez facilement les moniteurs, les véhicules et les leçons des élèves."
+      },
+      {
+        "title": "Fitness & Bien-être",
+        "description": "Gérez sans effort les réservations de cours et les emplois du temps des coachs."
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Tarifs simples et transparents",
+    "subtitle": "Choisissez le plan qui correspond à votre entreprise",
+    "plans": [
+      {
+        "name": "Starter",
+        "price": "29€/mois",
+        "features": [
+          "Jusqu'à 5 employés",
+          "Fonctionnalités de planification de base",
+          "Support par email"
+        ],
+        "cta": "Essai gratuit"
+      },
+      {
+        "name": "Professional",
+        "price": "79€/mois",
+        "features": [
+          "Employés illimités",
+          "Fonctionnalités avancées",
+          "Support prioritaire"
+        ],
+        "cta": "Essai gratuit"
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "© 2024 EasyTakt. Tous droits réservés.",
+    "links": [
+      {
+        "title": "Produit",
+        "items": [
+          {
+            "text": "Fonctionnalités",
+            "href": "/features"
+          },
+          {
+            "text": "Solutions",
+            "href": "/solutions"
+          },
+          {
+            "text": "Tarifs",
+            "href": "/pricing"
+          }
+        ]
+      },
+      {
+        "title": "Entreprise",
+        "items": [
+          {
+            "text": "À propos",
+            "href": "/about"
+          },
+          {
+            "text": "Blog",
+            "href": "/blog"
+          },
+          {
+            "text": "Contact",
+            "href": "/contact"
+          }
+        ]
+      }
+    ]
+  }
+} 
