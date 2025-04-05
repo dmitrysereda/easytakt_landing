@@ -1,0 +1,148 @@
+{
+  "common": {
+    "language": "Language",
+    "loading": "Loading..."
+  },
+  "navigation": {
+    "solutions": "Solutions",
+    "features": "Features",
+    "pricing": "Pricing",
+    "contact": "Contact",
+    "blog": "Blog"
+  },
+  "hero": {
+    "title": "Smart Scheduling for Your Business",
+    "subtitle": "Streamline your operations, reduce no-shows, and grow your business with our powerful scheduling platform.",
+    "cta": "Get Started"
+  },
+  "features": {
+    "title": "Powerful Scheduling Features for Business",
+    "subtitle": "All in One Platform",
+    "description": "Streamline your scheduling workflow with powerful tools that drive business growth",
+    "items": {
+      "calendar": {
+        "title": "Interactive Calendar",
+        "description": "Easily manage your schedule with our intuitive calendar. Set availability, handle bookings, and view your entire schedule at a glance.",
+        "imageAlt": "EasyTakt Calendar Interface"
+      },
+      "clients": {
+        "title": "Client Management",
+        "description": "Keep track of client information, preferences, and booking history in one organized system. Build stronger relationships with detailed insights.",
+        "imageAlt": "Client Management Interface"
+      },
+      "reminders": {
+        "title": "Smart Notifications",
+        "description": "Reduce no-shows with automated reminders. Keep clients and staff informed with timely notifications about appointments and changes.",
+        "imageAlt": "Smart Notifications Interface"
+      },
+      "analytics": {
+        "title": "Business Analytics",
+        "description": "Make data-driven decisions with insights into booking patterns, client preferences, and business performance metrics.",
+        "imageAlt": "Business Analytics Dashboard"
+      },
+      "mobile": {
+        "title": "Mobile-Friendly",
+        "description": "Manage your business on the go. Access your schedule, handle bookings, and stay connected from any device.",
+        "imageAlt": "Mobile Interface"
+      },
+      "settings": {
+        "title": "Customizable Settings",
+        "description": "Tailor the platform to your business needs. Set custom booking rules, service durations, and availability windows.",
+        "imageAlt": "Settings Interface"
+      }
+    }
+  },
+  "solutions": {
+    "title": "Solutions for Every Business",
+    "subtitle": "Discover how EasyTakt can help your specific industry",
+    "items": []
+  },
+  "pricing": {
+    "title": "Simple, Transparent",
+    "subtitle": "Pricing for Everyone",
+    "description": "No hidden fees. No long-term contracts. Just everything you need to run your business efficiently.",
+    "features": [
+      "Smart scheduling & automated notifications",
+      "Unlimited clients and staff members",
+      "Comprehensive business analytics",
+      "Client history and notes",
+      "Custom booking rules",
+      "Multiple service locations",
+      "Calendar integrations",
+      "All features included - no upsells"
+    ],
+    "price": {
+      "amount": "15",
+      "period": "/month",
+      "description": "Everything included. No surprises."
+    },
+    "cta": {
+      "primary": "Try now for free",
+      "secondary": "No credit card required"
+    },
+    "benefits": {
+      "title": "Your Investment, Multiplied",
+      "items": [
+        {
+          "title": "Reduce No-Shows",
+          "description": "Smart reminders and confirmations dramatically reduce missed appointments",
+          "metric": "Up to 80% reduction in no-shows",
+          "emphasis": "Save thousands in lost revenue"
+        },
+        {
+          "title": "Save Admin Time",
+          "description": "Automate your scheduling workflow and free up hours every week",
+          "metric": "15+ hours saved per month",
+          "emphasis": "Focus on growing your business"
+        },
+        {
+          "title": "Boost Client Satisfaction",
+          "description": "Deliver a seamless booking experience that keeps clients coming back",
+          "metric": "95% client satisfaction rate",
+          "emphasis": "Build lasting relationships"
+        },
+        {
+          "title": "Increase Revenue",
+          "description": "Fill empty slots and optimize your schedule for maximum earnings",
+          "metric": "25% average revenue increase",
+          "emphasis": "Maximize your potential"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "question": "Is there a minimum contract period?",
+          "answer": "No, EasyTakt is a month-to-month service. You can cancel at any time without any penalties."
+        },
+        {
+          "question": "Are there any setup fees?",
+          "answer": "None at all. The monthly fee covers everything, including setup and onboarding support."
+        },
+        {
+          "question": "What payment methods do you accept?",
+          "answer": "We accept all major credit cards and can provide invoices for bank transfers within the EU."
+        },
+        {
+          "question": "Can I change plans later?",
+          "answer": "We offer a single comprehensive plan that includes all features. No need to worry about upgrading or downgrading."
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "Ready to Transform Your Business?",
+      "description": "Join thousands of businesses already saving time and growing with EasyTakt.",
+      "button": "Get Started Free"
+    }
+  },
+  "footer": {
+    "copyright": "© 2024 EasyTakt. All rights reserved.",
+    "links": []
+  },
+  "cta": {
+    "title": "Ready to Transform Your Business?",
+    "description": "Join hundreds of businesses already saving time and growing with EasyTakt.",
+    "button": "Get Started Free"
+  }
+} 

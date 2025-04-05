@@ -1,0 +1,148 @@
+{
+  "common": {
+    "language": "Langue",
+    "loading": "Chargement..."
+  },
+  "navigation": {
+    "solutions": "Solutions",
+    "features": "Fonctionnalités",
+    "pricing": "Tarifs",
+    "contact": "Contact",
+    "blog": "Blog"
+  },
+  "hero": {
+    "title": "Planification intelligente pour votre entreprise",
+    "subtitle": "Optimisez vos opérations, réduisez les absences et développez votre entreprise avec notre puissante plateforme de planification.",
+    "cta": "Commencer"
+  },
+  "features": {
+    "title": "Fonctionnalités puissantes de planification",
+    "subtitle": "Tout en une plateforme",
+    "description": "Optimisez votre flux de planification avec des outils puissants qui favorisent la croissance de votre entreprise",
+    "items": {
+      "calendar": {
+        "title": "Calendrier interactif",
+        "description": "Gérez facilement votre emploi du temps avec notre calendrier intuitif. Définissez vos disponibilités, gérez les réservations et visualisez tout votre planning d'un coup d'œil.",
+        "imageAlt": "Interface du calendrier EasyTakt"
+      },
+      "clients": {
+        "title": "Gestion des clients",
+        "description": "Suivez les informations clients, les préférences et l'historique des réservations dans un système organisé. Construisez des relations plus solides grâce à des aperçus détaillés.",
+        "imageAlt": "Interface de gestion des clients"
+      },
+      "reminders": {
+        "title": "Notifications intelligentes",
+        "description": "Réduisez les absences grâce aux rappels automatisés. Gardez les clients et le personnel informés avec des notifications opportunes sur les rendez-vous et les changements.",
+        "imageAlt": "Interface des notifications"
+      },
+      "analytics": {
+        "title": "Analyses commerciales",
+        "description": "Prenez des décisions basées sur les données avec des aperçus des tendances de réservation, des préférences clients et des indicateurs de performance.",
+        "imageAlt": "Tableau de bord d'analyses"
+      },
+      "mobile": {
+        "title": "Compatible mobile",
+        "description": "Gérez votre entreprise en déplacement. Accédez à votre planning, gérez les réservations et restez connecté depuis n'importe quel appareil.",
+        "imageAlt": "Interface mobile"
+      },
+      "settings": {
+        "title": "Paramètres personnalisables",
+        "description": "Adaptez la plateforme à vos besoins professionnels. Définissez des règles de réservation personnalisées, des durées de service et des plages de disponibilité.",
+        "imageAlt": "Interface des paramètres"
+      }
+    }
+  },
+  "cta": {
+    "title": "Prêt à optimiser votre entreprise ?",
+    "description": "Rejoignez des centaines d'entreprises qui utilisent déjà EasyTakt pour gérer leurs plannings et ravir leurs clients.",
+    "button": "Essayer gratuitement"
+  },
+  "solutions": {
+    "title": "Solutions pour chaque entreprise",
+    "subtitle": "Découvrez comment EasyTakt peut aider votre secteur",
+    "items": []
+  },
+  "pricing": {
+    "title": "Simple, Transparent",
+    "subtitle": "Tarifs pour Tous",
+    "description": "Pas de frais cachés. Pas de contrats à long terme. Juste tout ce dont vous avez besoin pour gérer votre entreprise efficacement.",
+    "features": [
+      "Planification intelligente et notifications automatisées",
+      "Clients et membres du personnel illimités",
+      "Analyses commerciales complètes",
+      "Historique et notes des clients",
+      "Règles de réservation personnalisées",
+      "Plusieurs lieux de service",
+      "Intégrations de calendrier",
+      "Toutes les fonctionnalités incluses - pas de suppléments"
+    ],
+    "price": {
+      "amount": "15",
+      "period": "/mois",
+      "description": "Tout inclus. Pas de surprises."
+    },
+    "cta": {
+      "primary": "Essayer gratuitement",
+      "secondary": "Aucune carte de crédit requise"
+    },
+    "benefits": {
+      "title": "Votre investissement, multiplié",
+      "items": [
+        {
+          "title": "Réduire les Absences",
+          "description": "Les rappels et confirmations intelligents réduisent considérablement les rendez-vous manqués",
+          "metric": "Jusqu'à 80% de réduction des absences",
+          "emphasis": "Économisez des milliers en revenus perdus"
+        },
+        {
+          "title": "Gagner du Temps Administratif",
+          "description": "Automatisez votre flux de planification et libérez des heures chaque semaine",
+          "metric": "Plus de 15 heures économisées par mois",
+          "emphasis": "Concentrez-vous sur le développement de votre entreprise"
+        },
+        {
+          "title": "Améliorer la Satisfaction Client",
+          "description": "Offrez une expérience de réservation fluide qui fidélise les clients",
+          "metric": "95% de taux de satisfaction client",
+          "emphasis": "Construisez des relations durables"
+        },
+        {
+          "title": "Augmenter les Revenus",
+          "description": "Remplissez les créneaux vides et optimisez votre emploi du temps pour des revenus maximaux",
+          "metric": "25% d'augmentation moyenne des revenus",
+          "emphasis": "Maximisez votre potentiel"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Questions Fréquemment Posées",
+      "items": [
+        {
+          "question": "Y a-t-il une période minimale de contrat ?",
+          "answer": "Non, EasyTakt est un service mensuel. Vous pouvez annuler à tout moment sans pénalité."
+        },
+        {
+          "question": "Y a-t-il des frais d'installation ?",
+          "answer": "Aucun. Les frais mensuels couvrent tout, y compris l'installation et le support d'intégration."
+        },
+        {
+          "question": "Quels modes de paiement acceptez-vous ?",
+          "answer": "Nous acceptons toutes les cartes de crédit principales et pouvons fournir des factures pour les virements bancaires dans l'UE."
+        },
+        {
+          "question": "Puis-je changer de forfait plus tard ?",
+          "answer": "Nous proposons un seul forfait complet qui inclut toutes les fonctionnalités. Pas besoin de vous soucier des mises à niveau ou des rétrogradations."
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "Prêt à Transformer Votre Entreprise ?",
+      "description": "Rejoignez des milliers d'entreprises qui économisent déjà du temps et se développent avec EasyTakt.",
+      "button": "Commencer Gratuitement"
+    }
+  },
+  "footer": {
+    "copyright": "© 2024 EasyTakt. Tous droits réservés.",
+    "links": []
+  }
+} 

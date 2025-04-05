@@ -1,0 +1,148 @@
+{
+  "common": {
+    "language": "Sprache",
+    "loading": "Laden..."
+  },
+  "navigation": {
+    "solutions": "Lösungen",
+    "features": "Funktionen",
+    "pricing": "Preise",
+    "contact": "Kontakt",
+    "blog": "Blog"
+  },
+  "hero": {
+    "title": "Intelligente Terminplanung für Ihr Unternehmen",
+    "subtitle": "Optimieren Sie Ihre Abläufe, reduzieren Sie Terminausfälle und steigern Sie Ihren Geschäftserfolg mit unserer leistungsstarken Planungsplattform.",
+    "cta": "Jetzt starten"
+  },
+  "features": {
+    "title": "Leistungsstarke Terminplanungsfunktionen",
+    "subtitle": "Alles in einer Plattform",
+    "description": "Optimieren Sie Ihren Terminplanungsablauf mit leistungsstarken Tools, die das Wachstum Ihres Unternehmens fördern",
+    "items": {
+      "calendar": {
+        "title": "Interaktiver Kalender",
+        "description": "Verwalten Sie Ihren Zeitplan einfach mit unserem intuitiven Kalender. Legen Sie Verfügbarkeiten fest, bearbeiten Sie Buchungen und behalten Sie Ihren gesamten Zeitplan im Blick.",
+        "imageAlt": "EasyTakt Kalender-Interface"
+      },
+      "clients": {
+        "title": "Kundenverwaltung",
+        "description": "Behalten Sie Kundeninformationen, Präferenzen und Buchungshistorie in einem organisierten System im Überblick. Bauen Sie stärkere Beziehungen durch detaillierte Einblicke auf.",
+        "imageAlt": "Kundenverwaltungs-Interface"
+      },
+      "reminders": {
+        "title": "Intelligente Benachrichtigungen",
+        "description": "Reduzieren Sie Terminausfälle durch automatisierte Erinnerungen. Halten Sie Kunden und Mitarbeiter mit zeitnahen Benachrichtigungen über Termine und Änderungen auf dem Laufenden.",
+        "imageAlt": "Benachrichtigungs-Interface"
+      },
+      "analytics": {
+        "title": "Geschäftsanalysen",
+        "description": "Treffen Sie datenbasierte Entscheidungen mit Einblicken in Buchungsmuster, Kundenpräferenzen und Geschäftsleistungskennzahlen.",
+        "imageAlt": "Geschäftsanalysen-Dashboard"
+      },
+      "mobile": {
+        "title": "Mobilfreundlich",
+        "description": "Verwalten Sie Ihr Unternehmen unterwegs. Greifen Sie von jedem Gerät aus auf Ihren Zeitplan zu, bearbeiten Sie Buchungen und bleiben Sie verbunden.",
+        "imageAlt": "Mobiles Interface"
+      },
+      "settings": {
+        "title": "Anpassbare Einstellungen",
+        "description": "Passen Sie die Plattform an Ihre Geschäftsanforderungen an. Legen Sie individuelle Buchungsregeln, Servicedauer und Verfügbarkeitsfenster fest.",
+        "imageAlt": "Einstellungs-Interface"
+      }
+    }
+  },
+  "cta": {
+    "title": "Bereit, Ihr Unternehmen zu optimieren?",
+    "description": "Schließen Sie sich Hunderten von Unternehmen an, die EasyTakt bereits nutzen, um ihre Termine zu verwalten und ihre Kunden zu begeistern.",
+    "button": "Jetzt kostenlos testen"
+  },
+  "solutions": {
+    "title": "Lösungen für jedes Unternehmen",
+    "subtitle": "Entdecken Sie, wie EasyTakt Ihrer Branche helfen kann",
+    "items": []
+  },
+  "pricing": {
+    "title": "Einfach, Transparent",
+    "subtitle": "Preise für Jeden",
+    "description": "Keine versteckten Gebühren. Keine langfristigen Verträge. Nur alles, was Sie für den effizienten Betrieb Ihres Unternehmens benötigen.",
+    "features": [
+      "Intelligente Planung & automatisierte Benachrichtigungen",
+      "Unbegrenzte Kunden und Mitarbeiter",
+      "Umfassende Geschäftsanalysen",
+      "Kundenhistorie und Notizen",
+      "Individuelle Buchungsregeln",
+      "Mehrere Standorte",
+      "Kalenderintegrationen",
+      "Alle Funktionen inklusive - keine versteckten Kosten"
+    ],
+    "price": {
+      "amount": "15",
+      "period": "/Monat",
+      "description": "Alles inklusive. Keine Überraschungen."
+    },
+    "cta": {
+      "primary": "Kostenlos testen",
+      "secondary": "Keine Kreditkarte erforderlich"
+    },
+    "benefits": {
+      "title": "Ihre Investition, maximiert",
+      "items": [
+        {
+          "title": "Weniger Terminausfälle",
+          "description": "Intelligente Erinnerungen und Bestätigungen reduzieren verpasste Termine drastisch",
+          "metric": "Bis zu 80% weniger Ausfälle",
+          "emphasis": "Tausende Euro an Umsatzverlusten sparen"
+        },
+        {
+          "title": "Verwaltungszeit sparen",
+          "description": "Automatisieren Sie Ihre Terminplanung und gewinnen Sie wöchentlich mehr Zeit",
+          "metric": "Über 15 Stunden pro Monat gespart",
+          "emphasis": "Konzentrieren Sie sich auf Ihr Wachstum"
+        },
+        {
+          "title": "Höhere Kundenzufriedenheit",
+          "description": "Bieten Sie ein nahtloses Buchungserlebnis, das Kunden bindet",
+          "metric": "95% Kundenzufriedenheit",
+          "emphasis": "Bauen Sie dauerhafte Beziehungen auf"
+        },
+        {
+          "title": "Umsatzsteigerung",
+          "description": "Füllen Sie freie Termine und optimieren Sie Ihren Zeitplan für maximale Einnahmen",
+          "metric": "25% durchschnittliche Umsatzsteigerung",
+          "emphasis": "Maximieren Sie Ihr Potenzial"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "items": [
+        {
+          "question": "Gibt es eine Mindestvertragslaufzeit?",
+          "answer": "Nein, EasyTakt ist ein monatlich kündbarer Service. Sie können jederzeit ohne Vertragsstrafen kündigen."
+        },
+        {
+          "question": "Fallen Einrichtungsgebühren an?",
+          "answer": "Überhaupt nicht. Die monatliche Gebühr deckt alles ab, einschließlich Einrichtung und Einarbeitungsunterstützung."
+        },
+        {
+          "question": "Welche Zahlungsmethoden akzeptieren Sie?",
+          "answer": "Wir akzeptieren alle gängigen Kreditkarten und können Rechnungen für Überweisungen innerhalb der EU ausstellen."
+        },
+        {
+          "question": "Kann ich später den Tarif wechseln?",
+          "answer": "Wir bieten einen einzigen umfassenden Tarif an, der alle Funktionen enthält. Sie müssen sich keine Gedanken über Upgrades oder Downgrades machen."
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "Bereit, Ihr Unternehmen zu transformieren?",
+      "description": "Schließen Sie sich tausenden von Unternehmen an, die bereits Zeit sparen und mit EasyTakt wachsen.",
+      "button": "Kostenlos starten"
+    }
+  },
+  "footer": {
+    "copyright": "© 2024 EasyTakt. Alle Rechte vorbehalten.",
+    "links": []
+  }
+} 
