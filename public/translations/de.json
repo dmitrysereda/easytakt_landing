@@ -60,7 +60,87 @@
   "solutions": {
     "title": "Lösungen für jedes Unternehmen",
     "subtitle": "Entdecken Sie, wie EasyTakt Ihrer Branche helfen kann",
-    "items": []
+    "hero": {
+      "title": {
+        "line1": "Ein Unternehmen zu führen",
+        "line2": "ist schwer.",
+        "line3": "Die Terminplanung sollte es nicht sein."
+      },
+      "description": "Eine intelligentere und schnellere Möglichkeit, Termine und Zeitpläne für Unternehmen jeder Größe zu verwalten – alles in einer benutzerfreundlichen Plattform"
+    },
+    "core_features": {
+      "title": "Kernfunktionen für jedes Unternehmen",
+      "description": "Unabhängig von Ihrer Branche bietet EasyTakt leistungsstarke Tools zur Optimierung Ihrer Terminplanung.",
+      "items": [
+        {
+          "title": "24/7 Online-Buchung",
+          "description": "Lassen Sie Kunden jederzeit und überall Termine buchen. Schluss mit verpassten Anrufen und verlorenen Chancen."
+        },
+        {
+          "title": "Intelligente Ressourcenverwaltung",
+          "description": "Verwalten Sie Ihr Personal, Räume, Ausrüstung und andere Ressourcen effizient für maximale Auslastung."
+        },
+        {
+          "title": "Automatische Erinnerungen",
+          "description": "Reduzieren Sie Terminausfälle mit anpassbaren E-Mail- und SMS-Erinnerungen, die alle auf dem Laufenden halten."
+        },
+        {
+          "title": "Kalenderintegration",
+          "description": "Synchronisieren Sie mit gängigen Kalender-Apps, um Doppelbuchungen zu vermeiden und plattformübergreifend organisiert zu bleiben."
+        },
+        {
+          "title": "Detaillierte Analysen",
+          "description": "Treffen Sie datenbasierte Entscheidungen mit Einblicken in Buchungsmuster, Ressourcennutzung und mehr."
+        },
+        {
+          "title": "Individuelles Branding",
+          "description": "Präsentieren Sie ein professionelles Image mit einer Buchungsseite, die zu Ihrer Markenidentität passt."
+        }
+      ]
+    },
+    "industries": {
+      "salons_spas": {
+        "title": "Salons & Spas",
+        "description": "Optimieren Sie Termine, verwalten Sie Mitarbeiterpläne und reduzieren Sie Ausfälle mit automatischen Erinnerungen."
+      },
+      "music_dance": {
+        "title": "Musik- & Tanzschulen",
+        "description": "Koordinieren Sie Unterrichtsstunden, verwalten Sie Übungsräume und verfolgen Sie den Fortschritt der Schüler an einem Ort."
+      },
+      "driving_schools": {
+        "title": "Fahrschulen",
+        "description": "Verwalten Sie Fahrlehrerpläne, überwachen Sie die Fahrzeugverfügbarkeit und lassen Sie Schüler online Fahrstunden buchen."
+      },
+      "fitness_wellness": {
+        "title": "Fitness & Wellness",
+        "description": "Verwalten Sie Kursbuchungen, Mitgliedschaften und optimieren Sie die Studioauslastung mühelos."
+      },
+      "tutors_coaches": {
+        "title": "Tutoren & Coaches",
+        "description": "Planen Sie Sitzungen, verfolgen Sie Fortschritte und teilen Sie Ressourcen nahtlos mit Ihren Schülern."
+      },
+      "freelancers": {
+        "title": "Freiberufler",
+        "description": "Behalten Sie die Kontrolle über Ihren Zeitplan, verwalten Sie Kundenbuchungen und präsentieren Sie ein professionelles Image."
+      },
+      "pet_services": {
+        "title": "Tierdienstleistungen",
+        "description": "Verwalten Sie Tierpflegetermine, Trainingssitzungen und Kundenkommunikation effizient."
+      },
+      "automotive": {
+        "title": "Kfz-Dienstleistungen",
+        "description": "Ermöglichen Sie einfache Terminbuchungen für Fahrzeugwartung und -reparaturen."
+      },
+      "personal_stylists": {
+        "title": "Personal Stylisten & Mode-Berater",
+        "description": "Verwalten Sie Kundentermine für Stilberatung und Shopping-Sessions."
+      }
+    },
+    "cta": {
+      "title": "Bereit, Ihre Terminplanung zu optimieren?",
+      "description": "Schließen Sie sich tausenden von Unternehmen an, die EasyTakt für ihre Terminplanungsbedürfnisse vertrauen. Starten Sie noch heute mit unserer 30-tägigen kostenlosen Testversion.",
+      "button": "Jetzt kostenlos testen"
+    }
   },
   "pricing": {
     "title": "Einfach, Transparent",
@@ -144,5 +224,39 @@
   "footer": {
     "copyright": "© 2024 EasyTakt. Alle Rechte vorbehalten.",
     "links": []
+  },
+  "save_time": {
+    "title": "Zeit sparen. Kontrolle behalten.",
+    "features": [
+      {
+        "title": "Schnelle Einrichtung",
+        "description": "EasyTakt ist der einfachste Weg, Termine für Ihr Unternehmen zu verwalten. Keine komplizierte Einrichtung, kein langwieriges Onboarding – importieren Sie Ihre bestehenden Termine und Daten in wenigen Minuten."
+      },
+      {
+        "title": "Einfache Preisgestaltung",
+        "description": "Keine versteckten Gebühren, keine langfristigen Verträge. Anders als andere Plattformen, die für jede zusätzliche Funktion Gebühren erheben, hält EasyTakt die Preisgestaltung einfach und vorhersehbar."
+      },
+      {
+        "title": "DSGVO-konform & sicher",
+        "description": "Ihre Daten bleiben sicher und werden innerhalb der EU gespeichert, wodurch die vollständige Einhaltung der DSGVO-Vorschriften gewährleistet ist."
+      }
+    ]
+  },
+  "metrics": {
+    "title": "Die Zahlen sprechen für sich",
+    "items": [
+      {
+        "number": "80%",
+        "description": "Steigerung der Geschäftseffizienz durch automatisierte Terminplanung"
+      },
+      {
+        "number": "90%",
+        "description": "der Unternehmen berichten über eine bessere Ressourcennutzung"
+      },
+      {
+        "number": "50%",
+        "description": "Reduzierung von Terminkonflikten und Doppelbuchungen"
+      }
+    ]
   }
 } 

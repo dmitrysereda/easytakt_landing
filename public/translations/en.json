@@ -55,7 +55,87 @@
   "solutions": {
     "title": "Solutions for Every Business",
     "subtitle": "Discover how EasyTakt can help your specific industry",
-    "items": []
+    "hero": {
+      "title": {
+        "line1": "Running your business",
+        "line2": "is hard.",
+        "line3": "Scheduling shouldn't be."
+      },
+      "description": "A smarter, faster way to manage appointments and schedules for businesses of all sizes – all in one easy-to-use platform"
+    },
+    "core_features": {
+      "title": "Core Features for Every Business",
+      "description": "No matter your industry, EasyTakt provides powerful tools to streamline your scheduling operations.",
+      "items": [
+        {
+          "title": "24/7 Online Booking",
+          "description": "Let clients book appointments anytime, anywhere. No more phone tag or missed opportunities."
+        },
+        {
+          "title": "Smart Resource Management",
+          "description": "Efficiently manage your staff, rooms, equipment, and other resources to maximize utilization."
+        },
+        {
+          "title": "Automated Reminders",
+          "description": "Reduce no-shows with customizable email and SMS reminders that keep everyone on track."
+        },
+        {
+          "title": "Calendar Integration",
+          "description": "Sync with popular calendar apps to avoid double-booking and stay organized across platforms."
+        },
+        {
+          "title": "Detailed Analytics",
+          "description": "Make data-driven decisions with insights into booking patterns, resource usage, and more."
+        },
+        {
+          "title": "Custom Branding",
+          "description": "Present a professional image with a booking page that matches your brand identity."
+        }
+      ]
+    },
+    "industries": {
+      "salons_spas": {
+        "title": "Salons & Spas",
+        "description": "Streamline appointments, manage staff schedules, and reduce no-shows with automated reminders."
+      },
+      "music_dance": {
+        "title": "Music & Dance Schools",
+        "description": "Coordinate lessons, manage practice rooms, and track student progress all in one place."
+      },
+      "driving_schools": {
+        "title": "Driving Schools",
+        "description": "Manage instructor schedules, track vehicle availability, and let students book lessons online."
+      },
+      "fitness_wellness": {
+        "title": "Fitness & Wellness",
+        "description": "Handle class bookings, manage memberships, and optimize studio capacity effortlessly."
+      },
+      "tutors_coaches": {
+        "title": "Tutors & Coaches",
+        "description": "Schedule sessions, track progress, and share resources with your students seamlessly."
+      },
+      "freelancers": {
+        "title": "Freelancers",
+        "description": "Take control of your schedule, manage client bookings, and present a professional image."
+      },
+      "pet_services": {
+        "title": "Pet Services",
+        "description": "Manage pet appointments, training sessions, and client communication efficiently."
+      },
+      "automotive": {
+        "title": "Automotive Services",
+        "description": "Enable easy appointment booking for vehicle maintenance and repairs."
+      },
+      "personal_stylists": {
+        "title": "Personal Stylists & Fashion Consultants",
+        "description": "Manage client appointments for wardrobe styling and shopping sessions."
+      }
+    },
+    "cta": {
+      "title": "Ready to streamline your scheduling?",
+      "description": "Join thousands of businesses that trust EasyTakt to handle their scheduling needs. Get started today with our 30-day free trial.",
+      "button": "Try now for free"
+    }
   },
   "pricing": {
     "title": "Simple, Transparent",
@@ -144,5 +224,39 @@
     "title": "Ready to Transform Your Business?",
     "description": "Join hundreds of businesses already saving time and growing with EasyTakt.",
     "button": "Get Started Free"
+  },
+  "save_time": {
+    "title": "Save Time. Stay in Control.",
+    "features": [
+      {
+        "title": "Quick Setup",
+        "description": "EasyTakt is the simplest way to manage schedules for your business. No complicated setup, no lengthy onboarding—import your existing schedules and data in minutes."
+      },
+      {
+        "title": "Simple Pricing",
+        "description": "No hidden fees, no long-term contracts. Unlike other platforms that charge for every extra feature, EasyTakt keeps pricing simple and predictable."
+      },
+      {
+        "title": "GDPR-Compliant & Secure",
+        "description": "Your data stays safe, stored securely within the EU, ensuring full compliance with GDPR regulations."
+      }
+    ]
+  },
+  "metrics": {
+    "title": "The Numbers Don't Lie",
+    "items": [
+      {
+        "number": "80%",
+        "description": "increase in business efficiency through automated scheduling"
+      },
+      {
+        "number": "90%",
+        "description": "of businesses report better resource utilization"
+      },
+      {
+        "number": "50%",
+        "description": "decrease in scheduling conflicts and double bookings"
+      }
+    ]
   }
 } 

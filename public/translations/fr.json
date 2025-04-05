@@ -60,7 +60,87 @@
   "solutions": {
     "title": "Solutions pour chaque entreprise",
     "subtitle": "Découvrez comment EasyTakt peut aider votre secteur",
-    "items": []
+    "hero": {
+      "title": {
+        "line1": "Gérer une entreprise",
+        "line2": "est difficile.",
+        "line3": "La planification ne devrait pas l'être."
+      },
+      "description": "Une façon plus intelligente et plus rapide de gérer les rendez-vous et les plannings pour les entreprises de toutes tailles – le tout dans une plateforme facile à utiliser"
+    },
+    "core_features": {
+      "title": "Fonctionnalités essentielles pour chaque entreprise",
+      "description": "Quel que soit votre secteur, EasyTakt fournit des outils puissants pour optimiser vos opérations de planification.",
+      "items": [
+        {
+          "title": "Réservation en ligne 24/7",
+          "description": "Permettez aux clients de réserver à tout moment, n'importe où. Plus de jeux de téléphone ni d'opportunités manquées."
+        },
+        {
+          "title": "Gestion intelligente des ressources",
+          "description": "Gérez efficacement votre personnel, vos salles, votre équipement et autres ressources pour une utilisation maximale."
+        },
+        {
+          "title": "Rappels automatisés",
+          "description": "Réduisez les absences avec des rappels personnalisables par email et SMS qui gardent tout le monde informé."
+        },
+        {
+          "title": "Intégration de calendrier",
+          "description": "Synchronisez avec les applications de calendrier populaires pour éviter les doubles réservations et rester organisé sur toutes les plateformes."
+        },
+        {
+          "title": "Analyses détaillées",
+          "description": "Prenez des décisions basées sur les données avec des aperçus des tendances de réservation, de l'utilisation des ressources et plus encore."
+        },
+        {
+          "title": "Image de marque personnalisée",
+          "description": "Présentez une image professionnelle avec une page de réservation qui correspond à l'identité de votre marque."
+        }
+      ]
+    },
+    "industries": {
+      "salons_spas": {
+        "title": "Salons & Spas",
+        "description": "Optimisez les rendez-vous, gérez les plannings du personnel et réduisez les absences avec des rappels automatisés."
+      },
+      "music_dance": {
+        "title": "Écoles de Musique & Danse",
+        "description": "Coordonnez les cours, gérez les salles de pratique et suivez les progrès des élèves en un seul endroit."
+      },
+      "driving_schools": {
+        "title": "Auto-écoles",
+        "description": "Gérez les plannings des moniteurs, suivez la disponibilité des véhicules et permettez aux élèves de réserver des leçons en ligne."
+      },
+      "fitness_wellness": {
+        "title": "Fitness & Bien-être",
+        "description": "Gérez les réservations de cours, les adhésions et optimisez la capacité du studio sans effort."
+      },
+      "tutors_coaches": {
+        "title": "Tuteurs & Coachs",
+        "description": "Planifiez les sessions, suivez les progrès et partagez les ressources avec vos élèves en toute simplicité."
+      },
+      "freelancers": {
+        "title": "Freelances",
+        "description": "Gardez le contrôle de votre emploi du temps, gérez les réservations clients et présentez une image professionnelle."
+      },
+      "pet_services": {
+        "title": "Services Animaliers",
+        "description": "Gérez efficacement les rendez-vous pour animaux, les sessions d'entraînement et la communication client."
+      },
+      "automotive": {
+        "title": "Services Automobiles",
+        "description": "Facilitez la prise de rendez-vous pour l'entretien et les réparations de véhicules."
+      },
+      "personal_stylists": {
+        "title": "Stylistes Personnels & Consultants Mode",
+        "description": "Gérez les rendez-vous clients pour le conseil en style et les sessions shopping."
+      }
+    },
+    "cta": {
+      "title": "Prêt à optimiser votre planification ?",
+      "description": "Rejoignez des milliers d'entreprises qui font confiance à EasyTakt pour gérer leurs besoins de planification. Commencez dès aujourd'hui avec notre essai gratuit de 30 jours.",
+      "button": "Essayer gratuitement"
+    }
   },
   "pricing": {
     "title": "Simple, Transparent",
@@ -144,5 +224,39 @@
   "footer": {
     "copyright": "© 2024 EasyTakt. Tous droits réservés.",
     "links": []
+  },
+  "save_time": {
+    "title": "Gagnez du temps. Gardez le contrôle.",
+    "features": [
+      {
+        "title": "Configuration rapide",
+        "description": "EasyTakt est la façon la plus simple de gérer les plannings pour votre entreprise. Pas de configuration compliquée, pas d'intégration longue—importez vos plannings et données existants en quelques minutes."
+      },
+      {
+        "title": "Tarification simple",
+        "description": "Pas de frais cachés, pas de contrats à long terme. Contrairement aux autres plateformes qui facturent chaque fonctionnalité supplémentaire, EasyTakt maintient une tarification simple et prévisible."
+      },
+      {
+        "title": "Conforme RGPD & sécurisé",
+        "description": "Vos données restent en sécurité, stockées de manière sécurisée au sein de l'UE, assurant une conformité totale avec les réglementations RGPD."
+      }
+    ]
+  },
+  "metrics": {
+    "title": "Les chiffres ne mentent pas",
+    "items": [
+      {
+        "number": "80%",
+        "description": "d'augmentation de l'efficacité commerciale grâce à la planification automatisée"
+      },
+      {
+        "number": "90%",
+        "description": "des entreprises constatent une meilleure utilisation des ressources"
+      },
+      {
+        "number": "50%",
+        "description": "de réduction des conflits de planification et des doubles réservations"
+      }
+    ]
   }
 } 
