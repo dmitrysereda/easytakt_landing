@@ -76,7 +76,7 @@ const Footer = () => {
 
         <div className="mt-12 pt-8 border-t border-gray-100 text-center">
           <p className="text-gray-600">
-            {t('footer.copyright', { year: new Date().getFullYear(), returnObjects: false })}
+            {t('footer.copyright', { replace: { year: new Date().getFullYear() } })}
           </p>
         </div>
       </div>
