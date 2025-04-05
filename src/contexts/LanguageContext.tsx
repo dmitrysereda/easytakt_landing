@@ -1,89 +1,25 @@
 'use client';
 
-import React, { createContext, useContext, useState, useEffect } from 'react';
-import { Translation } from '@/types/translations';
+import React, { createContext, useContext, useState, useEffect, useCallback } from 'react';
 
 type TranslationValue = string | string[] | Record<string, any>[] | Record<string, any>;
+type TranslationParams = {
+  returnObjects?: boolean;
+  replace?: Record<string, string | number>;
+};
 
-type LanguageContextType = {
+interface LanguageContextType {
   language: string;
   setLanguage: (lang: string) => void;
-  t: <T = string>(key: string, options?: { returnObjects?: boolean }) => T;
+  t: <T = string>(key: string, params?: TranslationParams) => T;
   loading: boolean;
-};
+}
 
-const defaultTranslations: Translation = {
-  common: {
-    language: 'Language',
-    loading: 'Loading...'
-  },
-  navigation: {
-    solutions: 'Solutions',
-    features: 'Features',
-    pricing: 'Pricing',
-    contact: 'Contact',
-    blog: 'Blog'
-  },
-  hero: {
-    title: 'Smart Scheduling for Your Business',
-    subtitle: 'Streamline your operations, reduce no-shows, and grow your business with our powerful scheduling platform.',
-    cta: 'Get Started'
-  },
-  features: {
-    title: 'Powerful Scheduling Features for Business',
-    subtitle: 'All in One Platform',
-    description: 'Streamline your scheduling workflow with powerful tools that drive business growth',
-    items: []
-  },
-  solutions: {
-    title: 'Solutions for Every Business',
-    subtitle: 'Discover how EasyTakt can help your specific industry',
-    items: []
-  },
-  pricing: {
-    title: 'Simple, Transparent',
-    subtitle: 'Pricing for Everyone',
-    description: 'No hidden fees. No long-term contracts. Just everything you need to run your business efficiently.',
-    features: [],
-    price: {
-      amount: '15',
-      period: '/month',
-      description: 'Everything included. No surprises.'
-    },
-    cta: {
-      primary: 'Try now for free',
-      secondary: 'No credit card required'
-    },
-    benefits: {
-      title: 'Your Investment, Multiplied',
-      items: []
-    },
-    faq: {
-      title: 'Frequently Asked Questions',
-      items: []
-    },
-    finalCta: {
-      title: 'Ready to Transform Your Business?',
-      description: 'Join thousands of businesses already saving time and growing with EasyTakt.',
-      button: 'Get Started Free'
-    }
-  },
-  footer: {
-    copyright: '© 2024 EasyTakt. All rights reserved.',
-    links: []
-  }
-};
+const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
-const LanguageContext = createContext<LanguageContextType>({
-  language: 'en',
-  setLanguage: () => {},
-  t: ((key: string) => key) as LanguageContextType['t'],
-  loading: false
-});
-
-export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [language, setLanguageState] = useState('en');
-  const [translations, setTranslations] = useState<Translation>(defaultTranslations);
+  const [translations, setTranslations] = useState<Record<string, any>>({});
   const [loading, setLoading] = useState(false);
   const [isClient, setIsClient] = useState(false);
 
@@ -115,25 +51,28 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
         setTranslations(data);
       } catch (error) {
         console.error('Error loading translations:', error);
-        setTranslations(defaultTranslations);
+        setTranslations({});
       } finally {
         setLoading(false);
       }
     };
 
-    loadTranslations();
-  }, [language]);
+    if (isClient) {
+      loadTranslations();
+    }
+  }, [language, isClient]);
 
-  const t = <T = string>(key: string, options?: { returnObjects?: boolean }): T => {
+  const t = useCallback(<T = string>(key: string, params?: TranslationParams): T => {
     const keys = key.split('.');
     let value: any = translations;
     
+    // Navigate through the translation object using the key path
     for (const k of keys) {
       if (value && typeof value === 'object') {
         value = value[k];
       } else {
         // If we're expecting an array but the value is missing, return an empty array
-        if (options?.returnObjects) {
+        if (params?.returnObjects) {
           return ([] as unknown) as T;
         }
         return key as unknown as T;
@@ -141,30 +80,38 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     }
     
     if (value === undefined || value === null) {
-      if (options?.returnObjects) {
+      if (params?.returnObjects) {
         return ([] as unknown) as T;
       }
       return key as unknown as T;
     }
-    
-    if (options?.returnObjects && Array.isArray(value)) {
+
+    // If returnObjects is true, return the value as is
+    if (params?.returnObjects) {
       return value as unknown as T;
     }
     
+    // Handle string translations with parameter replacement
+    if (typeof value === 'string' && params?.replace) {
+      Object.entries(params.replace).forEach(([paramKey, paramValue]) => {
+        value = value.replace(`{{${paramKey}}}`, String(paramValue));
+      });
+    }
+    
     return (value || key) as unknown as T;
-  };
+  }, [translations]);
 
   return (
     <LanguageContext.Provider value={{ language, setLanguage, t, loading }}>
       {children}
     </LanguageContext.Provider>
   );
-};
+}
 
-export const useLanguage = () => {
+export function useLanguage() {
   const context = useContext(LanguageContext);
-  if (!context) {
+  if (context === undefined) {
     throw new Error('useLanguage must be used within a LanguageProvider');
   }
   return context;
-}; 
+} 
