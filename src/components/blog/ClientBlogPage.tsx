@@ -72,7 +72,7 @@ export default function ClientBlogPage({ posts, categories }: ClientBlogPageProp
               {selectedCategory && (
                 <div className="flex items-center justify-center">
                   <div className="bg-blue-50 text-blue-600 px-4 py-2 rounded-lg flex items-center gap-2">
-                    <span>{t('blog.categories.showing_articles_in', { category: selectedCategory })}</span>
+                    <span>{t('blog.categories.showing_articles_in', { replace: { categoryName: selectedCategory } })}</span>
                     <button
                       onClick={handleCategoryDeselect}
                       className="hover:bg-blue-100 p-1 rounded-full transition-colors"
@@ -95,7 +95,7 @@ export default function ClientBlogPage({ posts, categories }: ClientBlogPageProp
               <section>
                 <h2 className="text-2xl font-bold text-gray-900 mb-8">
                   {selectedCategory 
-                    ? t('blog.posts.articles_in_category', { category: selectedCategory })
+                    ? t('blog.posts.articles_in', { replace: { categoryName: selectedCategory } })
                     : t('blog.posts.latest_articles')}
                 </h2>
                 <div className="space-y-12">
@@ -186,7 +186,7 @@ export default function ClientBlogPage({ posts, categories }: ClientBlogPageProp
                             ? 'text-blue-600'
                             : 'text-gray-600 group-hover:text-gray-900'
                         } transition-colors`}>
-                          {category.name}
+                          {t('blog.categories.articles_in_category', { replace: { categoryName: category.name } })}
                         </span>
                         <span className={`text-sm ${
                           selectedCategory?.toLowerCase() === category.name.toLowerCase()
