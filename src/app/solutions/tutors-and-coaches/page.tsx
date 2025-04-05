@@ -23,34 +23,36 @@ interface BenefitCategory {
 }
 
 export default function TutorsAndCoachesPage() {
-  const { t } = useLanguage();
+  const { t, loading } = useLanguage();
 
-  if (!t) {
-    return <div>Loading...</div>;
+  if (loading) {
+    return (
+      <div className="flex justify-center items-center min-h-screen">
+        <div className="text-gray-600">{t ? t('common.loading') : 'Loading...'}</div>
+      </div>
+    );
   }
 
-  const features = t('solutions.tutors_and_coaches_page.features', { returnObjects: true }) as Feature[];
-  const benefits = t('solutions.tutors_and_coaches_page.benefits', { returnObjects: true }) as {
-    students: { title: string; icon: string; items: Benefit[] };
-    tutors: { title: string; icon: string; items: Benefit[] };
-    centers: { title: string; icon: string; items: Benefit[] };
-  };
+  if (!t) {
+    return null;
+  }
 
+  const features = t('solutions.tutors_and_coaches_page.features', { returnObjects: true }) as Feature[] || [];
   const benefitCategories: BenefitCategory[] = [
     {
-      title: benefits.students.title,
-      icon: benefits.students.icon,
-      benefits: benefits.students.items,
+      title: t('solutions.tutors_and_coaches_page.benefits.students.title') || '',
+      icon: t('solutions.tutors_and_coaches_page.benefits.students.icon') || '',
+      benefits: t('solutions.tutors_and_coaches_page.benefits.students.items', { returnObjects: true }) || [],
     },
     {
-      title: benefits.tutors.title,
-      icon: benefits.tutors.icon,
-      benefits: benefits.tutors.items,
+      title: t('solutions.tutors_and_coaches_page.benefits.tutors.title') || '',
+      icon: t('solutions.tutors_and_coaches_page.benefits.tutors.icon') || '',
+      benefits: t('solutions.tutors_and_coaches_page.benefits.tutors.items', { returnObjects: true }) || [],
     },
     {
-      title: benefits.centers.title,
-      icon: benefits.centers.icon,
-      benefits: benefits.centers.items,
+      title: t('solutions.tutors_and_coaches_page.benefits.centers.title') || '',
+      icon: t('solutions.tutors_and_coaches_page.benefits.centers.icon') || '',
+      benefits: t('solutions.tutors_and_coaches_page.benefits.centers.items', { returnObjects: true }) || [],
     },
   ];
 
