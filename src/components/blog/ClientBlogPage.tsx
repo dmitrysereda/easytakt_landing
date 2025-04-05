@@ -9,6 +9,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import type { BlogPost, BlogCategory } from '@/types/blog';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 interface ClientBlogPageProps {
   posts: BlogPost[];
@@ -26,6 +27,7 @@ export default function ClientBlogPage({ posts, categories }: ClientBlogPageProp
   const [searchTerm, setSearchTerm] = useState(searchParams.get('search') || '');
   const [selectedCategory, setSelectedCategory] = useState(searchParams.get('category') || '');
   const [filteredPosts, setFilteredPosts] = useState(posts);
+  const { t } = useLanguage();
 
   useEffect(() => {
     const filtered = posts.filter(post => {
@@ -39,7 +41,6 @@ export default function ClientBlogPage({ posts, categories }: ClientBlogPageProp
   }, [searchTerm, selectedCategory, posts]);
 
   const handleCategoryClick = (categoryName: string) => {
-    // If clicking the already selected category, deselect it
     if (selectedCategory?.toLowerCase() === categoryName.toLowerCase()) {
       setSelectedCategory('');
       router.push('/blog');
@@ -63,19 +64,19 @@ export default function ClientBlogPage({ posts, categories }: ClientBlogPageProp
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-3xl mx-auto animate-fade-in">
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                Insights for Growing Your Business
+                {t('blog.hero.title')}
               </h1>
               <p className="text-xl text-gray-600 mb-8">
-                Expert advice on scheduling, business growth, and industry best practices
+                {t('blog.hero.description')}
               </p>
               {selectedCategory && (
                 <div className="flex items-center justify-center">
                   <div className="bg-blue-50 text-blue-600 px-4 py-2 rounded-lg flex items-center gap-2">
-                    <span>Showing articles in: {selectedCategory}</span>
+                    <span>{t('blog.categories.showing_articles_in', { category: selectedCategory })}</span>
                     <button
                       onClick={handleCategoryDeselect}
                       className="hover:bg-blue-100 p-1 rounded-full transition-colors"
-                      aria-label="Clear category filter"
+                      aria-label={t('blog.categories.clear_filter')}
                     >
                       <X className="w-4 h-4" />
                     </button>
@@ -93,7 +94,9 @@ export default function ClientBlogPage({ posts, categories }: ClientBlogPageProp
               {/* Featured Posts */}
               <section>
                 <h2 className="text-2xl font-bold text-gray-900 mb-8">
-                  {selectedCategory ? `Articles in ${selectedCategory}` : 'Latest Articles'}
+                  {selectedCategory 
+                    ? t('blog.posts.articles_in_category', { category: selectedCategory })
+                    : t('blog.posts.latest_articles')}
                 </h2>
                 <div className="space-y-12">
                   {filteredPosts.map((post, index) => (
@@ -137,7 +140,7 @@ export default function ClientBlogPage({ posts, categories }: ClientBlogPageProp
                               {post.description}
                             </p>
                             <div className="flex items-center text-blue-600 font-medium">
-                              Read more
+                              {t('blog.posts.read_more')}
                               <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-2" />
                             </div>
                           </div>
@@ -148,12 +151,12 @@ export default function ClientBlogPage({ posts, categories }: ClientBlogPageProp
                 </div>
                 {filteredPosts.length === 0 && (
                   <div className="text-center py-12">
-                    <p className="text-gray-600">No articles found in this category.</p>
+                    <p className="text-gray-600">{t('blog.categories.no_articles.message')}</p>
                     <button
                       onClick={handleCategoryDeselect}
                       className="mt-4 text-blue-600 hover:text-blue-700 font-medium"
                     >
-                      View all articles
+                      {t('blog.categories.no_articles.view_all')}
                     </button>
                   </div>
                 )}
@@ -165,7 +168,7 @@ export default function ClientBlogPage({ posts, categories }: ClientBlogPageProp
               {/* Categories */}
               <div className="bg-gray-50 rounded-2xl p-8 sticky top-8">
                 <h3 className="text-xl font-semibold text-gray-900 mb-6">
-                  Categories
+                  {t('blog.categories.title')}
                 </h3>
                 <ul className="space-y-3">
                   {categories.map((category) => (

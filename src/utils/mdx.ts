@@ -1,8 +1,13 @@
-import { readFile, readdir } from 'fs/promises';
+// This file is server-side only
+import fs from 'fs';
+import { promisify } from 'util';
 import path from 'path';
 import matter from 'gray-matter';
 import { cache } from 'react';
 import yaml from 'js-yaml';
+
+const readFile = promisify(fs.readFile);
+const readdir = promisify(fs.readdir);
 
 const BLOG_DIR = path.join(process.cwd(), 'src/content/blog');
 

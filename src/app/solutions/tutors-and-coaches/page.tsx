@@ -4,79 +4,69 @@ import { GraduationCap } from 'lucide-react';
 import SolutionPageTemplate from '@/components/templates/SolutionPageTemplate';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import { useLanguage } from '@/contexts/LanguageContext';
 
-const features = [
-  {
-    title: 'Session Scheduling',
-    description: 'Let students book one-on-one or group sessions at times that work for everyone.',
-  },
-  {
-    title: 'Online & In-Person',
-    description: 'Manage both virtual and physical sessions with integrated video call links.',
-  },
-  {
-    title: 'Progress Tracking',
-    description: 'Keep detailed notes on student progress, assignments, and learning goals.',
-  },
-  {
-    title: 'Resource Sharing',
-    description: 'Share study materials, homework, and resources directly through the platform.',
-  },
-  {
-    title: 'Automated Reminders',
-    description: 'Reduce no-shows with session reminders via email or SMS.',
-  },
-  {
-    title: 'Payment Integration',
-    description: 'Handle session payments and package purchases seamlessly.',
-  },
-];
+interface Feature {
+  title: string;
+  description: string;
+}
 
-const benefitCategories = [
-  {
-    title: "For Students",
-    icon: "📚",
-    benefits: [
-      { title: "Book flexibly", description: "Schedule sessions that fit your learning pace and availability" },
-      { title: "Stay organized", description: "Access session materials and homework in one place" },
-      { title: "Track progress", description: "Monitor your learning journey and achievements" },
-      { title: "Never miss a session", description: "Get timely reminders for upcoming lessons" },
-    ],
-  },
-  {
-    title: "For Tutors & Coaches",
-    icon: "👩‍🏫",
-    benefits: [
-      { title: "Manage your time", description: "Set your availability and let students book within your schedule" },
-      { title: "Keep detailed records", description: "Track student progress and maintain session notes" },
-      { title: "Share resources easily", description: "Distribute materials and assignments efficiently" },
-    ],
-  },
-  {
-    title: "For Educational Centers",
-    icon: "🏫",
-    benefits: [
-      { title: "Streamline operations", description: "Coordinate multiple tutors and subjects seamlessly" },
-      { title: "Track performance", description: "Monitor student engagement and tutor effectiveness" },
-      { title: "Scale your impact", description: "Grow your tutoring business without administrative overhead" },
-    ],
-  },
-];
+interface Benefit {
+  title: string;
+  description: string;
+}
+
+interface BenefitCategory {
+  title: string;
+  icon: string;
+  benefits: Benefit[];
+}
 
 export default function TutorsAndCoachesPage() {
+  const { t } = useLanguage();
+
+  if (!t) {
+    return <div>Loading...</div>;
+  }
+
+  const features = t('solutions.tutors_and_coaches_page.features', { returnObjects: true }) as Feature[];
+  const benefits = t('solutions.tutors_and_coaches_page.benefits', { returnObjects: true }) as {
+    students: { title: string; icon: string; items: Benefit[] };
+    tutors: { title: string; icon: string; items: Benefit[] };
+    centers: { title: string; icon: string; items: Benefit[] };
+  };
+
+  const benefitCategories: BenefitCategory[] = [
+    {
+      title: benefits.students.title,
+      icon: benefits.students.icon,
+      benefits: benefits.students.items,
+    },
+    {
+      title: benefits.tutors.title,
+      icon: benefits.tutors.icon,
+      benefits: benefits.tutors.items,
+    },
+    {
+      title: benefits.centers.title,
+      icon: benefits.centers.icon,
+      benefits: benefits.centers.items,
+    },
+  ];
+
   return (
     <>
       <Header />
       <SolutionPageTemplate
         icon={GraduationCap}
-        title="Smart Scheduling for Tutors & Coaches"
-        description="Manage your tutoring sessions, track student progress, and share resources all in one place. Let students book sessions online and automate reminders."
+        title={t('solutions.tutors_and_coaches_page.title')}
+        description={t('solutions.tutors_and_coaches_page.description')}
         color="bg-blue-50"
         iconColor="text-blue-600"
         features={features}
         imageUrl="/images/solutions/tutoring-session.jpg"
         benefitCategories={benefitCategories}
-        challengeText="As an educator or coach, your focus should be on helping students succeed—not wrestling with calendars and scheduling conflicts. Yet you find yourself buried in emails and text messages, trying to coordinate sessions across different time zones and juggle multiple students' availability. Last-minute cancellations leave gaps in your schedule, while tracking payments and managing lesson materials becomes a part-time job in itself. And don't even mention the headache of switching between in-person and online sessions. It's like trying to teach algebra while doing a handstand—technically possible, but unnecessarily complicated."
+        challengeText={t('solutions.tutors_and_coaches_page.challenge_text')}
       />
       <Footer />
     </>

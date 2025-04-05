@@ -3,36 +3,24 @@
 import { CheckCircle } from 'lucide-react';
 import SignupButton from '../SignupButton';
 import { useIntersectionObserver } from '@/hooks/useIntersectionObserver';
-
-const benefits = [
-  "All features included - no upsells",
-  "Unlimited clients and staff members",
-  "Smart scheduling & automated notifications",
-  "Comprehensive business analytics"
-];
-
-const roi = [
-  {
-    title: "Reduce No-Shows",
-    description: "Smart reminders and confirmations dramatically reduce missed appointments"
-  },
-  {
-    title: "Save Admin Time",
-    description: "Automate your scheduling workflow and free up hours every week"
-  },
-  {
-    title: "Boost Client Satisfaction",
-    description: "Deliver a seamless booking experience that keeps clients coming back"
-  }
-];
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const PricingSection = () => {
   const headerRef = useIntersectionObserver();
   const pricingRef = useIntersectionObserver();
-  const benefitRefs = benefits.map(() => useIntersectionObserver());
+  const benefitRefs = Array(4).fill(null).map(() => useIntersectionObserver());
   const signupRef = useIntersectionObserver();
   const roiRef = useIntersectionObserver();
-  const roiItemRefs = roi.map(() => useIntersectionObserver());
+  const roiItemRefs = Array(3).fill(null).map(() => useIntersectionObserver());
+  const { t, loading } = useLanguage();
+
+  if (loading) {
+    return (
+      <div className="flex justify-center items-center h-64">
+        <div className="text-gray-600">{t('common.loading')}</div>
+      </div>
+    );
+  }
 
   return (
     <section id="pricing" className="py-24 bg-gradient-to-b from-white to-gray-50">
@@ -43,12 +31,12 @@ const PricingSection = () => {
             ref={headerRef}
             className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 animate-fade-in-up"
           >
-            Simple, Transparent Pricing
+            {t('pricing.title')} {t('pricing.subtitle')}
           </h2>
           <p
             className="text-xl text-gray-600 max-w-3xl mx-auto animate-fade-in-up-delay"
           >
-            No hidden fees. No long-term contracts. Just everything you need to run your business efficiently.
+            {t('pricing.description')}
           </p>
         </div>
 
@@ -61,22 +49,22 @@ const PricingSection = () => {
           >
             <div className="text-center mb-8">
               <div className="flex items-end justify-center">
-                <span className="text-6xl md:text-7xl font-bold text-gray-900">15€</span>
-                <span className="text-xl text-gray-600 mb-2 ml-2">/month</span>
+                <span className="text-6xl md:text-7xl font-bold text-gray-900">{t('pricing.price.amount')}€</span>
+                <span className="text-xl text-gray-600 mb-2 ml-2">{t('pricing.price.period')}</span>
               </div>
-              <p className="text-lg text-gray-600 mt-2">Everything included. No surprises.</p>
+              <p className="text-lg text-gray-600 mt-2">{t('pricing.price.description')}</p>
             </div>
 
             <div className="space-y-4 mb-10">
-              {benefits.map((benefit, index) => (
+              {(t('pricing.features', { returnObjects: true }) as string[]).map((feature: string, index: number) => (
                 <div
-                  key={benefit}
+                  key={feature}
                   ref={benefitRefs[index]}
                   className="flex items-center gap-3 animate-fade-in-right"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
                   <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0" />
-                  <span className="text-gray-700">{benefit}</span>
+                  <span className="text-gray-700">{feature}</span>
                 </div>
               ))}
             </div>
@@ -85,7 +73,7 @@ const PricingSection = () => {
               ref={signupRef}
               className="text-center animate-fade-in-up"
             >
-              <SignupButton size="large" className="w-full md:w-auto" />
+              <SignupButton text={t('pricing.cta.primary')} size="large" className="w-full md:w-auto" />
             </div>
           </div>
 
@@ -95,11 +83,11 @@ const PricingSection = () => {
             className="lg:pt-8 animate-fade-in-right"
           >
             <h3 className="text-2xl font-bold text-gray-900 mb-8">
-              Your Investment, Multiplied
+              {t('pricing.benefits.title')}
             </h3>
             
             <div className="space-y-6">
-              {roi.map((item, index) => (
+              {(t('pricing.benefits.items', { returnObjects: true }) as Array<{ title: string; description: string }>).map((item, index) => (
                 <div
                   key={item.title}
                   ref={roiItemRefs[index]}

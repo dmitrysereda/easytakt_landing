@@ -1,0 +1,120 @@
+{
+  "common": {
+    "language": "Language",
+    "loading": "Loading..."
+  },
+  "navigation": {
+    "solutions": "Solutions",
+    "features": "Features",
+    "pricing": "Pricing",
+    "contact": "Contact",
+    "blog": "Blog"
+  },
+  "hero": {
+    "title": "Smart Scheduling for Your Business",
+    "subtitle": "Streamline your operations, reduce no-shows, and grow your business with our powerful scheduling platform.",
+    "cta": "Get Started"
+  },
+  "features": {
+    "title": "Powerful Scheduling Features for Business",
+    "subtitle": "All in One Platform",
+    "description": "Streamline your scheduling workflow with powerful tools that drive business growth",
+    "items": [
+      {
+        "title": "Online Booking",
+        "description": "Let customers book appointments 24/7 through your website or social media."
+      },
+      {
+        "title": "Automated Reminders",
+        "description": "Reduce no-shows with automatic email and SMS reminders."
+      },
+      {
+        "title": "Calendar Sync",
+        "description": "Sync with Google Calendar, Outlook, and other popular calendars."
+      }
+    ]
+  },
+  "solutions": {
+    "title": "Solutions for Every Business",
+    "subtitle": "Discover how EasyTakt can help your specific industry",
+    "items": [
+      {
+        "title": "Medical & Health",
+        "description": "Manage patient appointments and provider schedules efficiently."
+      },
+      {
+        "title": "Driving Schools",
+        "description": "Coordinate instructors, vehicles, and student lessons with ease."
+      },
+      {
+        "title": "Fitness & Wellness",
+        "description": "Handle class bookings and trainer schedules effortlessly."
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Simple, Transparent Pricing",
+    "subtitle": "Choose the plan that's right for your business",
+    "plans": [
+      {
+        "name": "Starter",
+        "price": "$29/month",
+        "features": [
+          "Up to 5 staff members",
+          "Basic scheduling features",
+          "Email support"
+        ],
+        "cta": "Start Free Trial"
+      },
+      {
+        "name": "Professional",
+        "price": "$79/month",
+        "features": [
+          "Unlimited staff members",
+          "Advanced features",
+          "Priority support"
+        ],
+        "cta": "Start Free Trial"
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "© 2024 EasyTakt. All rights reserved.",
+    "links": [
+      {
+        "title": "Product",
+        "items": [
+          {
+            "text": "Features",
+            "href": "/features"
+          },
+          {
+            "text": "Solutions",
+            "href": "/solutions"
+          },
+          {
+            "text": "Pricing",
+            "href": "/pricing"
+          }
+        ]
+      },
+      {
+        "title": "Company",
+        "items": [
+          {
+            "text": "About",
+            "href": "/about"
+          },
+          {
+            "text": "Blog",
+            "href": "/blog"
+          },
+          {
+            "text": "Contact",
+            "href": "/contact"
+          }
+        ]
+      }
+    ]
+  }
+} 

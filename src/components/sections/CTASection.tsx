@@ -2,9 +2,19 @@
 
 import SignupButton from '@/components/SignupButton';
 import { useIntersectionObserver } from '@/hooks/useIntersectionObserver';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function CTASection() {
   const contentRef = useIntersectionObserver();
+  const { t, loading } = useLanguage();
+
+  if (loading) {
+    return (
+      <div className="flex justify-center items-center h-64">
+        <div className="text-gray-600">{t('common.loading')}</div>
+      </div>
+    );
+  }
 
   return (
     <section className="relative py-24 overflow-hidden">
@@ -17,12 +27,12 @@ export default function CTASection() {
           className="text-center animate-fade-in-up"
         >
           <h2 className="text-4xl font-bold text-gray-900 mb-6">
-            Ready to streamline your business?
+            {t('cta.title')}
           </h2>
           <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
-            Join hundreds of businesses already using EasyTakt to manage their schedules and delight their clients.
+            {t('cta.description')}
           </p>
-          <SignupButton className="text-lg px-8 py-4" />
+          <SignupButton text={t('cta.button')} className="text-lg px-8 py-4" />
         </div>
       </div>
     </section>

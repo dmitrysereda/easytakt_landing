@@ -1,0 +1,1247 @@
+{
+  "common": {
+    "language": "Langue",
+    "loading": "Chargement..."
+  },
+  "navigation": {
+    "solutions": "Solutions",
+    "features": "Fonctionnalités",
+    "pricing": "Tarifs",
+    "contact": "Contact",
+    "blog": "Blog"
+  },
+  "hero": {
+    "title": {
+      "line1": "Gérer votre",
+      "line2": "entreprise",
+      "line3": "est difficile.",
+      "line4": "La planification ne devrait pas l'être."
+    },
+    "description": "Une façon plus intelligente et plus rapide de gérer les rendez-vous et les plannings pour les entreprises de toutes tailles – le tout dans une plateforme facile à utiliser",
+    "cta": "Essayez gratuitement",
+    "image_alt": "Tableau de bord du calendrier EasyTakt"
+  },
+  "getting_started": {
+    "title": "Démarrez avec EasyTakt en 3 Étapes Ridiculement Simples",
+    "subtitle": "Vous voulez faciliter la gestion des réservations de votre entreprise ? On s'en occupe. Avec EasyTakt, la configuration demande autant d'effort que de faire une tasse de café (bon, peut-être deux). Suivez simplement ces trois étapes :",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Créez Votre Compte EasyTakt",
+        "description": "Inscrivez-vous, ajoutez les détails de votre entreprise, et voilà—vous êtes en route vers un système de réservation sans stress. C'est si simple que même votre chat pourrait le faire (s'il avait des pouces opposables).",
+        "image": "/images/steps/signup-screen.png"
+      },
+      {
+        "number": "02",
+        "title": "Ajoutez Vos Services & Équipe",
+        "description": "Vous avez des rendez-vous, des événements ou une équipe de rêve prête à démarrer ? Ajoutez-les tous. En quelques clics, ils sont officiellement réservables, et vous avez l'air totalement pro.",
+        "image": "/images/steps/services-screen.png"
+      },
+      {
+        "number": "03",
+        "title": "Personnalisez & Connectez Comme un Pro",
+        "description": "Rendez votre page de réservation aussi élégante que votre marque, puis intégrez-la à votre site web, vos réseaux sociaux, ou partout où se trouvent vos clients. Plus de réservations, moins de tracas. De rien.",
+        "image": "/images/steps/customize-screen.png"
+      }
+    ]
+  },
+  "features": {
+    "title": "Fonctionnalités de Planification Puissantes pour Entreprises",
+    "subtitle": "Tout en Une Plateforme",
+    "description": "Optimisez votre flux de planification avec des outils puissants qui favorisent la croissance de votre entreprise",
+    "items": {
+      "calendar": {
+        "title": "Calendrier Interactif",
+        "description": "Gérez facilement votre emploi du temps avec notre calendrier intuitif. Définissez vos disponibilités, gérez les réservations et visualisez tout votre planning d'un coup d'œil.",
+        "imageAlt": "Interface du calendrier EasyTakt"
+      },
+      "clients": {
+        "title": "Gestion des Clients",
+        "description": "Suivez les informations clients, les préférences et l'historique des réservations dans un système organisé. Construisez des relations plus solides grâce à des aperçus détaillés.",
+        "imageAlt": "Interface de gestion des clients"
+      },
+      "reminders": {
+        "title": "Notifications Intelligentes",
+        "description": "Réduisez les absences grâce aux rappels automatisés. Gardez les clients et le personnel informés avec des notifications opportunes sur les rendez-vous et les changements.",
+        "imageAlt": "Interface des notifications"
+      },
+      "analytics": {
+        "title": "Analyses Commerciales",
+        "description": "Prenez des décisions basées sur les données avec des aperçus des tendances de réservation, des préférences clients et des indicateurs de performance.",
+        "imageAlt": "Tableau de bord d'analyses"
+      },
+      "mobile": {
+        "title": "Compatible Mobile",
+        "description": "Gérez votre entreprise en déplacement. Accédez à votre planning, gérez les réservations et restez connecté depuis n'importe quel appareil.",
+        "imageAlt": "Interface mobile"
+      },
+      "settings": {
+        "title": "Paramètres Personnalisables",
+        "description": "Adaptez la plateforme à vos besoins professionnels. Définissez des règles de réservation personnalisées, des durées de service et des plages de disponibilité.",
+        "imageAlt": "Interface des paramètres"
+      }
+    }
+  },
+  "cta": {
+    "title": "Prêt à optimiser votre entreprise ?",
+    "description": "Rejoignez des centaines d'entreprises qui utilisent déjà EasyTakt pour gérer leurs plannings et ravir leurs clients.",
+    "button": "Essayer gratuitement"
+  },
+  "solutions": {
+    "title": "Solutions pour chaque entreprise",
+    "subtitle": "Découvrez comment EasyTakt peut aider votre secteur d'activité",
+    "hero": {
+      "title": {
+        "line1": "Logiciel de planification",
+        "line2": "pour tout type",
+        "line3": "d'entreprise."
+      },
+      "description": "Des solutions de planification spécifiques à chaque secteur, conçues pour optimiser les rendez-vous, gérer le personnel et développer votre entreprise – le tout dans une plateforme puissante"
+    },
+    "core_features": {
+      "title": "Fonctionnalités essentielles pour chaque entreprise",
+      "description": "Quel que soit votre secteur, EasyTakt fournit des outils puissants pour optimiser vos opérations de planification.",
+      "items": [
+        {
+          "title": "Réservation en ligne 24/7",
+          "description": "Permettez aux clients de réserver à tout moment, n'importe où. Plus de jeux de téléphone ni d'opportunités manquées."
+        },
+        {
+          "title": "Gestion intelligente des ressources",
+          "description": "Gérez efficacement votre personnel, vos salles, votre équipement et autres ressources pour une utilisation maximale."
+        },
+        {
+          "title": "Rappels automatisés",
+          "description": "Réduisez les absences avec des rappels personnalisables par email et SMS qui gardent tout le monde informé."
+        },
+        {
+          "title": "Intégration de calendrier",
+          "description": "Synchronisez avec les applications de calendrier populaires pour éviter les doubles réservations et rester organisé sur toutes les plateformes."
+        },
+        {
+          "title": "Analyses détaillées",
+          "description": "Prenez des décisions basées sur les données avec des aperçus des tendances de réservation, de l'utilisation des ressources et plus encore."
+        },
+        {
+          "title": "Image de marque personnalisée",
+          "description": "Présentez une image professionnelle avec une page de réservation qui correspond à l'identité de votre marque."
+        }
+      ]
+    },
+    "industries": {
+      "salons_spas": {
+        "title": "Salons & Spas",
+        "description": "Optimisez les rendez-vous, gérez les plannings du personnel et réduisez les absences avec des rappels automatisés."
+      },
+      "music_dance": {
+        "title": "Écoles de Musique & Danse",
+        "description": "Coordonnez les cours, gérez les salles de pratique et suivez les progrès des élèves en un seul endroit."
+      },
+      "driving_schools": {
+        "title": "Auto-écoles",
+        "description": "Gérez les plannings des moniteurs, suivez la disponibilité des véhicules et permettez aux élèves de réserver des leçons en ligne."
+      },
+      "fitness_wellness": {
+        "title": "Fitness & Bien-être",
+        "description": "Gérez les réservations de cours, les adhésions et optimisez la capacité du studio sans effort."
+      },
+      "tutors_coaches": {
+        "title": "Tuteurs & Coachs",
+        "description": "Planifiez les sessions, suivez les progrès et partagez les ressources avec vos élèves en toute simplicité."
+      },
+      "freelancers": {
+        "title": "Freelances",
+        "description": "Gardez le contrôle de votre emploi du temps, gérez les réservations clients et présentez une image professionnelle."
+      },
+      "pet_services": {
+        "title": "Services Animaliers",
+        "description": "Gérez efficacement les rendez-vous pour animaux, les sessions d'entraînement et la communication client."
+      },
+      "automotive": {
+        "title": "Services Automobiles",
+        "description": "Facilitez la prise de rendez-vous pour l'entretien et les réparations de véhicules."
+      },
+      "personal_stylists": {
+        "title": "Stylistes Personnels & Consultants Mode",
+        "description": "Gérez les rendez-vous clients pour le conseil en style et les sessions shopping."
+      }
+    },
+    "salons_spas_page": {
+      "title": "Réservation Facile pour Salons & Spas",
+      "description": "Permettez aux clients de prendre rendez-vous 24h/24, réduisez les absences grâce aux rappels et gérez la disponibilité de votre équipe depuis un seul tableau de bord.",
+      "challenge_text": "Dans le monde trépidant de la beauté et du bien-être, la planification ne devrait pas être votre plus grand facteur de stress. Pourtant, vous voilà, gérant un flux constant d'appels téléphoniques pendant les soins, essayant de coordonner les horaires des stylistes sur papier et perdant des revenus à cause des absences. Votre équipe est débordée par les changements de dernière minute, tandis que les clients sont frustrés de ne pas pouvoir réserver leur styliste préféré en dehors des heures d'ouverture. Le résultat ? Des fauteuils doublement réservés, des clients mécontents et un système de planification plus compliqué qu'une coloration multi-étapes.",
+      "features": [
+        {
+          "title": "Réservation en Ligne 24h/24",
+          "description": "Permettez aux clients de réserver à tout moment, n'importe où. Plus de jeux de téléphone ni d'appels manqués."
+        },
+        {
+          "title": "Planification Intelligente du Personnel",
+          "description": "Gérez la disponibilité et les spécialités de votre équipe. Assignez automatiquement le bon styliste pour chaque service."
+        },
+        {
+          "title": "Rappels Automatisés",
+          "description": "Réduisez les absences grâce à des rappels de rendez-vous personnalisables par email ou SMS."
+        },
+        {
+          "title": "Gestion des Services",
+          "description": "Gérez facilement différents services, durées et tarifs. Groupez les services en forfaits."
+        },
+        {
+          "title": "Historique Client",
+          "description": "Gardez une trace des préférences clients, des services précédents et des notes pour une expérience personnalisée."
+        },
+        {
+          "title": "Gestion des Ressources",
+          "description": "Optimisez l'utilisation des fauteuils, des salles et du matériel pour tous les rendez-vous."
+        }
+      ],
+      "benefits": {
+        "clients": {
+          "title": "Pour les Clients",
+          "icon": "💇‍♀️",
+          "items": [
+            {
+              "title": "Réservez à tout moment",
+              "description": "Prenez rendez-vous 24h/24 depuis votre téléphone ou ordinateur"
+            },
+            {
+              "title": "Restez informé",
+              "description": "Recevez des rappels et mises à jour automatiques sur vos rendez-vous"
+            },
+            {
+              "title": "Reprogrammation facile",
+              "description": "Modifiez votre horaire de rendez-vous en quelques clics"
+            },
+            {
+              "title": "Préférences personnelles",
+              "description": "Vos services favoris et préférences de styliste sont sauvegardés pour la prochaine fois"
+            }
+          ]
+        },
+        "staff": {
+          "title": "Pour les Stylistes & le Personnel",
+          "icon": "✂️",
+          "items": [
+            {
+              "title": "Planning quotidien clair",
+              "description": "Visualisez tous vos rendez-vous et pauses dans une vue organisée"
+            },
+            {
+              "title": "Historique client à portée de main",
+              "description": "Accédez instantanément aux préférences clients et à l'historique des services"
+            },
+            {
+              "title": "Disponibilité flexible",
+              "description": "Mettez facilement à jour vos heures de travail et offres de services"
+            }
+          ]
+        },
+        "owners": {
+          "title": "Pour les Propriétaires de Salon",
+          "icon": "👔",
+          "items": [
+            {
+              "title": "Vue d'ensemble complète",
+              "description": "Surveillez la performance du personnel et les statistiques des rendez-vous"
+            },
+            {
+              "title": "Optimisation des ressources",
+              "description": "Maximisez l'utilisation des fauteuils et réduisez les créneaux vides"
+            },
+            {
+              "title": "Axé sur la croissance",
+              "description": "Passez moins de temps à gérer les plannings, plus de temps à développer votre entreprise"
+            }
+          ]
+        }
+      }
+    },
+    "music_and_dance_page": {
+      "title": "Planification Simplifiée pour Écoles de Musique & de Danse",
+      "description": "Gérez les cours particuliers, les cours collectifs et les progrès des élèves en toute simplicité. Permettez aux élèves et aux parents de réserver des séances en ligne et automatisez les rappels.",
+      "challenge_text": "Gérer une école de musique ou de danse, c'est comme diriger un orchestre – chaque élément doit être parfaitement synchronisé. Entre la coordination des cours particuliers, des cours collectifs et des espaces de studio, les méthodes de planification traditionnelles montrent leurs limites. Les professeurs luttent contre les annulations de dernière minute, tandis que les parents et les élèves sont frustrés par des systèmes de réservation inflexibles. Les salles de pratique restent vides pendant les heures creuses, mais sont surréservées aux heures de pointe. Et suivre les progrès des élèves avec plusieurs instructeurs ? C'est une danse que personne ne veut danser.",
+      "features": [
+        {
+          "title": "Planification Facile des Cours",
+          "description": "Planifiez des cours particuliers et collectifs en quelques clics. Les élèves et les parents peuvent réserver les créneaux disponibles en ligne."
+        },
+        {
+          "title": "Suivi des Progrès",
+          "description": "Gardez des notes détaillées sur les progrès des élèves, le répertoire et les devoirs de pratique en un seul endroit."
+        },
+        {
+          "title": "Rappels Automatisés",
+          "description": "Réduisez les absences grâce aux rappels automatiques de cours par email ou SMS."
+        },
+        {
+          "title": "Gestion des Salles & Ressources",
+          "description": "Gérez efficacement les salles de pratique, les instruments et autres ressources pour tous vos cours."
+        },
+        {
+          "title": "Gestion des Cours Collectifs",
+          "description": "Organisez facilement les récitals, ateliers et cours collectifs. Suivez la présence et la capacité."
+        },
+        {
+          "title": "Intégration des Paiements",
+          "description": "Connectez-vous à votre système de paiement préféré pour gérer les frais de cours et les achats de forfaits."
+        }
+      ],
+      "benefits": {
+        "students": {
+          "title": "Pour les Élèves",
+          "icon": "🎵",
+          "items": [
+            {
+              "title": "Restez sur la bonne voie sans effort",
+              "description": "Visualisez vos prochains cours et votre planning de pratique en un coup d'œil"
+            },
+            {
+              "title": "Ne manquez aucun cours",
+              "description": "Recevez des rappels opportuns et synchronisez instantanément les cours avec votre calendrier"
+            },
+            {
+              "title": "Replanifiez facilement",
+              "description": "Modifiez les horaires des cours en quelques clics quand la vie devient chargée"
+            },
+            {
+              "title": "Suivez vos progrès",
+              "description": "Accédez aux notes de pratique et aux devoirs en un seul endroit"
+            }
+          ]
+        },
+        "teachers": {
+          "title": "Pour les Professeurs",
+          "icon": "👩‍🏫",
+          "items": [
+            {
+              "title": "Organisez votre emploi du temps",
+              "description": "Visualisez tous vos cours particuliers et collectifs dans une vue claire"
+            },
+            {
+              "title": "Gardez des enregistrements détaillés",
+              "description": "Suivez les progrès des élèves, le répertoire et les devoirs de pratique"
+            },
+            {
+              "title": "Gérez les ressources",
+              "description": "Réservez les salles de pratique et les instruments sans conflits"
+            }
+          ]
+        },
+        "owners": {
+          "title": "Pour les Propriétaires d'École",
+          "icon": "🎹",
+          "items": [
+            {
+              "title": "Optimisez les opérations",
+              "description": "Gérez plusieurs professeurs et types de cours sans effort"
+            },
+            {
+              "title": "Optimisez les ressources",
+              "description": "Maximisez l'utilisation des espaces de studio et des instruments"
+            },
+            {
+              "title": "Développez votre entreprise",
+              "description": "Concentrez-vous sur l'enseignement pendant que nous gérons la planification"
+            }
+          ]
+        }
+      }
+    },
+    "driving_schools_page": {
+      "title": "Planification Intelligente pour Auto-écoles",
+      "description": "Optimisez les réservations de leçons, gérez votre flotte et suivez les progrès des élèves en un seul endroit. Permettez aux élèves de réserver des leçons en ligne et automatisez les rappels.",
+      "challenge_text": "Gérer une auto-école signifie jongler avec plusieurs moniteurs, véhicules et élèves, tout en essayant de maintenir une opération fluide. Les appels téléphoniques interrompent les leçons, les doubles réservations causent de la frustration, et le suivi de la disponibilité des véhicules devient un casse-tête logistique. Les systèmes de planification manuels mènent à la confusion, tandis que les dossiers papier rendent difficile le suivi des progrès des élèves. Et n'oublions pas le temps passé à jouer au chat et à la souris avec les élèves pour planifier ou reprogrammer les leçons. Ça vous parle ? On s'en doutait.",
+      "features": [
+        {
+          "title": "Gestion des Leçons",
+          "description": "Planifiez facilement les leçons théoriques et pratiques. Permettez aux élèves de réserver des créneaux disponibles en ligne."
+        },
+        {
+          "title": "Gestion de Flotte",
+          "description": "Suivez et gérez votre flotte de véhicules efficacement. Évitez les doubles réservations et optimisez l'utilisation."
+        },
+        {
+          "title": "Planification des Moniteurs",
+          "description": "Coordonnez les emplois du temps des moniteurs, leurs spécialités et leurs disponibilités en un seul endroit."
+        },
+        {
+          "title": "Rappels Automatisés",
+          "description": "Réduisez les absences grâce aux rappels automatiques de leçons par email ou SMS."
+        },
+        {
+          "title": "Suivi des Progrès",
+          "description": "Gardez des notes détaillées sur les progrès des élèves, leur préparation aux examens et leurs étapes d'apprentissage."
+        },
+        {
+          "title": "Gestion des Ressources",
+          "description": "Gérez facilement les salles de cours théoriques et le matériel pédagogique."
+        }
+      ],
+      "benefits": {
+        "students": {
+          "title": "Pour les Élèves",
+          "icon": "👨‍🎓",
+          "items": [
+            {
+              "title": "Restez sur la bonne voie sans effort",
+              "description": "Visualisez vos prochaines leçons en un coup d'œil"
+            },
+            {
+              "title": "Ne manquez aucune leçon",
+              "description": "Recevez des rappels opportuns et ajoutez les leçons à votre calendrier en un seul clic"
+            },
+            {
+              "title": "Reprogrammez en quelques secondes",
+              "description": "La reprogrammation flexible signifie plus de va-et-vient fastidieux"
+            },
+            {
+              "title": "Planifiez plus intelligemment",
+              "description": "Visualisez les leçons théoriques et pratiques en un seul endroit"
+            }
+          ]
+        },
+        "instructors": {
+          "title": "Pour les Moniteurs",
+          "icon": "👨‍🏫",
+          "items": [
+            {
+              "title": "Soyez parfaitement préparé",
+              "description": "Accédez à votre emploi du temps quotidien et hebdomadaire en une seule vue"
+            },
+            {
+              "title": "Restez organisé",
+              "description": "Prenez des notes après chaque leçon pour suivre les progrès des élèves"
+            },
+            {
+              "title": "Adaptez-vous rapidement",
+              "description": "Reprogrammez facilement les leçons selon votre disponibilité"
+            }
+          ]
+        },
+        "owners": {
+          "title": "Pour les Propriétaires d'Auto-école",
+          "icon": "👔",
+          "items": [
+            {
+              "title": "Gardez le contrôle total",
+              "description": "Surveillez la charge de travail des moniteurs et les progrès des élèves en un coup d'œil"
+            },
+            {
+              "title": "Gérez vos actifs",
+              "description": "Suivez votre flotte – voitures et motos – sans tableurs"
+            },
+            {
+              "title": "Augmentez l'efficacité",
+              "description": "Réduisez le travail manuel pour que votre personnel puisse se concentrer sur l'enseignement"
+            }
+          ]
+        }
+      }
+    },
+    "fitness_and_wellness_page": {
+      "title": "Planification Intelligente pour Fitness & Bien-être",
+      "description": "Optimisez les réservations de cours, gérez la présence des membres et coordonnez les emplois du temps des coachs en un seul endroit. Permettez aux membres de réserver des séances en ligne et automatisez les rappels.",
+      "challenge_text": "Gérer un établissement de fitness ou de bien-être consiste à aider les gens à transformer leur vie – pas à s'empêtrer dans le chaos de la planification. Mais entre la gestion des capacités des cours, la coordination des emplois du temps des coachs et la gestion des annulations de dernière minute, vous passez plus de temps sur l'administratif que sur le coaching réel. Les membres sont frustrés quand les cours sont complets, les coachs luttent avec des conflits d'horaires, et votre accueil est submergé par les demandes de réservation. Pendant ce temps, les créneaux horaires privilégiés restent inutilisés tandis que les heures de pointe sont surbookées. C'est de quoi faire transpirer n'importe qui – et pas de la bonne façon.",
+      "features": [
+        {
+          "title": "Réservation de Cours & Séances",
+          "description": "Permettez aux membres de réserver facilement des cours collectifs et des séances de coaching personnel en ligne."
+        },
+        {
+          "title": "Gestion des Capacités",
+          "description": "Définissez et suivez automatiquement les tailles des cours, les listes d'attente et la disponibilité des équipements."
+        },
+        {
+          "title": "Planification des Coachs",
+          "description": "Coordonnez les emplois du temps des coachs, leurs spécialités et leurs disponibilités en un seul endroit."
+        },
+        {
+          "title": "Gestion des Membres",
+          "description": "Suivez la présence des membres, leurs progrès et leurs préférences pour un service personnalisé."
+        },
+        {
+          "title": "Rappels Automatisés",
+          "description": "Réduisez les absences grâce aux rappels de cours et de séances par email ou SMS."
+        },
+        {
+          "title": "Gestion des Ressources",
+          "description": "Optimisez l'utilisation des espaces de studio et des équipements pour tous les cours et séances."
+        }
+      ],
+      "benefits": {
+        "members": {
+          "title": "Pour les Membres",
+          "icon": "💪",
+          "items": [
+            {
+              "title": "Réservez facilement",
+              "description": "Réservez votre place dans les cours et séances à tout moment, n'importe où"
+            },
+            {
+              "title": "Restez motivé",
+              "description": "Recevez des rappels opportuns pour maintenir votre routine fitness"
+            },
+            {
+              "title": "Planification flexible",
+              "description": "Échangez facilement des cours ou replanifiez quand vos plans changent"
+            },
+            {
+              "title": "Suivez votre parcours",
+              "description": "Surveillez votre assiduité et vos progrès au fil du temps"
+            }
+          ]
+        },
+        "trainers": {
+          "title": "Pour les Coachs",
+          "icon": "🏋️‍♂️",
+          "items": [
+            {
+              "title": "Planning organisé",
+              "description": "Visualisez tous vos cours et séances privées en un seul endroit"
+            },
+            {
+              "title": "Aperçu des clients",
+              "description": "Accédez instantanément aux profils des membres et à leurs objectifs fitness"
+            },
+            {
+              "title": "Contrôle des capacités",
+              "description": "Gérez facilement les tailles des cours et les listes d'attente"
+            }
+          ]
+        },
+        "owners": {
+          "title": "Pour les Propriétaires d'Établissement",
+          "icon": "🏢",
+          "items": [
+            {
+              "title": "Maximisez l'efficacité",
+              "description": "Optimisez l'utilisation des espaces de studio et des équipements"
+            },
+            {
+              "title": "Décisions basées sur les données",
+              "description": "Suivez la popularité des cours et les tendances de fréquentation"
+            },
+            {
+              "title": "Évoluez facilement",
+              "description": "Ajoutez de nouveaux cours et coachs à mesure que votre entreprise se développe"
+            }
+          ]
+        }
+      }
+    },
+    "tutors_and_coaches_page": {
+      "title": "Planification Intelligente pour Tuteurs & Coachs",
+      "description": "Gérez vos séances de tutorat, suivez les progrès des élèves et partagez des ressources en un seul endroit. Permettez aux élèves de réserver des séances en ligne et automatisez les rappels.",
+      "challenge_text": "En tant qu'éducateur ou coach, votre attention devrait être portée sur la réussite des élèves – pas sur la lutte avec les calendriers et les conflits d'horaires. Pourtant, vous vous retrouvez noyé dans les emails et les messages texte, essayant de coordonner les séances à travers différents fuseaux horaires et jonglant avec la disponibilité de plusieurs élèves. Les annulations de dernière minute laissent des trous dans votre emploi du temps, tandis que le suivi des paiements et la gestion du matériel pédagogique deviennent un travail à temps partiel en soi. Et ne parlons même pas du casse-tête du passage entre les séances en présentiel et en ligne. C'est comme essayer d'enseigner l'algèbre en faisant le poirier – techniquement possible, mais inutilement compliqué.",
+      "features": [
+        {
+          "title": "Planification des Séances",
+          "description": "Permettez aux élèves de réserver des séances individuelles ou en groupe à des horaires qui conviennent à tous."
+        },
+        {
+          "title": "En Ligne & En Présentiel",
+          "description": "Gérez à la fois les séances virtuelles et physiques avec des liens d'appel vidéo intégrés."
+        },
+        {
+          "title": "Suivi des Progrès",
+          "description": "Conservez des notes détaillées sur les progrès des élèves, les devoirs et les objectifs d'apprentissage."
+        },
+        {
+          "title": "Partage de Ressources",
+          "description": "Partagez les supports d'étude, les devoirs et les ressources directement via la plateforme."
+        },
+        {
+          "title": "Rappels Automatisés",
+          "description": "Réduisez les absences avec des rappels de séance par email ou SMS."
+        },
+        {
+          "title": "Intégration des Paiements",
+          "description": "Gérez les paiements des séances et les achats de forfaits de manière transparente."
+        }
+      ],
+      "benefits": {
+        "students": {
+          "title": "Pour les Élèves",
+          "icon": "📚",
+          "items": [
+            {
+              "title": "Réservez en toute flexibilité",
+              "description": "Planifiez des séances adaptées à votre rythme d'apprentissage et à votre disponibilité"
+            },
+            {
+              "title": "Restez organisé",
+              "description": "Accédez aux supports de séance et aux devoirs en un seul endroit"
+            },
+            {
+              "title": "Suivez vos progrès",
+              "description": "Surveillez votre parcours d'apprentissage et vos réalisations"
+            },
+            {
+              "title": "Ne manquez aucune séance",
+              "description": "Recevez des rappels en temps opportun pour les cours à venir"
+            }
+          ]
+        },
+        "tutors": {
+          "title": "Pour les Tuteurs & Coachs",
+          "icon": "👩‍🏫",
+          "items": [
+            {
+              "title": "Gérez votre temps",
+              "description": "Définissez vos disponibilités et laissez les élèves réserver dans votre emploi du temps"
+            },
+            {
+              "title": "Tenez des registres détaillés",
+              "description": "Suivez les progrès des élèves et maintenez des notes de séance"
+            },
+            {
+              "title": "Partagez facilement les ressources",
+              "description": "Distribuez les supports et les devoirs efficacement"
+            }
+          ]
+        },
+        "centers": {
+          "title": "Pour les Centres Éducatifs",
+          "icon": "🏫",
+          "items": [
+            {
+              "title": "Optimisez les opérations",
+              "description": "Coordonnez plusieurs tuteurs et matières de manière transparente"
+            },
+            {
+              "title": "Suivez les performances",
+              "description": "Surveillez l'engagement des élèves et l'efficacité des tuteurs"
+            },
+            {
+              "title": "Développez votre impact",
+              "description": "Faites croître votre activité de tutorat sans surcharge administrative"
+            }
+          ]
+        }
+      }
+    },
+    "freelancers_page": {
+      "title": "Planification Professionnelle pour Freelances",
+      "description": "Prenez le contrôle de votre agenda, gérez les réservations clients et présentez une image professionnelle. Permettez aux clients de réserver en ligne et automatisez les rappels.",
+      "challenge_text": "En tant que freelance, la gestion de votre agenda peut être accablante. Les chaînes d'emails interminables pour trouver des créneaux, les doubles réservations dues aux confusions de fuseaux horaires et les expériences de planification non professionnelles peuvent nuire à votre activité. Vous avez besoin d'une solution qui rend la planification sans effort tout en maintenant votre image professionnelle.",
+      "features": [
+        {
+          "title": "Disponibilité Intelligente",
+          "description": "Définissez vos heures de travail et laissez les clients réserver aux moments qui vous conviennent."
+        },
+        {
+          "title": "Gestion des Services",
+          "description": "Organisez vos services, forfaits et tarifs dans une interface professionnelle."
+        },
+        {
+          "title": "Portail Client",
+          "description": "Offrez aux clients une expérience de réservation professionnelle avec votre portail personnalisé."
+        },
+        {
+          "title": "Suivi de Projet",
+          "description": "Suivez les projets en cours, les échéances et les communications clients."
+        },
+        {
+          "title": "Rappels Automatiques",
+          "description": "Réduisez les absences avec des rappels de rendez-vous par email ou SMS."
+        },
+        {
+          "title": "Intégration Calendrier",
+          "description": "Synchronisez avec votre calendrier préféré pour éviter les doubles réservations."
+        }
+      ],
+      "benefits": {
+        "clients": {
+          "title": "Pour Vos Clients",
+          "icon": "🤝",
+          "items": [
+            {
+              "title": "Réservation facile",
+              "description": "Planifiez des rendez-vous et consultations en quelques clics"
+            },
+            {
+              "title": "Communication claire",
+              "description": "Recevez des confirmations et rappels automatiques"
+            },
+            {
+              "title": "Expérience professionnelle",
+              "description": "Réservez via votre portail de planification personnalisé"
+            },
+            {
+              "title": "Options flexibles",
+              "description": "Choisissez parmi vos services et créneaux disponibles"
+            }
+          ]
+        },
+        "freelancers": {
+          "title": "Pour Vous en tant que Freelance",
+          "icon": "💼",
+          "items": [
+            {
+              "title": "Travaillez à vos conditions",
+              "description": "Contrôlez votre agenda et disponibilité avec précision"
+            },
+            {
+              "title": "Restez organisé",
+              "description": "Gérez tous vos rendez-vous clients et projets en un seul endroit"
+            },
+            {
+              "title": "Paraissez professionnel",
+              "description": "Présentez une expérience de réservation soignée aux clients"
+            }
+          ]
+        },
+        "business": {
+          "title": "Pour Votre Entreprise",
+          "icon": "📈",
+          "items": [
+            {
+              "title": "Gagnez du temps",
+              "description": "Éliminez les allers-retours d'emails pour la planification"
+            },
+            {
+              "title": "Croissance efficace",
+              "description": "Développez votre clientèle sans surcharge administrative"
+            },
+            {
+              "title": "Travaillez plus intelligemment",
+              "description": "Concentrez-vous sur la création de valeur plutôt que la gestion de calendrier"
+            }
+          ]
+        }
+      }
+    },
+    "pet_services_page": {
+      "title": "Planification Intelligente pour Services Animaliers",
+      "description": "Optimisez les rendez-vous de toilettage, d'entraînement et de promenade. Gardez des dossiers détaillés des animaux et automatisez les communications avec les clients.",
+      "challenge_text": "Gérer une entreprise de services animaliers signifie jongler avec plusieurs rendez-vous tout en s'assurant que chaque ami à fourrure reçoit l'attention qu'il mérite. Entre la gestion des différents types de services, la coordination des horaires du personnel et le suivi des besoins uniques de chaque animal, les systèmes de réservation traditionnels montrent leurs limites. Les appels téléphoniques interrompent les services, tandis que les dossiers papier rendent difficile la tenue d'historiques détaillés des animaux. Pendant ce temps, les propriétaires d'animaux peinent à prendre des rendez-vous autour de leurs emplois du temps chargés. Ça vous parle ? Nous avons la solution.",
+      "features": [
+        {
+          "title": "Gestion des Rendez-vous",
+          "description": "Planifiez facilement les rendez-vous de toilettage, d'entraînement et de promenade. Suivez les exigences et préférences spécifiques à chaque animal."
+        },
+        {
+          "title": "Profils Clients & Animaux",
+          "description": "Maintenez des dossiers détaillés des animaux, incluant race, âge, conditions médicales et instructions de soins spéciaux."
+        },
+        {
+          "title": "Planning du Personnel",
+          "description": "Coordonnez efficacement les toiletteurs, entraîneurs et promeneurs. Associez les animaux aux bons spécialistes."
+        },
+        {
+          "title": "Rappels Automatiques",
+          "description": "Envoyez des confirmations et rappels de rendez-vous aux propriétaires par email ou SMS."
+        },
+        {
+          "title": "Suivi des Services",
+          "description": "Gardez des enregistrements détaillés des services passés, notes de comportement et préférences de toilettage."
+        },
+        {
+          "title": "Portail de Réservation",
+          "description": "Permettez aux propriétaires de réserver des services en ligne et gérer leurs rendez-vous 24/7."
+        }
+      ],
+      "benefits": {
+        "pet_owners": {
+          "title": "Pour les Propriétaires",
+          "icon": "🐾",
+          "items": [
+            {
+              "title": "Réservation Facile",
+              "description": "Réservez des services animaliers n'importe quand, n'importe où en quelques clics"
+            },
+            {
+              "title": "Historique des Services",
+              "description": "Accédez à l'historique complet des services et rendez-vous"
+            },
+            {
+              "title": "Rappels Automatiques",
+              "description": "Ne manquez jamais un rendez-vous grâce aux notifications ponctuelles"
+            }
+          ]
+        },
+        "staff": {
+          "title": "Pour le Personnel",
+          "icon": "👥",
+          "items": [
+            {
+              "title": "Planning Organisé",
+              "description": "Visualisez et gérez efficacement les rendez-vous quotidiens"
+            },
+            {
+              "title": "Informations Animaux",
+              "description": "Accédez instantanément aux profils détaillés et instructions de soins"
+            },
+            {
+              "title": "Notes de Service",
+              "description": "Enregistrez et suivez le comportement et les préférences des animaux"
+            }
+          ]
+        },
+        "owners": {
+          "title": "Pour les Propriétaires d'Entreprise",
+          "icon": "💼",
+          "items": [
+            {
+              "title": "Croissance Commerciale",
+              "description": "Développez votre clientèle avec une réservation en ligne professionnelle"
+            },
+            {
+              "title": "Gestion du Personnel",
+              "description": "Optimisez les plannings du personnel et l'attribution des services"
+            },
+            {
+              "title": "Fidélisation Client",
+              "description": "Construisez des relations durables avec des suivis automatisés"
+            }
+          ]
+        }
+      }
+    },
+    "automotive_services_page": {
+      "title": "Planification Intelligente pour Services Automobiles",
+      "description": "Optimisez les rendez-vous d'entretien, gérez les baies de service et conservez des dossiers détaillés. Permettez aux clients de réserver des services en ligne et automatisez les suivis.",
+      "challenge_text": "La gestion d'une entreprise de services automobiles s'accompagne de défis uniques en matière de planification. Entre la gestion de plusieurs baies de service, la coordination des horaires des techniciens et la gestion des réparations d'urgence de dernière minute, les méthodes de réservation traditionnelles créent des maux de tête inutiles. Les interruptions téléphoniques perturbent le travail, tandis que les systèmes papier rendent difficile le suivi des historiques des véhicules et la tenue de registres précis. Pendant ce temps, les clients peinent à trouver des horaires convenables pour leurs rendez-vous d'entretien. Nous comprenons ces défis et avons développé une solution pour les résoudre tous.",
+      "features": [
+        {
+          "title": "Réservation de Services",
+          "description": "Permettez aux clients de réserver facilement en ligne les services d'entretien, de réparation et de détailing."
+        },
+        {
+          "title": "Suivi Historique Véhicule",
+          "description": "Maintenez des dossiers de service détaillés pour chaque véhicule, incluant l'historique d'entretien et les notes."
+        },
+        {
+          "title": "Planning des Techniciens",
+          "description": "Gérez efficacement les horaires des techniciens et la répartition du travail."
+        },
+        {
+          "title": "Gestion des Baies",
+          "description": "Optimisez l'utilisation des baies de service et évitez les conflits de planification."
+        },
+        {
+          "title": "Rappels d'Entretien",
+          "description": "Envoyez des rappels d'entretien automatisés et des notifications de suivi aux clients."
+        },
+        {
+          "title": "Devis Numériques",
+          "description": "Créez et envoyez des devis de service professionnels directement via la plateforme."
+        }
+      ],
+      "benefits": {
+        "vehicle_owners": {
+          "title": "Pour les Propriétaires de Véhicules",
+          "icon": "🚗",
+          "items": [
+            {
+              "title": "Réservation Pratique",
+              "description": "Planifiez des rendez-vous d'entretien à tout moment sans appels téléphoniques"
+            },
+            {
+              "title": "Suivi des Services",
+              "description": "Accédez à l'historique complet des services et aux entretiens à venir"
+            },
+            {
+              "title": "Communication Claire",
+              "description": "Recevez les mises à jour et les devis directement via la plateforme"
+            }
+          ]
+        },
+        "technicians": {
+          "title": "Pour les Techniciens",
+          "icon": "🔧",
+          "items": [
+            {
+              "title": "Flux de Travail Organisé",
+              "description": "Visualisez les tâches et rendez-vous quotidiens d'un coup d'œil"
+            },
+            {
+              "title": "Informations de Service",
+              "description": "Accédez instantanément à l'historique du véhicule et aux exigences de service"
+            },
+            {
+              "title": "Gestion du Temps",
+              "description": "Meilleure planification et répartition du travail"
+            }
+          ]
+        },
+        "owners": {
+          "title": "Pour les Propriétaires d'Ateliers",
+          "icon": "💼",
+          "items": [
+            {
+              "title": "Efficacité Accrue",
+              "description": "Optimisez l'utilisation des baies et la planification des techniciens"
+            },
+            {
+              "title": "Fidélisation Client",
+              "description": "Développez la loyauté avec un service professionnel et des suivis"
+            },
+            {
+              "title": "Croissance Commerciale",
+              "description": "Élargissez votre clientèle avec des capacités de réservation en ligne"
+            }
+          ]
+        }
+      }
+    },
+    "personal_stylists_page": {
+      "title": "Planification Intelligente pour Stylistes Personnels",
+      "description": "Transformez votre entreprise de style avec une gestion efficace des rendez-vous et une organisation client. Concentrez-vous sur la création de looks exceptionnels pendant que nous gérons la planification.",
+      "challenge_text": "Gérer plusieurs rendez-vous clients, suivre les préférences de style et coordonner les sessions shopping peut être accablant. EasyTakt vous aide à rester organisé et à vous concentrer sur l'essentiel - faire en sorte que vos clients soient à leur meilleur et se sentent bien.",
+      "features": [
+        {
+          "title": "Gestion de la Garde-robe Client",
+          "description": "Conservez des dossiers détaillés des préférences, tailles et objectifs de style des clients. Suivez les inventaires de garde-robe et les listes de shopping."
+        },
+        {
+          "title": "Planification des Sessions Shopping",
+          "description": "Planifiez et gérez facilement les rendez-vous shopping personnels, les consultations virtuelles et les audits de garde-robe."
+        },
+        {
+          "title": "Recommandations de Style",
+          "description": "Créez et partagez des tableaux de style numériques, des combinaisons de tenues et des recommandations shopping avec les clients."
+        },
+        {
+          "title": "Communication Client",
+          "description": "Envoyez des rappels de rendez-vous, des suivis et des mises à jour de style automatisés pour maintenir l'engagement des clients."
+        },
+        {
+          "title": "Forfaits de Services",
+          "description": "Gérez différents forfaits de services et suivez les sessions clients, des consultations ponctuelles aux services de style continus."
+        },
+        {
+          "title": "Lookbooks Numériques",
+          "description": "Créez et maintenez des lookbooks numériques pour chaque client, facilitant la référence aux recommandations et achats passés."
+        }
+      ],
+      "benefits": {
+        "clients": {
+          "title": "Pour les Clients",
+          "icon": "👗",
+          "items": [
+            {
+              "title": "Réservation Facile",
+              "description": "Réservez des sessions de style et des consultations en quelques clics"
+            },
+            {
+              "title": "Historique de Style",
+              "description": "Accédez aux recommandations et achats passés au même endroit"
+            },
+            {
+              "title": "Communication Transparente",
+              "description": "Recevez des mises à jour et recommandations de style en temps opportun"
+            }
+          ]
+        },
+        "stylists": {
+          "title": "Pour les Stylistes",
+          "icon": "👔",
+          "items": [
+            {
+              "title": "Emploi du Temps Organisé",
+              "description": "Gérez tous vos rendez-vous clients dans un seul calendrier"
+            },
+            {
+              "title": "Profils Clients",
+              "description": "Accédez instantanément aux préférences et à l'historique détaillés des clients"
+            },
+            {
+              "title": "Outils Numériques",
+              "description": "Créez et partagez facilement des tableaux de style et des recommandations"
+            }
+          ]
+        },
+        "owners": {
+          "title": "Pour les Propriétaires d'Entreprise",
+          "icon": "💼",
+          "items": [
+            {
+              "title": "Croissance de l'Entreprise",
+              "description": "Développez votre entreprise de style avec une planification efficace"
+            },
+            {
+              "title": "Gestion Client",
+              "description": "Bâtissez des relations durables avec des données client organisées"
+            },
+            {
+              "title": "Suivi des Services",
+              "description": "Surveillez les sessions de style et l'utilisation des forfaits"
+            }
+          ]
+        }
+      }
+    },
+    "cta": {
+      "title": "Prêt à optimiser votre planification ?",
+      "description": "Rejoignez des milliers d'entreprises qui font confiance à EasyTakt pour gérer leurs besoins de planification. Commencez dès aujourd'hui avec notre essai gratuit de 30 jours.",
+      "button": "Essayer gratuitement"
+    }
+  },
+  "pricing": {
+    "title": "Simple,",
+    "subtitle": "Prix Transparent",
+    "description": "Pas de frais cachés. Pas de contrats à long terme. Juste tout ce dont vous avez besoin pour gérer votre entreprise efficacement.",
+    "price": {
+      "amount": "15",
+      "period": "/mois",
+      "description": "Tout inclus. Sans surprises."
+    },
+    "features": [
+      "Toutes les fonctionnalités incluses - pas de suppléments",
+      "Clients et membres du personnel illimités",
+      "Planification intelligente et notifications automatisées",
+      "Analyses commerciales complètes"
+    ],
+    "cta": {
+      "primary": "Essai Gratuit"
+    },
+    "benefits": {
+      "title": "Votre Investissement, Multiplié",
+      "items": [
+        {
+          "title": "Réduisez les Absences",
+          "description": "Les rappels et confirmations intelligents réduisent considérablement les rendez-vous manqués"
+        },
+        {
+          "title": "Gagnez du Temps Administratif",
+          "description": "Automatisez votre processus de planification et libérez des heures chaque semaine"
+        },
+        {
+          "title": "Augmentez la Satisfaction Client",
+          "description": "Offrez une expérience de réservation fluide qui fidélise vos clients"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Questions Fréquemment Posées",
+      "items": [
+        {
+          "question": "Y a-t-il une période minimale de contrat ?",
+          "answer": "Non, EasyTakt est un service mensuel. Vous pouvez annuler à tout moment sans pénalité."
+        },
+        {
+          "question": "Y a-t-il des frais d'installation ?",
+          "answer": "Aucun. Les frais mensuels couvrent tout, y compris l'installation et le support d'intégration."
+        },
+        {
+          "question": "Quels modes de paiement acceptez-vous ?",
+          "answer": "Nous acceptons toutes les cartes de crédit principales et pouvons fournir des factures pour les virements bancaires dans l'UE."
+        },
+        {
+          "question": "Puis-je changer de forfait plus tard ?",
+          "answer": "Nous proposons un seul forfait complet qui inclut toutes les fonctionnalités. Pas besoin de vous soucier des mises à niveau ou des rétrogradations."
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "Prêt à Transformer Votre Entreprise ?",
+      "description": "Rejoignez des milliers d'entreprises qui économisent déjà du temps et se développent avec EasyTakt.",
+      "button": "Commencer Gratuitement"
+    }
+  },
+  "footer": {
+    "brand": {
+      "description": "Solutions de planification intelligentes pour les entreprises modernes."
+    },
+    "sections": {
+      "solutions": {
+        "title": "Solutions",
+        "links": [
+          {
+            "href": "/solutions/driving-schools",
+            "label": "Auto-écoles"
+          },
+          {
+            "href": "/solutions/music-and-dance",
+            "label": "Écoles de Musique & Danse"
+          },
+          {
+            "href": "/solutions/salons-and-spas",
+            "label": "Salons & Spas"
+          },
+          {
+            "href": "/solutions/fitness-and-wellness",
+            "label": "Fitness & Bien-être"
+          },
+          {
+            "href": "/solutions/tutors-and-coaches",
+            "label": "Tuteurs & Coachs"
+          },
+          {
+            "href": "/solutions/freelancers",
+            "label": "Freelances"
+          },
+          {
+            "href": "/solutions/pet-services",
+            "label": "Services Animaliers"
+          },
+          {
+            "href": "/solutions/automotive-services",
+            "label": "Services Automobiles"
+          },
+          {
+            "href": "/solutions/personal-stylists",
+            "label": "Stylistes Personnels"
+          }
+        ]
+      },
+      "quick_links": {
+        "title": "Liens Rapides",
+        "links": [
+          {
+            "href": "/blog",
+            "label": "Blog"
+          },
+          {
+            "href": "/features",
+            "label": "Fonctionnalités"
+          },
+          {
+            "href": "/pricing",
+            "label": "Tarifs"
+          },
+          {
+            "href": "/contact",
+            "label": "Contact"
+          }
+        ]
+      },
+      "legal": {
+        "title": "Mentions Légales",
+        "links": [
+          {
+            "href": "/privacy",
+            "label": "Politique de Confidentialité"
+          },
+          {
+            "href": "/terms",
+            "label": "Conditions d'Utilisation"
+          }
+        ]
+      }
+    },
+    "copyright": "© {{year}} EasyTakt. Tous droits réservés."
+  },
+  "save_time": {
+    "title": "Gagnez du temps. Gardez le contrôle.",
+    "features": [
+      {
+        "title": "Configuration rapide",
+        "description": "EasyTakt est la façon la plus simple de gérer les plannings pour votre entreprise. Pas de configuration compliquée, pas d'intégration longue—importez vos plannings et données existants en quelques minutes."
+      },
+      {
+        "title": "Tarification simple",
+        "description": "Pas de frais cachés, pas de contrats à long terme. Contrairement aux autres plateformes qui facturent chaque fonctionnalité supplémentaire, EasyTakt maintient une tarification simple et prévisible."
+      },
+      {
+        "title": "Conforme RGPD & sécurisé",
+        "description": "Vos données restent en sécurité, stockées de manière sécurisée au sein de l'UE, assurant une conformité totale avec les réglementations RGPD."
+      },
+      {
+        "title": "Votre entreprise, vos règles",
+        "description": "Nous n'interférons pas avec vos relations financières avec les clients. EasyTakt est là pour vous faire gagner des heures en gestion de planning—pas pour dicter comment gérer votre entreprise."
+      }
+    ]
+  },
+  "metrics": {
+    "title": "Les chiffres ne mentent pas",
+    "items": [
+      {
+        "number": "80%",
+        "description": "d'augmentation de l'efficacité commerciale grâce à la planification automatisée"
+      },
+      {
+        "number": "90%",
+        "description": "des entreprises constatent une meilleure utilisation des ressources"
+      },
+      {
+        "number": "50%",
+        "description": "de réduction des conflits de planification et des doubles réservations"
+      }
+    ]
+  },
+  "challenge": {
+    "title": "LE DÉFI",
+    "subtitle": "Il est temps de dire adieu aux maux de tête de la planification"
+  },
+  "why_easytakt": {
+    "title": "Pourquoi EasyTakt ?",
+    "subtitle": "Conçu pour rendre la planification sans effort"
+  },
+  "who_its_for": {
+    "title": "Pour qui ?",
+    "subtitle": "Conçu pour les propriétaires de petites entreprises qui ont besoin d'un système de planification simple et fiable",
+    "businesses": {
+      "driving_schools": {
+        "title": "Auto-écoles",
+        "description": "Gérez efficacement les instructeurs, les véhicules et les leçons des élèves."
+      },
+      "music_dance": {
+        "title": "Écoles de Musique & de Danse",
+        "description": "Organisez les cours particuliers et les cours collectifs."
+      },
+      "salons_spas": {
+        "title": "Salons & Spas",
+        "description": "Permettez aux clients de réserver sans appeler."
+      },
+      "fitness_wellness": {
+        "title": "Studios de Fitness & Bien-être",
+        "description": "Gérez les séances, les coachs et les plannings des cours."
+      },
+      "tutors_coaches": {
+        "title": "Tuteurs & Coachs",
+        "description": "Suivez facilement les leçons et les progrès des élèves."
+      },
+      "freelancers": {
+        "title": "Freelances & Prestataires de Services",
+        "description": "Passez plus de temps à travailler, moins à planifier."
+      },
+      "pet_services": {
+        "title": "Services pour Animaux",
+        "description": "Gérez les rendez-vous, les séances d'entraînement et la communication client."
+      },
+      "automotive": {
+        "title": "Services Automobiles",
+        "description": "Facilitez la prise de rendez-vous pour l'entretien et les réparations."
+      },
+      "personal_stylists": {
+        "title": "Stylistes Personnels & Conseillers en Mode",
+        "description": "Gérez les rendez-vous clients pour le stylisme et les séances shopping."
+      }
+    }
+  },
+  "blog": {
+    "hero": {
+      "title": "Conseils pour Développer Votre Entreprise",
+      "description": "Conseils d'experts sur la planification, la croissance et les meilleures pratiques du secteur"
+    },
+    "categories": {
+      "title": "Catégories",
+      "showing_articles_in": "Articles dans la catégorie : {{category}}",
+      "clear_filter": "Effacer le filtre de catégorie",
+      "no_articles": {
+        "message": "Aucun article trouvé dans cette catégorie.",
+        "view_all": "Voir tous les articles"
+      }
+    },
+    "posts": {
+      "latest_articles": "Derniers Articles",
+      "articles_in_category": "Articles dans {{category}}",
+      "read_more": "Lire la suite"
+    },
+    "post": {
+      "navigation": {
+        "home": "Accueil",
+        "blog": "Blog"
+      },
+      "cta": {
+        "title": "Prêt à Optimiser Votre Planification ?",
+        "description": "Rejoignez des milliers d'entreprises qui font confiance à EasyTakt pour gérer leurs rendez-vous et développer leur activité.",
+        "button": "Essayer Gratuitement"
+      }
+    },
+    "loading": "Chargement des articles..."
+  }
+} 

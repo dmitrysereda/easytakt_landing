@@ -3,11 +3,21 @@
 import Image from 'next/image';
 import SignupButton from '../SignupButton';
 import { useIntersectionObserver } from '@/hooks/useIntersectionObserver';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const Hero = () => {
   const textRef = useIntersectionObserver();
   const buttonRef = useIntersectionObserver();
   const imageRef = useIntersectionObserver();
+  const { t, loading } = useLanguage();
+
+  if (loading) {
+    return (
+      <div className="flex justify-center items-center h-64">
+        <div className="text-gray-600">{t('common.loading')}</div>
+      </div>
+    );
+  }
 
   return (
     <section className="relative min-h-[90vh] flex items-center bg-gradient-to-b from-white to-gray-50 overflow-hidden">
@@ -23,14 +33,13 @@ const Hero = () => {
             className="relative z-10 text-left max-w-xl mx-auto lg:mx-0 lg:pr-12 animate-fade-in-up"
           >
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 tracking-tight leading-[1.15]">
-              Running your business
+              {t('hero.title.line1')}
               <br />
-              is{' '}
-              <span className="text-gray-900">hard.</span>
+              {t('hero.title.line2')}
+              <br />
+              {t('hero.title.line3')}
               <div className="bg-gradient-to-r from-blue-500 via-purple-500 to-purple-600 text-transparent bg-clip-text mt-4">
-                Scheduling
-                <br />
-                shouldn't be.
+                {t('hero.title.line4')}
               </div>
             </h1>
 
@@ -38,7 +47,7 @@ const Hero = () => {
               ref={buttonRef}
               className="mt-10 animate-fade-in-up-delay"
             >
-              <SignupButton />
+              <SignupButton text={t('hero.cta')} />
             </div>
           </div>
 
@@ -54,7 +63,7 @@ const Hero = () => {
                 <div className="relative aspect-[16/9] w-full">
                   <Image
                     src="/images/calendar-dashboard.png"
-                    alt="EasyTakt Calendar Dashboard"
+                    alt={t('hero.image_alt')}
                     fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1600px) 65vw, 1000px"
                     className="object-contain rounded-2xl transition-transform duration-500 hover:scale-[1.02]"

@@ -1,0 +1,120 @@
+{
+  "common": {
+    "language": "Sprache",
+    "loading": "Laden..."
+  },
+  "navigation": {
+    "solutions": "Lösungen",
+    "features": "Funktionen",
+    "pricing": "Preise",
+    "contact": "Kontakt",
+    "blog": "Blog"
+  },
+  "hero": {
+    "title": "Ein Unternehmen zu führen ist schwer.",
+    "subtitle": "Die Terminplanung sollte es nicht sein.",
+    "cta": "Jetzt kostenlos testen",
+    "dashboardImage": "EasyTakt Kalender-Dashboard"
+  },
+  "features": {
+    "title": "Leistungsstarke Terminplanungsfunktionen",
+    "subtitle": "Alle Tools, die Sie für einen optimierten Terminplanungsablauf benötigen",
+    "items": [
+      {
+        "title": "Online-Buchung",
+        "description": "Lassen Sie Kunden rund um die Uhr Termine über Ihre Website oder Social Media buchen."
+      },
+      {
+        "title": "Automatische Erinnerungen",
+        "description": "Reduzieren Sie Absagen mit automatischen E-Mail- und SMS-Erinnerungen."
+      },
+      {
+        "title": "Kalendersynchronisation",
+        "description": "Synchronisieren Sie mit Google Kalender, Outlook und anderen beliebten Kalendern."
+      }
+    ]
+  },
+  "solutions": {
+    "title": "Lösungen für jedes Unternehmen",
+    "subtitle": "Entdecken Sie, wie EasyTakt Ihrer spezifischen Branche helfen kann",
+    "items": [
+      {
+        "title": "Medizin & Gesundheit",
+        "description": "Verwalten Sie Patiententermine und Mitarbeiterpläne effizient."
+      },
+      {
+        "title": "Fahrschulen",
+        "description": "Koordinieren Sie Fahrlehrer, Fahrzeuge und Schülerstunden mühelos."
+      },
+      {
+        "title": "Fitness & Wellness",
+        "description": "Verwalten Sie Kursbuchungen und Trainerpläne problemlos."
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Einfache, transparente Preise",
+    "subtitle": "Wählen Sie den Plan, der zu Ihrem Unternehmen passt",
+    "plans": [
+      {
+        "name": "Starter",
+        "price": "29€/Monat",
+        "features": [
+          "Bis zu 5 Mitarbeiter",
+          "Grundlegende Terminplanungsfunktionen",
+          "E-Mail-Support"
+        ],
+        "cta": "Kostenlos testen"
+      },
+      {
+        "name": "Professional",
+        "price": "79€/Monat",
+        "features": [
+          "Unbegrenzte Mitarbeiter",
+          "Erweiterte Funktionen",
+          "Prioritäts-Support"
+        ],
+        "cta": "Kostenlos testen"
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "© 2024 EasyTakt. Alle Rechte vorbehalten.",
+    "links": [
+      {
+        "title": "Produkt",
+        "items": [
+          {
+            "text": "Funktionen",
+            "href": "/features"
+          },
+          {
+            "text": "Lösungen",
+            "href": "/solutions"
+          },
+          {
+            "text": "Preise",
+            "href": "/pricing"
+          }
+        ]
+      },
+      {
+        "title": "Unternehmen",
+        "items": [
+          {
+            "text": "Über uns",
+            "href": "/about"
+          },
+          {
+            "text": "Blog",
+            "href": "/blog"
+          },
+          {
+            "text": "Kontakt",
+            "href": "/contact"
+          }
+        ]
+      }
+    ]
+  }
+} 
